@@ -3405,98 +3405,129 @@
                                                     },
                                                     "ACTIONS": {
                                                       "block": {
-                                                        "type": "SpotTarget",
-                                                        "id": "UnPXQJQf._*Eq!h3[HJE",
-                                                        "inputs": {
-                                                          "VALUE-0": {
-                                                            "block": {
-                                                              "type": "EventPlayer",
-                                                              "id": "-8C6A_L1ey[PboN_59R7"
-                                                            }
-                                                          },
-                                                          "VALUE-1": {
-                                                            "block": {
-                                                              "type": "Number",
-                                                              "id": "35%WBJp*.rjpY^O!SV?h",
-                                                              "fields": {
-                                                                "NUM": 300
-                                                              }
-                                                            }
-                                                          }
+                                                        "type": "actionComment",
+                                                        "id": "Q1Rgs^0Am!nL;z[%WSRZ",
+                                                        "fields": {
+                                                          "TEXT": "spot for debug"
                                                         },
                                                         "next": {
                                                           "block": {
-                                                            "type": "Teleport",
-                                                            "id": "`5UQ_a~{+HH02LJ5Xs,/",
-                                                            "inline": false,
+                                                            "type": "SpotTarget",
+                                                            "id": "UnPXQJQf._*Eq!h3[HJE",
                                                             "inputs": {
                                                               "VALUE-0": {
                                                                 "block": {
                                                                   "type": "EventPlayer",
-                                                                  "id": ")MUyEGUaTE|YPx|@;*9)"
+                                                                  "id": "-8C6A_L1ey[PboN_59R7"
                                                                 }
                                                               },
                                                               "VALUE-1": {
                                                                 "block": {
-                                                                  "type": "Add",
-                                                                  "id": "KP:PlaC@J%4sc.*,@*8K",
-                                                                  "inputs": {
-                                                                    "VALUE-0": {
+                                                                  "type": "Number",
+                                                                  "id": "35%WBJp*.rjpY^O!SV?h",
+                                                                  "fields": {
+                                                                    "NUM": 300
+                                                                  }
+                                                                }
+                                                              }
+                                                            },
+                                                            "next": {
+                                                              "block": {
+                                                                "type": "actionComment",
+                                                                "id": "W;9ChuRNHE0f}vy8v6Yr",
+                                                                "fields": {
+                                                                  "TEXT": "add ai to player for debug"
+                                                                },
+                                                                "next": {
+                                                                  "block": {
+                                                                    "type": "subroutineInstanceBlock",
+                                                                    "id": "tXccNNwThMym8Bzw78ju",
+                                                                    "extraState": {
+                                                                      "subroutineName": "getLobby",
+                                                                      "parameters": []
+                                                                    },
+                                                                    "fields": {
+                                                                      "SUBROUTINE_NAME": "getLobby"
+                                                                    },
+                                                                    "next": {
                                                                       "block": {
-                                                                        "type": "GetSoldierState",
-                                                                        "id": "yQNlw2?_Pd^Tcb`wt4C:",
+                                                                        "type": "Teleport",
+                                                                        "id": "`5UQ_a~{+HH02LJ5Xs,/",
+                                                                        "inline": false,
                                                                         "inputs": {
                                                                           "VALUE-0": {
                                                                             "block": {
                                                                               "type": "EventPlayer",
-                                                                              "id": "BI1h_8YRDc^EG#U{V^b="
+                                                                              "id": ")MUyEGUaTE|YPx|@;*9)"
                                                                             }
                                                                           },
                                                                           "VALUE-1": {
                                                                             "block": {
-                                                                              "type": "SoldierStateVectorItem",
-                                                                              "id": "sdP_Y`tq+|q=CmbVeZ-U",
-                                                                              "fields": {
-                                                                                "VALUE-0": "SoldierStateVector",
-                                                                                "VALUE-1": "GetPosition"
+                                                                              "type": "Add",
+                                                                              "id": "KP:PlaC@J%4sc.*,@*8K",
+                                                                              "inputs": {
+                                                                                "VALUE-0": {
+                                                                                  "block": {
+                                                                                    "type": "GetSoldierState",
+                                                                                    "id": "yQNlw2?_Pd^Tcb`wt4C:",
+                                                                                    "inputs": {
+                                                                                      "VALUE-0": {
+                                                                                        "block": {
+                                                                                          "type": "EventPlayer",
+                                                                                          "id": "BI1h_8YRDc^EG#U{V^b="
+                                                                                        }
+                                                                                      },
+                                                                                      "VALUE-1": {
+                                                                                        "block": {
+                                                                                          "type": "SoldierStateVectorItem",
+                                                                                          "id": "sdP_Y`tq+|q=CmbVeZ-U",
+                                                                                          "fields": {
+                                                                                            "VALUE-0": "SoldierStateVector",
+                                                                                            "VALUE-1": "GetPosition"
+                                                                                          }
+                                                                                        }
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                },
+                                                                                "VALUE-1": {
+                                                                                  "block": {
+                                                                                    "type": "Multiply",
+                                                                                    "id": "G82bCp$4ZQZjW%#=no/V",
+                                                                                    "inputs": {
+                                                                                      "VALUE-0": {
+                                                                                        "block": {
+                                                                                          "type": "UpVector",
+                                                                                          "id": "y]l8(Tr`{?4fx[SJ1c+t"
+                                                                                        }
+                                                                                      },
+                                                                                      "VALUE-1": {
+                                                                                        "block": {
+                                                                                          "type": "Number",
+                                                                                          "id": ")Q%z]I$-k4Gw({i.|Z-l",
+                                                                                          "fields": {
+                                                                                            "NUM": 250
+                                                                                          }
+                                                                                        }
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                }
                                                                               }
                                                                             }
-                                                                          }
-                                                                        }
-                                                                      }
-                                                                    },
-                                                                    "VALUE-1": {
-                                                                      "block": {
-                                                                        "type": "Multiply",
-                                                                        "id": "G82bCp$4ZQZjW%#=no/V",
-                                                                        "inputs": {
-                                                                          "VALUE-0": {
-                                                                            "block": {
-                                                                              "type": "UpVector",
-                                                                              "id": "y]l8(Tr`{?4fx[SJ1c+t"
-                                                                            }
                                                                           },
-                                                                          "VALUE-1": {
+                                                                          "VALUE-2": {
                                                                             "block": {
                                                                               "type": "Number",
-                                                                              "id": ")Q%z]I$-k4Gw({i.|Z-l",
+                                                                              "id": "3ud#lEtYPIAm9/q+8LZv",
                                                                               "fields": {
-                                                                                "NUM": 250
+                                                                                "NUM": 0
                                                                               }
                                                                             }
                                                                           }
                                                                         }
                                                                       }
                                                                     }
-                                                                  }
-                                                                }
-                                                              },
-                                                              "VALUE-2": {
-                                                                "block": {
-                                                                  "type": "Number",
-                                                                  "id": "3ud#lEtYPIAm9/q+8LZv",
-                                                                  "fields": {
-                                                                    "NUM": 0
                                                                   }
                                                                 }
                                                               }
@@ -19557,8 +19588,8 @@
       {
         "type": "While",
         "id": "Hr3C`rOJ-RMG[(yIIeLh",
-        "x": 0,
-        "y": 19365,
+        "x": 88,
+        "y": 19387,
         "next": {
           "block": {
             "type": "actionComment",
