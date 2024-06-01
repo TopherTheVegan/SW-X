@@ -16044,42 +16044,61 @@
                             },
                             "next": {
                               "block": {
-                                "type": "DisplayCustomNotificationMessage",
-                                "id": "ndD?v3WB?O_dBi1o_6P_",
+                                "type": "subroutineInstanceBlock",
+                                "id": "B!VVK;;RmZs,vOWe9+)n",
+                                "extraState": {
+                                  "subroutineName": "runTeamStats",
+                                  "parameters": [
+                                    {
+                                      "types": "TeamId",
+                                      "name": "eventTeam"
+                                    },
+                                    {
+                                      "types": "Number",
+                                      "name": "stat"
+                                    },
+                                    {
+                                      "types": "String",
+                                      "name": "statName"
+                                    }
+                                  ]
+                                },
+                                "fields": {
+                                  "SUBROUTINE_NAME": "runTeamStats"
+                                },
                                 "inputs": {
-                                  "VALUE-0": {
+                                  "PARAM-0": {
                                     "block": {
-                                      "type": "Message",
-                                      "id": "o1k8@llqno1]0*96GY*x",
+                                      "type": "GetTeamId",
+                                      "id": "#5N=Cu.mvR^dy(zX?^]A",
                                       "inputs": {
                                         "VALUE-0": {
                                           "block": {
-                                            "type": "Text",
-                                            "id": "195Q%eo*?xqTMft/_dAl",
+                                            "type": "Number",
+                                            "id": ")4Yjz1AASOyi*QC|ll5n",
                                             "fields": {
-                                              "TEXT": "----------------- Score Board -----------------                     Player Kills"
+                                              "NUM": 1
                                             }
                                           }
                                         }
                                       }
                                     }
                                   },
-                                  "VALUE-1": {
+                                  "PARAM-1": {
                                     "block": {
-                                      "type": "CustomMessagesItem",
-                                      "id": "`6VaIZB$gpQ:`)V$|7._",
+                                      "type": "Number",
+                                      "id": "ApNdG/JfVOO(6N^xcfv7",
                                       "fields": {
-                                        "VALUE-0": "CustomMessages",
-                                        "VALUE-1": "HeaderText"
+                                        "NUM": 0
                                       }
                                     }
                                   },
-                                  "VALUE-2": {
+                                  "PARAM-2": {
                                     "block": {
-                                      "type": "Number",
-                                      "id": "}g0$$#Zh(FE9/X%L9bhf",
+                                      "type": "Text",
+                                      "id": "jviNz8m)[_*QN9+y3HjB",
                                       "fields": {
-                                        "NUM": -1
+                                        "TEXT": "Kills"
                                       }
                                     }
                                   }
@@ -16087,313 +16106,142 @@
                                 "next": {
                                   "block": {
                                     "type": "Wait",
-                                    "id": "y8;!]44*G~!)*:CzP6N)",
+                                    "id": "dLmgPp4Z6lpFWvc^fVdS",
                                     "inputs": {
                                       "VALUE-0": {
                                         "block": {
                                           "type": "Number",
-                                          "id": "zK.RlMpepJe4tr?sHwz3",
+                                          "id": "e**50wvoz+-o]L@rJ:_}",
                                           "fields": {
-                                            "NUM": 0.55
+                                            "NUM": 5
                                           }
                                         }
                                       }
                                     },
                                     "next": {
                                       "block": {
-                                        "type": "DisplayCustomNotificationMessage",
-                                        "id": "}9z@p}-^61)cmF,DM:3z",
+                                        "type": "TriggerAudio",
+                                        "id": "m//lJ/5099NZD]c_u%!^",
                                         "inputs": {
                                           "VALUE-0": {
                                             "block": {
-                                              "type": "Message",
-                                              "id": "}/pAE8we*u?(cDz(,Q62",
-                                              "inputs": {
-                                                "VALUE-0": {
-                                                  "block": {
-                                                    "type": "Text",
-                                                    "id": "NJgsBYO|*Wp;Ld=aIo0W",
-                                                    "fields": {
-                                                      "TEXT": "XX - {}"
-                                                    }
-                                                  }
-                                                },
-                                                "VALUE-2": {
-                                                  "block": {
-                                                    "type": "GetPlayerKills",
-                                                    "id": "yvW@DG0d3Ef9gE?|P?~y",
-                                                    "inputs": {
-                                                      "VALUE-0": {
-                                                        "block": {
-                                                          "type": "FirstOf",
-                                                          "id": "AvKH-oJ-23[I7VN{T}x?",
-                                                          "inputs": {
-                                                            "VALUE-0": {
-                                                              "block": {
-                                                                "type": "GetVariable",
-                                                                "id": "2-|zSqG^:E=$LDBmVS6K",
-                                                                "inputs": {
-                                                                  "VALUE-0": {
-                                                                    "block": {
-                                                                      "type": "variableReferenceBlock",
-                                                                      "id": "eVjPb|rdjj9-~T2,j)~I",
-                                                                      "extraState": {
-                                                                        "isObjectVar": true
-                                                                      },
-                                                                      "fields": {
-                                                                        "OBJECTTYPE": "TeamId",
-                                                                        "VAR": {
-                                                                          "id": "ywT;T^;6:XzmJ@^g@;zE"
-                                                                        }
-                                                                      },
-                                                                      "inputs": {
-                                                                        "OBJECT": {
-                                                                          "block": {
-                                                                            "type": "GetTeamId",
-                                                                            "id": "PR-79)[zq;4O4W8t_!9v",
-                                                                            "inputs": {
-                                                                              "VALUE-0": {
-                                                                                "block": {
-                                                                                  "type": "Number",
-                                                                                  "id": "KA78_B{u3]De66@qx%SA",
-                                                                                  "fields": {
-                                                                                    "NUM": 1
-                                                                                  }
-                                                                                }
-                                                                              }
-                                                                            }
-                                                                          }
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                }
-                                                              }
-                                                            }
-                                                          }
-                                                        }
-                                                      }
-                                                    }
-                                                  }
-                                                }
+                                              "type": "SoundsItem",
+                                              "id": "1@fe7RmR=d:Ks4geeZ+^",
+                                              "fields": {
+                                                "VALUE-0": "Sounds",
+                                                "VALUE-1": "ObjectiveUpdated"
                                               }
                                             }
                                           },
                                           "VALUE-1": {
                                             "block": {
-                                              "type": "CustomMessagesItem",
-                                              "id": "YUb.9|:m`,DkEB3=a(jR",
-                                              "fields": {
-                                                "VALUE-0": "CustomMessages",
-                                                "VALUE-1": "MessageText1"
-                                              }
-                                            }
-                                          },
-                                          "VALUE-2": {
-                                            "block": {
-                                              "type": "Number",
-                                              "id": "uKVK(8_(KZ2Qjj$zyx1o",
-                                              "fields": {
-                                                "NUM": -1
+                                              "type": "GetTeamId",
+                                              "id": "[MZ;ovraHPR~dvG0bKr;",
+                                              "inputs": {
+                                                "VALUE-0": {
+                                                  "block": {
+                                                    "type": "Number",
+                                                    "id": "^pBaQGtF1V=s|_XNb3Nt",
+                                                    "fields": {
+                                                      "NUM": 1
+                                                    }
+                                                  }
+                                                }
                                               }
                                             }
                                           }
                                         },
                                         "next": {
                                           "block": {
-                                            "type": "subroutineInstanceBlock",
-                                            "id": "B!VVK;;RmZs,vOWe9+)n",
-                                            "extraState": {
-                                              "subroutineName": "runTeamStats",
-                                              "parameters": [
-                                                {
-                                                  "types": "TeamId",
-                                                  "name": "eventTeam"
-                                                },
-                                                {
-                                                  "types": "Number",
-                                                  "name": "stat"
-                                                },
-                                                {
-                                                  "types": "String",
-                                                  "name": "statName"
-                                                }
-                                              ]
-                                            },
-                                            "fields": {
-                                              "SUBROUTINE_NAME": "runTeamStats"
-                                            },
+                                            "type": "TriggerAudio",
+                                            "id": "BX1Oz^Yqf1pQR+6mceG$",
                                             "inputs": {
-                                              "PARAM-0": {
+                                              "VALUE-0": {
                                                 "block": {
-                                                  "type": "GetTeamId",
-                                                  "id": "#5N=Cu.mvR^dy(zX?^]A"
-                                                }
-                                              },
-                                              "PARAM-1": {
-                                                "block": {
-                                                  "type": "Number",
-                                                  "id": "ApNdG/JfVOO(6N^xcfv7",
+                                                  "type": "SoundsItem",
+                                                  "id": "8n.?zWjuOcmi(1y,US5|",
                                                   "fields": {
-                                                    "NUM": 0
+                                                    "VALUE-0": "Sounds",
+                                                    "VALUE-1": "ShowObjective"
                                                   }
                                                 }
                                               },
-                                              "PARAM-2": {
+                                              "VALUE-1": {
                                                 "block": {
-                                                  "type": "Text",
-                                                  "id": "jviNz8m)[_*QN9+y3HjB",
-                                                  "fields": {
-                                                    "TEXT": "Kills"
+                                                  "type": "GetTeamId",
+                                                  "id": "i}_1_z1+$O7,U%i]yT|{",
+                                                  "inputs": {
+                                                    "VALUE-0": {
+                                                      "block": {
+                                                        "type": "Number",
+                                                        "id": "fMH_W68So0kyM~P4Uu=b",
+                                                        "fields": {
+                                                          "NUM": 2
+                                                        }
+                                                      }
+                                                    }
                                                   }
                                                 }
                                               }
                                             },
                                             "next": {
                                               "block": {
-                                                "type": "Wait",
-                                                "id": "dLmgPp4Z6lpFWvc^fVdS",
+                                                "type": "ClearCustomNotificationMessage",
+                                                "id": "R{OIrj~V:7q]%6DsK~#4",
                                                 "inputs": {
                                                   "VALUE-0": {
                                                     "block": {
-                                                      "type": "Number",
-                                                      "id": "e**50wvoz+-o]L@rJ:_}",
+                                                      "type": "CustomMessagesItem",
+                                                      "id": "vX:A%@@.wbVTL=|_fObC",
                                                       "fields": {
-                                                        "NUM": 5
+                                                        "VALUE-0": "CustomMessages",
+                                                        "VALUE-1": "MessageText1"
                                                       }
                                                     }
                                                   }
                                                 },
                                                 "next": {
                                                   "block": {
-                                                    "type": "TriggerAudio",
-                                                    "id": "m//lJ/5099NZD]c_u%!^",
+                                                    "type": "Wait",
+                                                    "id": ")vTSb@Nq!|wHSgJav-uY",
                                                     "inputs": {
                                                       "VALUE-0": {
                                                         "block": {
-                                                          "type": "SoundsItem",
-                                                          "id": "1@fe7RmR=d:Ks4geeZ+^",
+                                                          "type": "Number",
+                                                          "id": "w`_qfFBAOiD]@?#b|L$~",
                                                           "fields": {
-                                                            "VALUE-0": "Sounds",
-                                                            "VALUE-1": "ObjectiveUpdated"
-                                                          }
-                                                        }
-                                                      },
-                                                      "VALUE-1": {
-                                                        "block": {
-                                                          "type": "GetTeamId",
-                                                          "id": "[MZ;ovraHPR~dvG0bKr;",
-                                                          "inputs": {
-                                                            "VALUE-0": {
-                                                              "block": {
-                                                                "type": "Number",
-                                                                "id": "^pBaQGtF1V=s|_XNb3Nt",
-                                                                "fields": {
-                                                                  "NUM": 1
-                                                                }
-                                                              }
-                                                            }
+                                                            "NUM": 0.55
                                                           }
                                                         }
                                                       }
                                                     },
                                                     "next": {
                                                       "block": {
-                                                        "type": "TriggerAudio",
-                                                        "id": "BX1Oz^Yqf1pQR+6mceG$",
+                                                        "type": "ClearCustomNotificationMessage",
+                                                        "id": "lt*hlK;U)RlrM*Mk$#F3",
                                                         "inputs": {
                                                           "VALUE-0": {
                                                             "block": {
-                                                              "type": "SoundsItem",
-                                                              "id": "8n.?zWjuOcmi(1y,US5|",
+                                                              "type": "CustomMessagesItem",
+                                                              "id": "s46m{-~RVl:yOZrH/h(B",
                                                               "fields": {
-                                                                "VALUE-0": "Sounds",
-                                                                "VALUE-1": "ShowObjective"
-                                                              }
-                                                            }
-                                                          },
-                                                          "VALUE-1": {
-                                                            "block": {
-                                                              "type": "GetTeamId",
-                                                              "id": "i}_1_z1+$O7,U%i]yT|{",
-                                                              "inputs": {
-                                                                "VALUE-0": {
-                                                                  "block": {
-                                                                    "type": "Number",
-                                                                    "id": "fMH_W68So0kyM~P4Uu=b",
-                                                                    "fields": {
-                                                                      "NUM": 2
-                                                                    }
-                                                                  }
-                                                                }
+                                                                "VALUE-0": "CustomMessages",
+                                                                "VALUE-1": "HeaderText"
                                                               }
                                                             }
                                                           }
                                                         },
                                                         "next": {
                                                           "block": {
-                                                            "type": "ClearCustomNotificationMessage",
-                                                            "id": "R{OIrj~V:7q]%6DsK~#4",
+                                                            "type": "Wait",
+                                                            "id": "[Ve3R.Ga/VK$yaJ3L:jN",
                                                             "inputs": {
                                                               "VALUE-0": {
                                                                 "block": {
-                                                                  "type": "CustomMessagesItem",
-                                                                  "id": "vX:A%@@.wbVTL=|_fObC",
+                                                                  "type": "Number",
+                                                                  "id": ")h(Lrqf.}9tq-S}]F7.:",
                                                                   "fields": {
-                                                                    "VALUE-0": "CustomMessages",
-                                                                    "VALUE-1": "MessageText1"
-                                                                  }
-                                                                }
-                                                              }
-                                                            },
-                                                            "next": {
-                                                              "block": {
-                                                                "type": "Wait",
-                                                                "id": ")vTSb@Nq!|wHSgJav-uY",
-                                                                "inputs": {
-                                                                  "VALUE-0": {
-                                                                    "block": {
-                                                                      "type": "Number",
-                                                                      "id": "w`_qfFBAOiD]@?#b|L$~",
-                                                                      "fields": {
-                                                                        "NUM": 0.55
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                },
-                                                                "next": {
-                                                                  "block": {
-                                                                    "type": "ClearCustomNotificationMessage",
-                                                                    "id": "lt*hlK;U)RlrM*Mk$#F3",
-                                                                    "inputs": {
-                                                                      "VALUE-0": {
-                                                                        "block": {
-                                                                          "type": "CustomMessagesItem",
-                                                                          "id": "s46m{-~RVl:yOZrH/h(B",
-                                                                          "fields": {
-                                                                            "VALUE-0": "CustomMessages",
-                                                                            "VALUE-1": "HeaderText"
-                                                                          }
-                                                                        }
-                                                                      }
-                                                                    },
-                                                                    "next": {
-                                                                      "block": {
-                                                                        "type": "Wait",
-                                                                        "id": "[Ve3R.Ga/VK$yaJ3L:jN",
-                                                                        "inputs": {
-                                                                          "VALUE-0": {
-                                                                            "block": {
-                                                                              "type": "Number",
-                                                                              "id": ")h(Lrqf.}9tq-S}]F7.:",
-                                                                              "fields": {
-                                                                                "NUM": 1
-                                                                              }
-                                                                            }
-                                                                          }
-                                                                        }
-                                                                      }
-                                                                    }
+                                                                    "NUM": 1
                                                                   }
                                                                 }
                                                               }
