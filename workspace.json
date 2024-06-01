@@ -6,7 +6,7 @@
         "type": "modBlock",
         "id": "RxJ]/Kib2k6Fr4$+OaoV",
         "x": 0,
-        "y": 6303,
+        "y": 6491,
         "inputs": {
           "RULES": {
             "block": {
@@ -7781,78 +7781,83 @@
                                                                                 },
                                                                                 "ACTIONS": {
                                                                                   "block": {
-                                                                                    "type": "subroutineInstanceBlock",
-                                                                                    "id": "7oQB(vIZmFQ{95SiwH|+",
-                                                                                    "extraState": {
-                                                                                      "subroutineName": "teamWiped",
-                                                                                      "parameters": [
-                                                                                        {
-                                                                                          "types": "TeamId",
-                                                                                          "name": "eventTeam"
-                                                                                        }
-                                                                                      ]
-                                                                                    },
-                                                                                    "fields": {
-                                                                                      "SUBROUTINE_NAME": "teamWiped"
-                                                                                    },
+                                                                                    "type": "Wait",
+                                                                                    "id": "YAVBAnVZh}jC3%)1f(Z9",
                                                                                     "inputs": {
-                                                                                      "PARAM-0": {
+                                                                                      "VALUE-0": {
                                                                                         "block": {
-                                                                                          "type": "GetTeamId",
-                                                                                          "id": "O-v$l5jLkoZ7ookR{g-s",
-                                                                                          "inputs": {
-                                                                                            "VALUE-0": {
-                                                                                              "block": {
-                                                                                                "type": "Number",
-                                                                                                "id": "6yxI7A@aQ4MZbus|JEos",
-                                                                                                "fields": {
-                                                                                                  "NUM": 1
-                                                                                                }
-                                                                                              }
-                                                                                            }
+                                                                                          "type": "Number",
+                                                                                          "id": "_n)v7(5cfLd5L1o3=,6V",
+                                                                                          "fields": {
+                                                                                            "NUM": 1
                                                                                           }
                                                                                         }
                                                                                       }
                                                                                     },
                                                                                     "next": {
                                                                                       "block": {
-                                                                                        "type": "Wait",
-                                                                                        "id": "YAVBAnVZh}jC3%)1f(Z9",
+                                                                                        "type": "TriggerAudio",
+                                                                                        "id": "(zS76+GxCQJg?M7$wuZ+",
                                                                                         "inputs": {
                                                                                           "VALUE-0": {
                                                                                             "block": {
-                                                                                              "type": "Number",
-                                                                                              "id": "_n)v7(5cfLd5L1o3=,6V",
+                                                                                              "type": "SoundsItem",
+                                                                                              "id": "oMy{I,?Af~B9t{p_REL-",
                                                                                               "fields": {
-                                                                                                "NUM": 2
+                                                                                                "VALUE-0": "Sounds",
+                                                                                                "VALUE-1": "ObjectiveCappingComplete"
+                                                                                              }
+                                                                                            }
+                                                                                          },
+                                                                                          "VALUE-1": {
+                                                                                            "block": {
+                                                                                              "type": "GetTeamId",
+                                                                                              "id": "7re+}vcThVWN:KRCfxeT",
+                                                                                              "inputs": {
+                                                                                                "VALUE-0": {
+                                                                                                  "block": {
+                                                                                                    "type": "Number",
+                                                                                                    "id": "r!nVpzdwsF!HNo*z?g/(",
+                                                                                                    "fields": {
+                                                                                                      "NUM": 2
+                                                                                                    }
+                                                                                                  }
+                                                                                                }
                                                                                               }
                                                                                             }
                                                                                           }
                                                                                         },
                                                                                         "next": {
                                                                                           "block": {
-                                                                                            "type": "TriggerAudio",
-                                                                                            "id": "(zS76+GxCQJg?M7$wuZ+",
+                                                                                            "type": "ShowEventGameModeMessage",
+                                                                                            "id": "s!Zu9ri|@e|*i|SXwA$N",
                                                                                             "inputs": {
                                                                                               "VALUE-0": {
                                                                                                 "block": {
-                                                                                                  "type": "SoundsItem",
-                                                                                                  "id": "oMy{I,?Af~B9t{p_REL-",
-                                                                                                  "fields": {
-                                                                                                    "VALUE-0": "Sounds",
-                                                                                                    "VALUE-1": "ObjectiveCappingComplete"
+                                                                                                  "type": "Message",
+                                                                                                  "id": "4famD|*)w|w+;4^qno9O",
+                                                                                                  "inputs": {
+                                                                                                    "VALUE-0": {
+                                                                                                      "block": {
+                                                                                                        "type": "Text",
+                                                                                                        "id": "v%%,BZYl6OL{c2F8U/!I",
+                                                                                                        "fields": {
+                                                                                                          "TEXT": "ENEMY TEAM WIPED OUT"
+                                                                                                        }
+                                                                                                      }
+                                                                                                    }
                                                                                                   }
                                                                                                 }
                                                                                               },
                                                                                               "VALUE-1": {
                                                                                                 "block": {
                                                                                                   "type": "GetTeamId",
-                                                                                                  "id": "7re+}vcThVWN:KRCfxeT",
+                                                                                                  "id": "~,{=rV7VqqtP7lXnD~QG",
                                                                                                   "inputs": {
                                                                                                     "VALUE-0": {
                                                                                                       "block": {
                                                                                                         "type": "Number",
-                                                                                                        "id": "r!nVpzdwsF!HNo*z?g/(",
+                                                                                                        "id": "okTeTSA^/uk12;@w{pd|",
                                                                                                         "fields": {
                                                                                                           "NUM": 2
                                                                                                         }
@@ -7864,37 +7869,32 @@
                                                                                             },
                                                                                             "next": {
                                                                                               "block": {
-                                                                                                "type": "ShowEventGameModeMessage",
-                                                                                                "id": "s!Zu9ri|@e|*i|SXwA$N",
-                                                                                                "inputs": {
-                                                                                                  "VALUE-0": {
-                                                                                                    "block": {
-                                                                                                      "type": "Message",
-                                                                                                      "id": "4famD|*)w|w+;4^qno9O",
-                                                                                                      "inputs": {
-                                                                                                        "VALUE-0": {
-                                                                                                          "block": {
-                                                                                                            "type": "Text",
-                                                                                                            "id": "v%%,BZYl6OL{c2F8U/!I",
-                                                                                                            "fields": {
-                                                                                                              "TEXT": "ENEMY TEAM WIPED OUT"
-                                                                                                            }
-                                                                                                          }
-                                                                                                        }
-                                                                                                      }
+                                                                                                "type": "subroutineInstanceBlock",
+                                                                                                "id": "7oQB(vIZmFQ{95SiwH|+",
+                                                                                                "extraState": {
+                                                                                                  "subroutineName": "teamWiped",
+                                                                                                  "parameters": [
+                                                                                                    {
+                                                                                                      "types": "TeamId",
+                                                                                                      "name": "eventTeam"
                                                                                                     }
-                                                                                                  },
-                                                                                                  "VALUE-1": {
+                                                                                                  ]
+                                                                                                },
+                                                                                                "fields": {
+                                                                                                  "SUBROUTINE_NAME": "teamWiped"
+                                                                                                },
+                                                                                                "inputs": {
+                                                                                                  "PARAM-0": {
                                                                                                     "block": {
                                                                                                       "type": "GetTeamId",
-                                                                                                      "id": "~,{=rV7VqqtP7lXnD~QG",
+                                                                                                      "id": "O-v$l5jLkoZ7ookR{g-s",
                                                                                                       "inputs": {
                                                                                                         "VALUE-0": {
                                                                                                           "block": {
                                                                                                             "type": "Number",
-                                                                                                            "id": "okTeTSA^/uk12;@w{pd|",
+                                                                                                            "id": "6yxI7A@aQ4MZbus|JEos",
                                                                                                             "fields": {
-                                                                                                              "NUM": 2
+                                                                                                              "NUM": 1
                                                                                                             }
                                                                                                           }
                                                                                                         }
@@ -8181,78 +8181,83 @@
                                                                                     },
                                                                                     "ACTIONS": {
                                                                                       "block": {
-                                                                                        "type": "subroutineInstanceBlock",
-                                                                                        "id": "=c@Cu$ui.y|*K[Tt#P?h",
-                                                                                        "extraState": {
-                                                                                          "subroutineName": "teamWiped",
-                                                                                          "parameters": [
-                                                                                            {
-                                                                                              "types": "TeamId",
-                                                                                              "name": "eventTeam"
-                                                                                            }
-                                                                                          ]
-                                                                                        },
-                                                                                        "fields": {
-                                                                                          "SUBROUTINE_NAME": "teamWiped"
-                                                                                        },
+                                                                                        "type": "Wait",
+                                                                                        "id": "MLQNg)m+v+%VOpR$#o$4",
                                                                                         "inputs": {
-                                                                                          "PARAM-0": {
+                                                                                          "VALUE-0": {
                                                                                             "block": {
-                                                                                              "type": "GetTeamId",
-                                                                                              "id": "imv%B1=h[vZ.(dHm,?d4",
-                                                                                              "inputs": {
-                                                                                                "VALUE-0": {
-                                                                                                  "block": {
-                                                                                                    "type": "Number",
-                                                                                                    "id": "x%H|mC+bk`#Or^`B(~T(",
-                                                                                                    "fields": {
-                                                                                                      "NUM": 2
-                                                                                                    }
-                                                                                                  }
-                                                                                                }
+                                                                                              "type": "Number",
+                                                                                              "id": "X=s6Bbv#P6Wod~^f@?Eh",
+                                                                                              "fields": {
+                                                                                                "NUM": 1
                                                                                               }
                                                                                             }
                                                                                           }
                                                                                         },
                                                                                         "next": {
                                                                                           "block": {
-                                                                                            "type": "Wait",
-                                                                                            "id": "MLQNg)m+v+%VOpR$#o$4",
+                                                                                            "type": "TriggerAudio",
+                                                                                            "id": "h-1Slaq1{Zls~|u!xX7d",
                                                                                             "inputs": {
                                                                                               "VALUE-0": {
                                                                                                 "block": {
-                                                                                                  "type": "Number",
-                                                                                                  "id": "X=s6Bbv#P6Wod~^f@?Eh",
+                                                                                                  "type": "SoundsItem",
+                                                                                                  "id": "km8(RIrM1~R`{uq,lwn)",
                                                                                                   "fields": {
-                                                                                                    "NUM": 2
+                                                                                                    "VALUE-0": "Sounds",
+                                                                                                    "VALUE-1": "ObjectiveCappingComplete"
+                                                                                                  }
+                                                                                                }
+                                                                                              },
+                                                                                              "VALUE-1": {
+                                                                                                "block": {
+                                                                                                  "type": "GetTeamId",
+                                                                                                  "id": "$PnoRBAXHywv1O~/sVkE",
+                                                                                                  "inputs": {
+                                                                                                    "VALUE-0": {
+                                                                                                      "block": {
+                                                                                                        "type": "Number",
+                                                                                                        "id": "^$VWJc^u(M~6-5yT)ow9",
+                                                                                                        "fields": {
+                                                                                                          "NUM": 1
+                                                                                                        }
+                                                                                                      }
+                                                                                                    }
                                                                                                   }
                                                                                                 }
                                                                                               }
                                                                                             },
                                                                                             "next": {
                                                                                               "block": {
-                                                                                                "type": "TriggerAudio",
-                                                                                                "id": "h-1Slaq1{Zls~|u!xX7d",
+                                                                                                "type": "ShowEventGameModeMessage",
+                                                                                                "id": "BYg#w9!e?vP;=ww-30h#",
                                                                                                 "inputs": {
                                                                                                   "VALUE-0": {
                                                                                                     "block": {
-                                                                                                      "type": "SoundsItem",
-                                                                                                      "id": "km8(RIrM1~R`{uq,lwn)",
-                                                                                                      "fields": {
-                                                                                                        "VALUE-0": "Sounds",
-                                                                                                        "VALUE-1": "ObjectiveCappingComplete"
+                                                                                                      "type": "Message",
+                                                                                                      "id": "#CNE`HgBdgoUe`,x;uhc",
+                                                                                                      "inputs": {
+                                                                                                        "VALUE-0": {
+                                                                                                          "block": {
+                                                                                                            "type": "Text",
+                                                                                                            "id": "22*XU|(`^h!*nEK_}+6T",
+                                                                                                            "fields": {
+                                                                                                              "TEXT": "ENEMY TEAM WIPED OUT"
+                                                                                                            }
+                                                                                                          }
+                                                                                                        }
                                                                                                       }
                                                                                                     }
                                                                                                   },
                                                                                                   "VALUE-1": {
                                                                                                     "block": {
                                                                                                       "type": "GetTeamId",
-                                                                                                      "id": "$PnoRBAXHywv1O~/sVkE",
+                                                                                                      "id": "3c!@QGB2fff0GRq7OFYP",
                                                                                                       "inputs": {
                                                                                                         "VALUE-0": {
                                                                                                           "block": {
                                                                                                             "type": "Number",
-                                                                                                            "id": "^$VWJc^u(M~6-5yT)ow9",
+                                                                                                            "id": "j]vTEGgFK^D`Lv|)^?!6",
                                                                                                             "fields": {
                                                                                                               "NUM": 1
                                                                                                             }
@@ -8264,37 +8269,32 @@
                                                                                                 },
                                                                                                 "next": {
                                                                                                   "block": {
-                                                                                                    "type": "ShowEventGameModeMessage",
-                                                                                                    "id": "BYg#w9!e?vP;=ww-30h#",
-                                                                                                    "inputs": {
-                                                                                                      "VALUE-0": {
-                                                                                                        "block": {
-                                                                                                          "type": "Message",
-                                                                                                          "id": "#CNE`HgBdgoUe`,x;uhc",
-                                                                                                          "inputs": {
-                                                                                                            "VALUE-0": {
-                                                                                                              "block": {
-                                                                                                                "type": "Text",
-                                                                                                                "id": "22*XU|(`^h!*nEK_}+6T",
-                                                                                                                "fields": {
-                                                                                                                  "TEXT": "ENEMY TEAM WIPED OUT"
-                                                                                                                }
-                                                                                                              }
-                                                                                                            }
-                                                                                                          }
+                                                                                                    "type": "subroutineInstanceBlock",
+                                                                                                    "id": "=c@Cu$ui.y|*K[Tt#P?h",
+                                                                                                    "extraState": {
+                                                                                                      "subroutineName": "teamWiped",
+                                                                                                      "parameters": [
+                                                                                                        {
+                                                                                                          "types": "TeamId",
+                                                                                                          "name": "eventTeam"
                                                                                                         }
-                                                                                                      },
-                                                                                                      "VALUE-1": {
+                                                                                                      ]
+                                                                                                    },
+                                                                                                    "fields": {
+                                                                                                      "SUBROUTINE_NAME": "teamWiped"
+                                                                                                    },
+                                                                                                    "inputs": {
+                                                                                                      "PARAM-0": {
                                                                                                         "block": {
                                                                                                           "type": "GetTeamId",
-                                                                                                          "id": "3c!@QGB2fff0GRq7OFYP",
+                                                                                                          "id": "imv%B1=h[vZ.(dHm,?d4",
                                                                                                           "inputs": {
                                                                                                             "VALUE-0": {
                                                                                                               "block": {
                                                                                                                 "type": "Number",
-                                                                                                                "id": "j]vTEGgFK^D`Lv|)^?!6",
+                                                                                                                "id": "x%H|mC+bk`#Or^`B(~T(",
                                                                                                                 "fields": {
-                                                                                                                  "NUM": 1
+                                                                                                                  "NUM": 2
                                                                                                                 }
                                                                                                               }
                                                                                                             }
@@ -9442,7 +9442,7 @@
         "type": "subroutineBlock",
         "id": "D*tsY#}X49:Er!7v?j;(",
         "x": 0,
-        "y": 35998,
+        "y": 36769,
         "extraState": {
           "subroutineName": "getLobby",
           "parameters": []
@@ -10710,7 +10710,7 @@
         "type": "subroutineBlock",
         "id": "4(.*A/GYofaCtobis.*c",
         "x": 0,
-        "y": 37452,
+        "y": 38223,
         "extraState": {
           "subroutineName": "printPlayers",
           "parameters": []
@@ -11495,7 +11495,7 @@
         "type": "subroutineBlock",
         "id": "/hvr$aV[!zff@,!!-3OS",
         "x": 0,
-        "y": 39300,
+        "y": 40071,
         "extraState": {
           "subroutineName": "printGameStartsTimeHeader",
           "parameters": []
@@ -11846,7 +11846,7 @@
         "type": "subroutineBlock",
         "id": "h*G0LElzT4)e+XZy^]9A",
         "x": 0,
-        "y": 38648,
+        "y": 39419,
         "extraState": {
           "subroutineName": "printLobbyWaitingHeader",
           "parameters": []
@@ -12023,7 +12023,7 @@
         "type": "subroutineBlock",
         "id": "f`I8)MTuuULAU#OkMTo/",
         "x": 0,
-        "y": 39026,
+        "y": 39797,
         "extraState": {
           "subroutineName": "printPlayerBackedOutHeader",
           "parameters": []
@@ -12415,8 +12415,8 @@
       {
         "type": "subroutineBlock",
         "id": "f}!u2-B;qO5l.fXROtQH",
-        "x": 51,
-        "y": 5277,
+        "x": 0,
+        "y": 5442,
         "extraState": {
           "subroutineName": "intGameVars",
           "parameters": []
@@ -12991,7 +12991,7 @@
         "type": "subroutineBlock",
         "id": "YE(1+nMlFfK6UH2;x8G`",
         "x": 0,
-        "y": 36743,
+        "y": 37514,
         "extraState": {
           "subroutineName": "checkPlayerCount",
           "parameters": []
@@ -13348,7 +13348,7 @@
         "type": "subroutineBlock",
         "id": "w?Dz+J{I#}d87?b@R8FN",
         "x": 0,
-        "y": 34335,
+        "y": 35106,
         "extraState": {
           "subroutineName": "intMcomSpawnLocations",
           "parameters": []
@@ -14627,7 +14627,7 @@
         "type": "subroutineBlock",
         "id": ")@@*cYmeT.oGDKL1:+9[",
         "x": 0,
-        "y": 38031,
+        "y": 38802,
         "extraState": {
           "subroutineName": "intMcoms",
           "parameters": []
@@ -14934,7 +14934,7 @@
         "type": "Text",
         "id": "}0?T{wUa8zv9M(nJ)8,#",
         "x": 0,
-        "y": 6215,
+        "y": 6403,
         "fields": {
           "TEXT": "Squad Wipe XX-XX-XX-XX"
         }
@@ -14943,7 +14943,7 @@
         "type": "subroutineBlock",
         "id": "5G/2]ad]yDY53q=6Cd/k",
         "x": 0,
-        "y": 33024,
+        "y": 33795,
         "extraState": {
           "subroutineName": "printGameLoadingLobby",
           "parameters": []
@@ -15570,7 +15570,7 @@
         "type": "subroutineBlock",
         "id": "#sDJqMg)oA:E,ni8*#NM",
         "x": 0,
-        "y": 26225,
+        "y": 26996,
         "extraState": {
           "subroutineName": "wipeAnimation",
           "parameters": [
@@ -17754,7 +17754,7 @@
         "type": "subroutineBlock",
         "id": ")7aqh?27#%X4ra^84vo:",
         "x": 0,
-        "y": 32471,
+        "y": 33242,
         "extraState": {
           "subroutineName": "runScoreboard",
           "parameters": []
@@ -18061,7 +18061,7 @@
         "type": "subroutineBlock",
         "id": "o}o}AlOn/^}y0$oK`+ZS",
         "x": 0,
-        "y": 21934,
+        "y": 22705,
         "extraState": {
           "subroutineName": "teamWiped",
           "parameters": [
@@ -19519,7 +19519,7 @@
         "type": "DegreesToRadians",
         "id": "%GU6QT#Ql[^TZCY%Ls*z",
         "x": 0,
-        "y": 24763,
+        "y": 25534,
         "inputs": {
           "VALUE-0": {
             "block": {
@@ -19854,7 +19854,7 @@
         "type": "subroutineBlock",
         "id": "],qXJuGzQhl.vx^ua^.)",
         "x": 0,
-        "y": 24891,
+        "y": 25662,
         "extraState": {
           "subroutineName": "undeployAllPlayers",
           "parameters": []
@@ -20557,7 +20557,7 @@
         "type": "While",
         "id": "p8p{K7AX(i,J4sy_$AZN",
         "x": 0,
-        "y": 26022,
+        "y": 26793,
         "inputs": {
           "VALUE-0": {
             "block": {
@@ -20622,7 +20622,7 @@
         "type": "subroutineBlock",
         "id": "1aE]Q*X:gyO:mp82i=[C",
         "x": 0,
-        "y": 28013,
+        "y": 28784,
         "extraState": {
           "subroutineName": "runTeamStats",
           "parameters": [
@@ -22566,7 +22566,7 @@
         "type": "GetVariable",
         "id": "RS$cj}wtWJUghHzIpene",
         "x": 0,
-        "y": 35902,
+        "y": 36673,
         "inputs": {
           "VALUE-0": {
             "block": {
@@ -22589,7 +22589,7 @@
         "type": "actionComment",
         "id": "Bl1-6El3MV}jjjk}y,Q7",
         "x": 0,
-        "y": 25768,
+        "y": 26539,
         "fields": {
           "TEXT": "debug stop game from ending"
         },
@@ -23762,228 +23762,10 @@
         }
       },
       {
-        "type": "ruleBlock",
-        "id": "{vKz-l(#U(AuH`mI3?$C",
-        "x": 86,
-        "y": 20982,
-        "extraState": {
-          "isOngoingEvent": false
-        },
-        "fields": {
-          "NAME": "plot players in circle and disable movement",
-          "EVENTTYPE": "OnPlayerDeployed"
-        },
-        "inputs": {
-          "CONDITIONS": {
-            "block": {
-              "type": "conditionBlock",
-              "id": "$H:5`7IT.rt)$],=jJVI",
-              "inputs": {
-                "CONDITION": {
-                  "block": {
-                    "type": "Equals",
-                    "id": "*s8uu$2+nHNp9~8NMSoY",
-                    "inputs": {
-                      "VALUE-0": {
-                        "block": {
-                          "type": "GetVariable",
-                          "id": "Y}zsGlGPy7oN-)oHM|#.",
-                          "inputs": {
-                            "VALUE-0": {
-                              "block": {
-                                "type": "variableReferenceBlock",
-                                "id": "Fk55m_#XTzoPJXEK^Y`l",
-                                "extraState": {
-                                  "isObjectVar": false
-                                },
-                                "fields": {
-                                  "OBJECTTYPE": "Global",
-                                  "VAR": {
-                                    "id": ";O|*h1oLViZ{t;k#(w$G"
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      },
-                      "VALUE-1": {
-                        "block": {
-                          "type": "Number",
-                          "id": "/t4X-$Ww=%NaoqY}Z|,E",
-                          "fields": {
-                            "NUM": 6
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "ACTIONS": {
-            "block": {
-              "type": "EnableAllInputRestrictions",
-              "id": "^@sUp5DQ.n,pf2Km*O@z",
-              "inputs": {
-                "VALUE-0": {
-                  "block": {
-                    "type": "EventPlayer",
-                    "id": "U-,Z#X2WC#lu2sW+]@(P"
-                  }
-                },
-                "VALUE-1": {
-                  "block": {
-                    "type": "Boolean",
-                    "id": "NuHKn*JzvN%PX^nIBpm2",
-                    "fields": {
-                      "BOOL": "TRUE"
-                    }
-                  }
-                }
-              },
-              "next": {
-                "block": {
-                  "type": "EnableInputRestriction",
-                  "id": "Tp7I9q([v3P@!FWUI_ec",
-                  "inputs": {
-                    "VALUE-0": {
-                      "block": {
-                        "type": "EventPlayer",
-                        "id": ")}BGJ23)v}3sYPWDIRNN"
-                      }
-                    },
-                    "VALUE-1": {
-                      "block": {
-                        "type": "RestrictedInputsItem",
-                        "id": ",nx?Aa2tUDe|fk#/#~){",
-                        "fields": {
-                          "VALUE-0": "RestrictedInputs",
-                          "VALUE-1": "CameraPitch"
-                        }
-                      }
-                    },
-                    "VALUE-2": {
-                      "block": {
-                        "type": "Boolean",
-                        "id": "YlWtR|BfFNd!$Bnw=Mjl",
-                        "fields": {
-                          "BOOL": "FALSE"
-                        }
-                      }
-                    }
-                  },
-                  "next": {
-                    "block": {
-                      "type": "EnableInputRestriction",
-                      "id": "1YQ(SulO5KG%hzmL+^93",
-                      "inputs": {
-                        "VALUE-0": {
-                          "block": {
-                            "type": "EventPlayer",
-                            "id": "C`9SbuK6#%|sJ!?HMVbR"
-                          }
-                        },
-                        "VALUE-1": {
-                          "block": {
-                            "type": "RestrictedInputsItem",
-                            "id": "[30HT7raWrk;Pj.hcS)t",
-                            "fields": {
-                              "VALUE-0": "RestrictedInputs",
-                              "VALUE-1": "CameraYaw"
-                            }
-                          }
-                        },
-                        "VALUE-2": {
-                          "block": {
-                            "type": "Boolean",
-                            "id": "LPiUy3O5~!=AJRgf=?Af",
-                            "fields": {
-                              "BOOL": "FALSE"
-                            }
-                          }
-                        }
-                      },
-                      "next": {
-                        "block": {
-                          "type": "EnableInputRestriction",
-                          "id": "jqE6lv8F:0G7Vele{SqQ",
-                          "inputs": {
-                            "VALUE-0": {
-                              "block": {
-                                "type": "EventPlayer",
-                                "id": "z(C~~h7P3~`Uht3]RC_-"
-                              }
-                            },
-                            "VALUE-1": {
-                              "block": {
-                                "type": "RestrictedInputsItem",
-                                "id": "e;,$Zx:~uD!v=txT0vE:",
-                                "fields": {
-                                  "VALUE-0": "RestrictedInputs",
-                                  "VALUE-1": "Crouch"
-                                }
-                              }
-                            },
-                            "VALUE-2": {
-                              "block": {
-                                "type": "Boolean",
-                                "id": "cd8v1x}hT(/:~gKNzI_#",
-                                "fields": {
-                                  "BOOL": "FALSE"
-                                }
-                              }
-                            }
-                          },
-                          "next": {
-                            "block": {
-                              "type": "EnableInputRestriction",
-                              "id": "{@WYvQ0+D)z=73q]JA9{",
-                              "inputs": {
-                                "VALUE-0": {
-                                  "block": {
-                                    "type": "EventPlayer",
-                                    "id": ")`RK:/BW_ccr{zd@%62,"
-                                  }
-                                },
-                                "VALUE-1": {
-                                  "block": {
-                                    "type": "RestrictedInputsItem",
-                                    "id": "1!:7~z*R6ezC0Xj4f~;T",
-                                    "fields": {
-                                      "VALUE-0": "RestrictedInputs",
-                                      "VALUE-1": "Jump"
-                                    }
-                                  }
-                                },
-                                "VALUE-2": {
-                                  "block": {
-                                    "type": "Boolean",
-                                    "id": "cn}@=,GV))1|v67G~m`S",
-                                    "fields": {
-                                      "BOOL": "FALSE"
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      },
-      {
         "type": "actionComment",
         "id": "u$HzHYbdE2RTh=.gc/+l",
-        "x": 87,
-        "y": 21469,
+        "x": 0,
+        "y": 22190,
         "fields": {
           "TEXT": "Display player's headshots"
         },
@@ -24018,85 +23800,19 @@
                         "next": {
                           "block": {
                             "type": "actionComment",
-                            "id": "w(2-BO=I}1PSYO`oY++r",
+                            "id": "?.!;N:s:v.+f^[Yc@D).",
                             "fields": {
-                              "TEXT": "debug. stop count down when player leaves"
+                              "TEXT": "reverse animation of players wiped"
                             },
                             "next": {
                               "block": {
                                 "type": "actionComment",
-                                "id": "rk#BA;8U$IT]kJ0|A`rb",
+                                "id": "$yYY+y9,[d$Cr+R3n(Am",
                                 "fields": {
-                                  "TEXT": "remove player from team array when they quit"
-                                },
-                                "next": {
-                                  "block": {
-                                    "type": "actionComment",
-                                    "id": "?.!;N:s:v.+f^[Yc@D).",
-                                    "fields": {
-                                      "TEXT": "reverse animation of players wiped"
-                                    },
-                                    "next": {
-                                      "block": {
-                                        "type": "actionComment",
-                                        "id": "$yYY+y9,[d$Cr+R3n(Am",
-                                        "fields": {
-                                          "TEXT": "put if statement for header txt b4 countdown"
-                                        }
-                                      }
-                                    }
-                                  }
+                                  "TEXT": "put if statement for header txt b4 countdown"
                                 }
                               }
                             }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      },
-      {
-        "type": "If",
-        "id": "(3X+mv_)ptOYV^vy@b!J",
-        "x": 2397,
-        "y": 14780,
-        "extraState": {},
-        "inputs": {
-          "VALUE-0": {
-            "block": {
-              "type": "Equals",
-              "id": "v:X[A6#5DJppxQqVc}8L",
-              "inputs": {
-                "VALUE-0": {
-                  "block": {
-                    "type": "GetTeamId",
-                    "id": "-KknI??:oVML~}hmGF!`",
-                    "inputs": {
-                      "VALUE-0": {
-                        "block": {
-                          "type": "EventPlayer",
-                          "id": "{tOPgOTnE?x`BG`NL0XT"
-                        }
-                      }
-                    }
-                  }
-                },
-                "VALUE-1": {
-                  "block": {
-                    "type": "GetTeamId",
-                    "id": "L2iu2cUb8mYKRat2-i0T",
-                    "inputs": {
-                      "VALUE-0": {
-                        "block": {
-                          "type": "Number",
-                          "id": "[GT83.DDfO(#X#xOZ}|a",
-                          "fields": {
-                            "NUM": 1
                           }
                         }
                       }
