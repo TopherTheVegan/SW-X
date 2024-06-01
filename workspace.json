@@ -22,37 +22,46 @@
               "inputs": {
                 "ACTIONS": {
                   "block": {
-                    "type": "subroutineInstanceBlock",
-                    "id": "-^@vbHw8Ee^k3Ma$C1?p",
-                    "extraState": {
-                      "subroutineName": "intPlayerVars",
-                      "parameters": [
-                        {
-                          "types": "Player",
-                          "name": "eventPlayer"
-                        }
-                      ]
-                    },
-                    "fields": {
-                      "SUBROUTINE_NAME": "intPlayerVars"
-                    },
+                    "type": "TriggerAudio",
+                    "id": "YXnBT|z|bsbD@gti|t9z",
                     "inputs": {
-                      "PARAM-0": {
+                      "VALUE-0": {
                         "block": {
-                          "type": "EventPlayer",
-                          "id": "uv$JuVPQ~`3b;aYa]bS|"
+                          "type": "SoundsItem",
+                          "id": "L:}hu`sd:,D~MC5x*o-V",
+                          "fields": {
+                            "VALUE-0": "Sounds",
+                            "VALUE-1": "ObjectiveCapping"
+                          }
+                        }
+                      },
+                      "VALUE-1": {
+                        "block": {
+                          "type": "GetTeamId",
+                          "id": "7lbkW8?}VtFtYbz_Oba]",
+                          "inputs": {
+                            "VALUE-0": {
+                              "block": {
+                                "type": "Number",
+                                "id": "a5MiK`#hqV^~PH-aGO7P",
+                                "fields": {
+                                  "NUM": 1
+                                }
+                              }
+                            }
+                          }
                         }
                       }
                     },
                     "next": {
                       "block": {
                         "type": "TriggerAudio",
-                        "id": "YXnBT|z|bsbD@gti|t9z",
+                        "id": "sx-MPD@5[+;z~+dUiaxq",
                         "inputs": {
                           "VALUE-0": {
                             "block": {
                               "type": "SoundsItem",
-                              "id": "L:}hu`sd:,D~MC5x*o-V",
+                              "id": "(5@gX_[;YCc345L:!+Gw",
                               "fields": {
                                 "VALUE-0": "Sounds",
                                 "VALUE-1": "ObjectiveCapping"
@@ -62,14 +71,14 @@
                           "VALUE-1": {
                             "block": {
                               "type": "GetTeamId",
-                              "id": "7lbkW8?}VtFtYbz_Oba]",
+                              "id": "{n#j~]G6H7_#P)__?p(z",
                               "inputs": {
                                 "VALUE-0": {
                                   "block": {
                                     "type": "Number",
-                                    "id": "a5MiK`#hqV^~PH-aGO7P",
+                                    "id": "|^7c|nP@Yz(X2w8$iP*M",
                                     "fields": {
-                                      "NUM": 1
+                                      "NUM": 2
                                     }
                                   }
                                 }
@@ -79,32 +88,40 @@
                         },
                         "next": {
                           "block": {
-                            "type": "TriggerAudio",
-                            "id": "sx-MPD@5[+;z~+dUiaxq",
+                            "type": "Wait",
+                            "id": "F_D1r~UKMYHqbWR0SeO8",
                             "inputs": {
                               "VALUE-0": {
                                 "block": {
-                                  "type": "SoundsItem",
-                                  "id": "(5@gX_[;YCc345L:!+Gw",
+                                  "type": "Number",
+                                  "id": "^-.dp+.80LF;z+1,Vzuf",
                                   "fields": {
-                                    "VALUE-0": "Sounds",
-                                    "VALUE-1": "ObjectiveCapping"
+                                    "NUM": 10
                                   }
                                 }
-                              },
-                              "VALUE-1": {
-                                "block": {
-                                  "type": "GetTeamId",
-                                  "id": "{n#j~]G6H7_#P)__?p(z",
-                                  "inputs": {
-                                    "VALUE-0": {
-                                      "block": {
-                                        "type": "Number",
-                                        "id": "|^7c|nP@Yz(X2w8$iP*M",
-                                        "fields": {
-                                          "NUM": 2
-                                        }
-                                      }
+                              }
+                            },
+                            "next": {
+                              "block": {
+                                "type": "subroutineInstanceBlock",
+                                "id": "-^@vbHw8Ee^k3Ma$C1?p",
+                                "extraState": {
+                                  "subroutineName": "intPlayerVars",
+                                  "parameters": [
+                                    {
+                                      "types": "Player",
+                                      "name": "eventPlayer"
+                                    }
+                                  ]
+                                },
+                                "fields": {
+                                  "SUBROUTINE_NAME": "intPlayerVars"
+                                },
+                                "inputs": {
+                                  "PARAM-0": {
+                                    "block": {
+                                      "type": "EventPlayer",
+                                      "id": "uv$JuVPQ~`3b;aYa]bS|"
                                     }
                                   }
                                 }
