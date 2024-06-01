@@ -2693,6 +2693,104 @@
                                                       }
                                                     }
                                                   }
+                                                },
+                                                "next": {
+                                                  "block": {
+                                                    "type": "conditionBlock",
+                                                    "id": "+Lw_yXTNZWq]q_Zcg!o*",
+                                                    "inputs": {
+                                                      "CONDITION": {
+                                                        "block": {
+                                                          "type": "LessThan",
+                                                          "id": "3L0x-b|WK5e$4@o7Z`x7",
+                                                          "inputs": {
+                                                            "VALUE-0": {
+                                                              "block": {
+                                                                "type": "GetVariable",
+                                                                "id": "y2qSEvkx+VIamiGI/!tk",
+                                                                "inputs": {
+                                                                  "VALUE-0": {
+                                                                    "block": {
+                                                                      "type": "variableReferenceBlock",
+                                                                      "id": "joknvvnr)`zyWssanYyw",
+                                                                      "extraState": {
+                                                                        "isObjectVar": false
+                                                                      },
+                                                                      "fields": {
+                                                                        "OBJECTTYPE": "Global",
+                                                                        "VAR": {
+                                                                          "id": ";O|*h1oLViZ{t;k#(w$G"
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            },
+                                                            "VALUE-1": {
+                                                              "block": {
+                                                                "type": "Number",
+                                                                "id": "GhIcdX=p`8GHn`^uZ`4J",
+                                                                "fields": {
+                                                                  "NUM": 4
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "ACTIONS": {
+                                              "block": {
+                                                "type": "subroutineInstanceBlock",
+                                                "id": "8:U)4R*6*7G;+kL08iT!",
+                                                "extraState": {
+                                                  "subroutineName": "getLobby",
+                                                  "parameters": []
+                                                },
+                                                "fields": {
+                                                  "SUBROUTINE_NAME": "getLobby"
+                                                },
+                                                "next": {
+                                                  "block": {
+                                                    "type": "UnspawnPlayer",
+                                                    "id": "#wSZZi2fTU?w;1TK[GlF",
+                                                    "inputs": {
+                                                      "VALUE-0": {
+                                                        "block": {
+                                                          "type": "EventPlayer",
+                                                          "id": "p#!eNSL^,IZUpfrDS2h("
+                                                        }
+                                                      }
+                                                    },
+                                                    "next": {
+                                                      "block": {
+                                                        "type": "SetSpawnOverride",
+                                                        "id": ",vxNNL^B7Qjy|hzyQj|*",
+                                                        "inputs": {
+                                                          "VALUE-0": {
+                                                            "block": {
+                                                              "type": "EventPlayer",
+                                                              "id": "w%bXx5;}S=}N-!zo.NKE"
+                                                            }
+                                                          },
+                                                          "VALUE-1": {
+                                                            "block": {
+                                                              "type": "Boolean",
+                                                              "id": "eLQ9,Y3h=60$/baKni.(",
+                                                              "fields": {
+                                                                "BOOL": "TRUE"
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
                                                 }
                                               }
                                             }
@@ -16938,8 +17036,8 @@
       {
         "type": "subroutineBlock",
         "id": "],qXJuGzQhl.vx^ua^.)",
-        "x": 0,
-        "y": 18557,
+        "x": 30,
+        "y": 18581,
         "extraState": {
           "subroutineName": "undeployAllPlayers",
           "parameters": []
