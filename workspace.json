@@ -19827,6 +19827,221 @@
             }
           }
         }
+      },
+      {
+        "type": "subroutineBlock",
+        "id": "1aE]Q*X:gyO:mp82i=[C",
+        "x": -2825,
+        "y": 27791,
+        "extraState": {
+          "subroutineName": "iconsTeams",
+          "parameters": [
+            {
+              "types": "TeamId",
+              "name": "eventTeam"
+            },
+            {
+              "types": "Number",
+              "name": "stat"
+            }
+          ]
+        },
+        "fields": {
+          "SUBROUTINE_NAME": "iconsTeams"
+        },
+        "inputs": {
+          "ACTIONS": {
+            "block": {
+              "type": "actionComment",
+              "id": "q^?3f#4Zd?pw$G3Qv6VS",
+              "fields": {
+                "TEXT": "Clear icons that may not be used"
+              },
+              "next": {
+                "block": {
+                  "type": "ForVariable",
+                  "id": "AfQVP,y!g@.v~_Umc4Yg",
+                  "inputs": {
+                    "VALUE-0": {
+                      "block": {
+                        "type": "variableReferenceBlock",
+                        "id": "}!x$1k_[JDciL$(/YJX@",
+                        "extraState": {
+                          "isObjectVar": true
+                        },
+                        "fields": {
+                          "OBJECTTYPE": "TeamId",
+                          "VAR": {
+                            "id": "0:(hI1~$lqQ6lMyt3EE["
+                          }
+                        },
+                        "inputs": {
+                          "OBJECT": {
+                            "block": {
+                              "type": "subroutineArgumentBlock",
+                              "id": "*Yy;|2OBUsVB,iQ9^e(3",
+                              "fields": {
+                                "ARGUMENT_INDEX": "0"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "VALUE-1": {
+                      "block": {
+                        "type": "Number",
+                        "id": "wLKFj2aqFnK~@A?V!x+t",
+                        "fields": {
+                          "NUM": 0
+                        }
+                      }
+                    },
+                    "VALUE-2": {
+                      "block": {
+                        "type": "Number",
+                        "id": "XQH:HzGY+!x)+NikR)yY",
+                        "fields": {
+                          "NUM": 4
+                        }
+                      }
+                    },
+                    "VALUE-3": {
+                      "block": {
+                        "type": "Number",
+                        "id": "PXN3,+.E[SIPse_SaKb5",
+                        "fields": {
+                          "NUM": 1
+                        }
+                      }
+                    },
+                    "DO": {
+                      "block": {
+                        "type": "EnableWorldIconText",
+                        "id": "6Riy/4rvr/DX%8?$pFWS",
+                        "inputs": {
+                          "VALUE-0": {
+                            "block": {
+                              "type": "ValueInArray",
+                              "id": "pXM/Yj}+7C7Ce^NGH,dv",
+                              "inputs": {
+                                "VALUE-0": {
+                                  "block": {
+                                    "type": "GetVariable",
+                                    "id": "O,jal,8aiB9sjT(zIXk)",
+                                    "inputs": {
+                                      "VALUE-0": {
+                                        "block": {
+                                          "type": "variableReferenceBlock",
+                                          "id": "}r,!LH[21l1y0xmXxne|",
+                                          "extraState": {
+                                            "isObjectVar": false
+                                          },
+                                          "fields": {
+                                            "OBJECTTYPE": "Global",
+                                            "VAR": {
+                                              "id": "nR4_S@.#+[/c#P-b{H*3"
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                },
+                                "VALUE-1": {
+                                  "block": {
+                                    "type": "GetVariable",
+                                    "id": "KcFc;r6E1Q)GXd*@wn:n",
+                                    "inputs": {
+                                      "VALUE-0": {
+                                        "block": {
+                                          "type": "variableReferenceBlock",
+                                          "id": "Owj1@-st`TlXdn?5R6#J",
+                                          "extraState": {
+                                            "isObjectVar": true
+                                          },
+                                          "fields": {
+                                            "OBJECTTYPE": "TeamId",
+                                            "VAR": {
+                                              "id": "0:(hI1~$lqQ6lMyt3EE["
+                                            }
+                                          },
+                                          "inputs": {
+                                            "OBJECT": {
+                                              "block": {
+                                                "type": "subroutineArgumentBlock",
+                                                "id": "Wfr7T!Dh3h)68[JjxNeu",
+                                                "fields": {
+                                                  "ARGUMENT_INDEX": "0"
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "VALUE-1": {
+                            "block": {
+                              "type": "Boolean",
+                              "id": "M[9KTmq/pp_ROlkEtlbW",
+                              "fields": {
+                                "BOOL": "FALSE"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "subroutineInstanceBlock",
+        "id": "B!VVK;;RmZs,vOWe9+)n",
+        "x": -1420,
+        "y": 27663,
+        "extraState": {
+          "subroutineName": "iconsTeams",
+          "parameters": [
+            {
+              "types": "TeamId",
+              "name": "eventTeam"
+            },
+            {
+              "types": "Number",
+              "name": "stat"
+            }
+          ]
+        },
+        "fields": {
+          "SUBROUTINE_NAME": "iconsTeams"
+        },
+        "inputs": {
+          "PARAM-0": {
+            "block": {
+              "type": "GetTeamId",
+              "id": "#5N=Cu.mvR^dy(zX?^]A"
+            }
+          },
+          "PARAM-1": {
+            "block": {
+              "type": "Number",
+              "id": "ApNdG/JfVOO(6N^xcfv7",
+              "fields": {
+                "NUM": 0
+              }
+            }
+          }
+        }
       }
     ]
   },
