@@ -1319,6 +1319,88 @@
                                               }
                                             }
                                           }
+                                        },
+                                        "next": {
+                                          "block": {
+                                            "type": "If",
+                                            "id": "-@UossqGdzglx0,3?=vP",
+                                            "extraState": {},
+                                            "inputs": {
+                                              "VALUE-0": {
+                                                "block": {
+                                                  "type": "LessThan",
+                                                  "id": "%p{hAn+d4L[ju6vdH=Vp",
+                                                  "inputs": {
+                                                    "VALUE-0": {
+                                                      "block": {
+                                                        "type": "CountOf",
+                                                        "id": "}I@a@c=OCFi+?[3VM)Fq",
+                                                        "inputs": {
+                                                          "VALUE-0": {
+                                                            "block": {
+                                                              "type": "AllPlayers",
+                                                              "id": "vdRhaOq~4(8%HTy*1pls"
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    },
+                                                    "VALUE-1": {
+                                                      "block": {
+                                                        "type": "Number",
+                                                        "id": "._Uj-~8V7:Ah%J[_f~;h",
+                                                        "fields": {
+                                                          "NUM": 8
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              },
+                                              "DO": {
+                                                "block": {
+                                                  "type": "ShowNotificationMessage",
+                                                  "id": "(Yrn!^:x2*!Z:|D6qJyl",
+                                                  "inputs": {
+                                                    "VALUE-0": {
+                                                      "block": {
+                                                        "type": "Message",
+                                                        "id": "2s+H{dgn+g*D5RCNmWs/",
+                                                        "inputs": {
+                                                          "VALUE-0": {
+                                                            "block": {
+                                                              "type": "Text",
+                                                              "id": "*-4RA*wk)Sb.9x*Y`u85",
+                                                              "fields": {
+                                                                "TEXT": "TEAM SWITCHING IS NOW OPEN > DEPLOY TO SWITCH TEAMS"
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  },
+                                                  "next": {
+                                                    "block": {
+                                                      "type": "EnablePlayerSpawning",
+                                                      "id": "L}o6k3.My-c7wKD@$de[",
+                                                      "inputs": {
+                                                        "VALUE-0": {
+                                                          "block": {
+                                                            "type": "Boolean",
+                                                            "id": "eDIKr/pcLm)m+SL]T#W?",
+                                                            "fields": {
+                                                              "BOOL": "TRUE"
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
                                         }
                                       }
                                     }
@@ -8427,7 +8509,7 @@
                                                         "fields": {
                                                           "OBJECTTYPE": "Global",
                                                           "VAR": {
-                                                            "id": ".MR[zv]3iRhzR0w#odX8"
+                                                            "id": "QL#i;NpG)Pm8w)RvLseC"
                                                           }
                                                         }
                                                       }
@@ -15288,7 +15370,7 @@
                                     "type": "Number",
                                     "id": "f`5P)EzNBB1;WI^SV1!}",
                                     "fields": {
-                                      "NUM": 50
+                                      "NUM": 290
                                     }
                                   }
                                 }
@@ -15334,7 +15416,7 @@
                                             "type": "Number",
                                             "id": "||s3k0uw=9%fCP4k{7l)",
                                             "fields": {
-                                              "NUM": 120
+                                              "NUM": 150
                                             }
                                           }
                                         }
@@ -16181,12 +16263,6 @@
             }
           }
         }
-      },
-      {
-        "type": "ShowNotificationMessage",
-        "id": "ezO0+)ycEA|?Cq9IDWJu",
-        "x": 0,
-        "y": 0
       },
       {
         "type": "subroutineBlock",
@@ -25251,8 +25327,8 @@
       {
         "type": "subroutineInstanceBlock",
         "id": "]XK{qI-ZTKhZz80$CN0S",
-        "x": 0,
-        "y": 26467,
+        "x": 86,
+        "y": 26539,
         "extraState": {
           "subroutineName": "intMcoms",
           "parameters": []
