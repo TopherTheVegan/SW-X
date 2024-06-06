@@ -6284,30 +6284,65 @@
                                                                                                             "next": {
                                                                                                               "block": {
                                                                                                                 "type": "actionComment",
-                                                                                                                "id": "S;uLLu5)6BpZ.5p-F}~|",
+                                                                                                                "id": "{CRnS#QEmp(Wu2X;Brp5",
                                                                                                                 "fields": {
-                                                                                                                  "TEXT": "things to do:"
+                                                                                                                  "TEXT": "when players deploy if game is over"
                                                                                                                 },
                                                                                                                 "next": {
                                                                                                                   "block": {
-                                                                                                                    "type": "actionComment",
-                                                                                                                    "id": "1s%6+O6_={jF@TS}DG?.",
+                                                                                                                    "type": "subroutineInstanceBlock",
+                                                                                                                    "id": "]Z1E,?8pE%/Aa?.?Tj.I",
+                                                                                                                    "extraState": {
+                                                                                                                      "subroutineName": "playerDeployedEndGameLobby",
+                                                                                                                      "parameters": [
+                                                                                                                        {
+                                                                                                                          "types": "Player",
+                                                                                                                          "name": "eventPlayer"
+                                                                                                                        }
+                                                                                                                      ]
+                                                                                                                    },
                                                                                                                     "fields": {
-                                                                                                                      "TEXT": "team switch before critical time"
+                                                                                                                      "SUBROUTINE_NAME": "playerDeployedEndGameLobby"
+                                                                                                                    },
+                                                                                                                    "inputs": {
+                                                                                                                      "PARAM-0": {
+                                                                                                                        "block": {
+                                                                                                                          "type": "EventPlayer",
+                                                                                                                          "id": "=!B|3|h~c16W`pP_iwru"
+                                                                                                                        }
+                                                                                                                      }
                                                                                                                     },
                                                                                                                     "next": {
                                                                                                                       "block": {
                                                                                                                         "type": "actionComment",
-                                                                                                                        "id": "?.!;N:s:v.+f^[Yc@D).",
+                                                                                                                        "id": "S;uLLu5)6BpZ.5p-F}~|",
                                                                                                                         "fields": {
-                                                                                                                          "TEXT": "reverse animation of players wiped"
+                                                                                                                          "TEXT": "things to do:"
                                                                                                                         },
                                                                                                                         "next": {
                                                                                                                           "block": {
                                                                                                                             "type": "actionComment",
-                                                                                                                            "id": "ND$DIV+mCB[jX^n4B(]s",
+                                                                                                                            "id": "1s%6+O6_={jF@TS}DG?.",
                                                                                                                             "fields": {
-                                                                                                                              "TEXT": "when last player of squad make music suspense "
+                                                                                                                              "TEXT": "team switch before critical time"
+                                                                                                                            },
+                                                                                                                            "next": {
+                                                                                                                              "block": {
+                                                                                                                                "type": "actionComment",
+                                                                                                                                "id": "?.!;N:s:v.+f^[Yc@D).",
+                                                                                                                                "fields": {
+                                                                                                                                  "TEXT": "reverse animation of players wiped"
+                                                                                                                                },
+                                                                                                                                "next": {
+                                                                                                                                  "block": {
+                                                                                                                                    "type": "actionComment",
+                                                                                                                                    "id": "ND$DIV+mCB[jX^n4B(]s",
+                                                                                                                                    "fields": {
+                                                                                                                                      "TEXT": "when last player of squad make music suspense "
+                                                                                                                                    }
+                                                                                                                                  }
+                                                                                                                                }
+                                                                                                                              }
                                                                                                                             }
                                                                                                                           }
                                                                                                                         }
@@ -28318,6 +28353,24 @@
         "id": "raDiAXZ+q[03MzAN0hy+",
         "x": -1039,
         "y": 28605
+      },
+      {
+        "type": "subroutineBlock",
+        "id": ";Z~KE=|rsnj]?bZ6`d;-",
+        "x": 1763,
+        "y": 22298,
+        "extraState": {
+          "subroutineName": "playerDeployedEndGameLobby",
+          "parameters": [
+            {
+              "types": "Player",
+              "name": "eventPlayer"
+            }
+          ]
+        },
+        "fields": {
+          "SUBROUTINE_NAME": "playerDeployedEndGameLobby"
+        }
       }
     ]
   },
