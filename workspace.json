@@ -15196,7 +15196,7 @@
         "type": "subroutineBlock",
         "id": "o}o}AlOn/^}y0$oK`+ZS",
         "x": 0,
-        "y": 35225,
+        "y": 35213,
         "extraState": {
           "subroutineName": "teamWiped",
           "parameters": [
@@ -16576,6 +16576,54 @@
                                                                                             "id": "d=MvX^+:r/D:lBL@1;%n",
                                                                                             "fields": {
                                                                                               "ARGUMENT_INDEX": "0"
+                                                                                            }
+                                                                                          }
+                                                                                        }
+                                                                                      },
+                                                                                      "next": {
+                                                                                        "block": {
+                                                                                          "type": "SetRoundTimeLimit",
+                                                                                          "id": "aP6MdjM8qYEz$uR)dCyF",
+                                                                                          "inputs": {
+                                                                                            "VALUE-0": {
+                                                                                              "block": {
+                                                                                                "type": "GetVariable",
+                                                                                                "id": "|Zz5Mtu3UQkzzaUWMIC{",
+                                                                                                "inputs": {
+                                                                                                  "VALUE-0": {
+                                                                                                    "block": {
+                                                                                                      "type": "variableReferenceBlock",
+                                                                                                      "id": ",IS?]9.H^6=p+R@[CYn)",
+                                                                                                      "extraState": {
+                                                                                                        "isObjectVar": false
+                                                                                                      },
+                                                                                                      "fields": {
+                                                                                                        "OBJECTTYPE": "Global",
+                                                                                                        "VAR": {
+                                                                                                          "id": "7kpss^r1Z{vgxVE4YAVD"
+                                                                                                        }
+                                                                                                      }
+                                                                                                    }
+                                                                                                  }
+                                                                                                }
+                                                                                              }
+                                                                                            }
+                                                                                          },
+                                                                                          "next": {
+                                                                                            "block": {
+                                                                                              "type": "PauseRoundTime",
+                                                                                              "id": "{Fpy^$|Dd+[Axu5I6v+i",
+                                                                                              "inputs": {
+                                                                                                "VALUE-0": {
+                                                                                                  "block": {
+                                                                                                    "type": "Boolean",
+                                                                                                    "id": "6Tec,QjjUMu1bbW.iVB;",
+                                                                                                    "fields": {
+                                                                                                      "BOOL": "FALSE"
+                                                                                                    }
+                                                                                                  }
+                                                                                                }
+                                                                                              }
                                                                                             }
                                                                                           }
                                                                                         }
@@ -23418,23 +23466,6 @@
                     }
                   }
                 }
-              }
-            }
-          }
-        }
-      },
-      {
-        "type": "GetTeamId",
-        "id": "=/t(JSVdxBoeYY3a24$S",
-        "x": 0,
-        "y": 38009,
-        "inputs": {
-          "VALUE-0": {
-            "block": {
-              "type": "Number",
-              "id": "tW8YN?-Y]Q0!n_gcv@41",
-              "fields": {
-                "NUM": 1
               }
             }
           }
