@@ -6763,38 +6763,37 @@
                                                                         "inputs": {
                                                                           "CONDITION": {
                                                                             "block": {
-                                                                              "type": "Equals",
-                                                                              "id": "!913Ou[=+!XO^8Vu0|#[",
+                                                                              "type": "Not",
+                                                                              "id": "gyup#pm}GI*UBD@HgNDX",
                                                                               "inputs": {
                                                                                 "VALUE-0": {
                                                                                   "block": {
                                                                                     "type": "GetVariable",
-                                                                                    "id": "w!*-aLhaS@0Ail!k_Z8W",
+                                                                                    "id": "s]%|]cpjK+c;oI%F$]`j",
                                                                                     "inputs": {
                                                                                       "VALUE-0": {
                                                                                         "block": {
                                                                                           "type": "variableReferenceBlock",
-                                                                                          "id": "rSB~q*W6f(}PcKxZNjUd",
+                                                                                          "id": "f:?+=w:)Y(2WvNzA@xyR",
                                                                                           "extraState": {
-                                                                                            "isObjectVar": false
+                                                                                            "isObjectVar": true
                                                                                           },
                                                                                           "fields": {
-                                                                                            "OBJECTTYPE": "Global",
+                                                                                            "OBJECTTYPE": "Player",
                                                                                             "VAR": {
-                                                                                              "id": ";O|*h1oLViZ{t;k#(w$G"
+                                                                                              "id": "D5YkwJGP_X%ajXZ6(f=}"
+                                                                                            }
+                                                                                          },
+                                                                                          "inputs": {
+                                                                                            "OBJECT": {
+                                                                                              "block": {
+                                                                                                "type": "EventPlayer",
+                                                                                                "id": "a~uo^1^5q5t#$i6TpLJ@"
+                                                                                              }
                                                                                             }
                                                                                           }
                                                                                         }
                                                                                       }
-                                                                                    }
-                                                                                  }
-                                                                                },
-                                                                                "VALUE-1": {
-                                                                                  "block": {
-                                                                                    "type": "Number",
-                                                                                    "id": "3/V)=jicQ=i,:jRr;_yj",
-                                                                                    "fields": {
-                                                                                      "NUM": 6
                                                                                     }
                                                                                   }
                                                                                 }
@@ -6872,70 +6871,110 @@
                                                                 },
                                                                 "ACTIONS": {
                                                                   "block": {
-                                                                    "type": "SendErrorReport",
-                                                                    "id": "MCy4jBBd.~J3urg1.{,u",
+                                                                    "type": "SetVariable",
+                                                                    "id": "#,1@_hVuAK{0#w6657~f",
                                                                     "inputs": {
                                                                       "VALUE-0": {
                                                                         "block": {
-                                                                          "type": "Message",
-                                                                          "id": "f4?jdR!|zf/vD-*,mqdU",
+                                                                          "type": "variableReferenceBlock",
+                                                                          "id": "T7|e=3QIa{M]@rx[/M_Q",
+                                                                          "extraState": {
+                                                                            "isObjectVar": true
+                                                                          },
+                                                                          "fields": {
+                                                                            "OBJECTTYPE": "Player",
+                                                                            "VAR": {
+                                                                              "id": "D5YkwJGP_X%ajXZ6(f=}"
+                                                                            }
+                                                                          },
                                                                           "inputs": {
-                                                                            "VALUE-0": {
-                                                                              "block": {
-                                                                                "type": "Text",
-                                                                                "id": "e;PT)mPAn;PJeDND4xDg",
-                                                                                "fields": {
-                                                                                  "TEXT": "{} has touched down"
-                                                                                }
-                                                                              }
-                                                                            },
-                                                                            "VALUE-1": {
+                                                                            "OBJECT": {
                                                                               "block": {
                                                                                 "type": "EventPlayer",
-                                                                                "id": "~dJuWq``n]0qKpwK$Uw]"
+                                                                                "id": "[qkU|xl#2t=m,cApZPyp"
                                                                               }
                                                                             }
+                                                                          }
+                                                                        }
+                                                                      },
+                                                                      "VALUE-1": {
+                                                                        "block": {
+                                                                          "type": "Boolean",
+                                                                          "id": "px`A09^#D`V%|mAH/pX{",
+                                                                          "fields": {
+                                                                            "BOOL": "TRUE"
                                                                           }
                                                                         }
                                                                       }
                                                                     },
                                                                     "next": {
                                                                       "block": {
-                                                                        "type": "subroutineInstanceBlock",
-                                                                        "id": "yb4*n`Jps8yh1RxT*!;5",
-                                                                        "extraState": {
-                                                                          "subroutineName": "startGame",
-                                                                          "parameters": []
-                                                                        },
-                                                                        "fields": {
-                                                                          "SUBROUTINE_NAME": "startGame"
+                                                                        "type": "SendErrorReport",
+                                                                        "id": "MCy4jBBd.~J3urg1.{,u",
+                                                                        "inputs": {
+                                                                          "VALUE-0": {
+                                                                            "block": {
+                                                                              "type": "Message",
+                                                                              "id": "f4?jdR!|zf/vD-*,mqdU",
+                                                                              "inputs": {
+                                                                                "VALUE-0": {
+                                                                                  "block": {
+                                                                                    "type": "Text",
+                                                                                    "id": "e;PT)mPAn;PJeDND4xDg",
+                                                                                    "fields": {
+                                                                                      "TEXT": "{} has touched down"
+                                                                                    }
+                                                                                  }
+                                                                                },
+                                                                                "VALUE-1": {
+                                                                                  "block": {
+                                                                                    "type": "EventPlayer",
+                                                                                    "id": "~dJuWq``n]0qKpwK$Uw]"
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
                                                                         },
                                                                         "next": {
                                                                           "block": {
-                                                                            "type": "ShowEventGameModeMessage",
-                                                                            "id": "a!_fx!1NaAQ:9Hh!b9qB",
-                                                                            "inputs": {
-                                                                              "VALUE-0": {
-                                                                                "block": {
-                                                                                  "type": "Message",
-                                                                                  "id": "mQ7/Ne]k#PdAH6Z{7%!z",
-                                                                                  "inputs": {
-                                                                                    "VALUE-0": {
-                                                                                      "block": {
-                                                                                        "type": "Text",
-                                                                                        "id": "74Ua0C.R;MnMu}096;-r",
-                                                                                        "fields": {
-                                                                                          "TEXT": "STICK TOGETHER; WIPE THE ENEMY SQUAD"
+                                                                            "type": "subroutineInstanceBlock",
+                                                                            "id": "yb4*n`Jps8yh1RxT*!;5",
+                                                                            "extraState": {
+                                                                              "subroutineName": "startGame",
+                                                                              "parameters": []
+                                                                            },
+                                                                            "fields": {
+                                                                              "SUBROUTINE_NAME": "startGame"
+                                                                            },
+                                                                            "next": {
+                                                                              "block": {
+                                                                                "type": "ShowEventGameModeMessage",
+                                                                                "id": "a!_fx!1NaAQ:9Hh!b9qB",
+                                                                                "inputs": {
+                                                                                  "VALUE-0": {
+                                                                                    "block": {
+                                                                                      "type": "Message",
+                                                                                      "id": "mQ7/Ne]k#PdAH6Z{7%!z",
+                                                                                      "inputs": {
+                                                                                        "VALUE-0": {
+                                                                                          "block": {
+                                                                                            "type": "Text",
+                                                                                            "id": "74Ua0C.R;MnMu}096;-r",
+                                                                                            "fields": {
+                                                                                              "TEXT": "STICK TOGETHER; WIPE THE ENEMY SQUAD"
+                                                                                            }
+                                                                                          }
                                                                                         }
                                                                                       }
                                                                                     }
+                                                                                  },
+                                                                                  "VALUE-1": {
+                                                                                    "block": {
+                                                                                      "type": "EventPlayer",
+                                                                                      "id": "YzIWV%+7fp.la5TpBz5x"
+                                                                                    }
                                                                                   }
-                                                                                }
-                                                                              },
-                                                                              "VALUE-1": {
-                                                                                "block": {
-                                                                                  "type": "EventPlayer",
-                                                                                  "id": "YzIWV%+7fp.la5TpBz5x"
                                                                                 }
                                                                               }
                                                                             }
