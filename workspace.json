@@ -26129,56 +26129,101 @@
                                   },
                                   "next": {
                                     "block": {
-                                      "type": "EnableAllInputRestrictions",
-                                      "id": "QWV=*V_7ODhvT}(hp2w*",
-                                      "inputs": {
-                                        "VALUE-0": {
-                                          "block": {
-                                            "type": "subroutineArgumentBlock",
-                                            "id": "XGM:24vJZwH/PQ;^i|50",
-                                            "fields": {
-                                              "ARGUMENT_INDEX": "0"
-                                            }
-                                          }
-                                        },
-                                        "VALUE-1": {
-                                          "block": {
-                                            "type": "Boolean",
-                                            "id": "-rmR)XaTB;^7K8*s0M;]",
-                                            "fields": {
-                                              "BOOL": "FALSE"
-                                            }
-                                          }
-                                        }
+                                      "type": "actionComment",
+                                      "id": "O_XN6Vu|wA`GwB8kwBvK",
+                                      "fields": {
+                                        "TEXT": "if the player died falling dont display"
                                       },
                                       "next": {
                                         "block": {
-                                          "type": "ShowEventGameModeMessage",
-                                          "id": "UGb[M)N/x*oJpt|/}]N|",
+                                          "type": "If",
+                                          "id": "U8{roAXG;hxT0aFnAKd~",
+                                          "extraState": {},
                                           "inputs": {
                                             "VALUE-0": {
                                               "block": {
-                                                "type": "Message",
-                                                "id": "XJue6jj;2x(d)j{xt^H[",
+                                                "type": "GetSoldierState",
+                                                "id": "4`o.IVv$m(1O|JZ~1k;N",
                                                 "inputs": {
                                                   "VALUE-0": {
                                                     "block": {
-                                                      "type": "Text",
-                                                      "id": "Q{GXBDh}iJt#5;QO,6;|",
+                                                      "type": "subroutineArgumentBlock",
+                                                      "id": "Ve.iN^P3_S?`1f3t[R.F",
                                                       "fields": {
-                                                        "TEXT": "STICK TOGETHER; WIPE THE ENEMY SQUAD"
+                                                        "ARGUMENT_INDEX": "0"
+                                                      }
+                                                    }
+                                                  },
+                                                  "VALUE-1": {
+                                                    "block": {
+                                                      "type": "SoldierStateBoolItem",
+                                                      "id": "x;[|AmS=7Yl:S^qh?qj.",
+                                                      "fields": {
+                                                        "VALUE-0": "SoldierStateBool",
+                                                        "VALUE-1": "IsAlive"
                                                       }
                                                     }
                                                   }
                                                 }
                                               }
                                             },
-                                            "VALUE-1": {
+                                            "DO": {
                                               "block": {
-                                                "type": "subroutineArgumentBlock",
-                                                "id": "(bfz,5^0?30z*sX$kYcV",
-                                                "fields": {
-                                                  "ARGUMENT_INDEX": "0"
+                                                "type": "EnableAllInputRestrictions",
+                                                "id": "QWV=*V_7ODhvT}(hp2w*",
+                                                "inputs": {
+                                                  "VALUE-0": {
+                                                    "block": {
+                                                      "type": "subroutineArgumentBlock",
+                                                      "id": "XGM:24vJZwH/PQ;^i|50",
+                                                      "fields": {
+                                                        "ARGUMENT_INDEX": "0"
+                                                      }
+                                                    }
+                                                  },
+                                                  "VALUE-1": {
+                                                    "block": {
+                                                      "type": "Boolean",
+                                                      "id": "-rmR)XaTB;^7K8*s0M;]",
+                                                      "fields": {
+                                                        "BOOL": "FALSE"
+                                                      }
+                                                    }
+                                                  }
+                                                },
+                                                "next": {
+                                                  "block": {
+                                                    "type": "ShowEventGameModeMessage",
+                                                    "id": "UGb[M)N/x*oJpt|/}]N|",
+                                                    "inputs": {
+                                                      "VALUE-0": {
+                                                        "block": {
+                                                          "type": "Message",
+                                                          "id": "XJue6jj;2x(d)j{xt^H[",
+                                                          "inputs": {
+                                                            "VALUE-0": {
+                                                              "block": {
+                                                                "type": "Text",
+                                                                "id": "Q{GXBDh}iJt#5;QO,6;|",
+                                                                "fields": {
+                                                                  "TEXT": "STICK TOGETHER; WIPE THE ENEMY SQUAD"
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      },
+                                                      "VALUE-1": {
+                                                        "block": {
+                                                          "type": "subroutineArgumentBlock",
+                                                          "id": "(bfz,5^0?30z*sX$kYcV",
+                                                          "fields": {
+                                                            "ARGUMENT_INDEX": "0"
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
                                                 }
                                               }
                                             }
