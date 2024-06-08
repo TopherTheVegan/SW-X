@@ -3009,14 +3009,45 @@
                                                                                                                                             },
                                                                                                                                             "next": {
                                                                                                                                               "block": {
-                                                                                                                                                "type": "subroutineInstanceBlock",
-                                                                                                                                                "id": "Iy?eL{1bu(b1?V,H%Yf+",
-                                                                                                                                                "extraState": {
-                                                                                                                                                  "subroutineName": "printPlayerBackedOutHeader",
-                                                                                                                                                  "parameters": []
-                                                                                                                                                },
-                                                                                                                                                "fields": {
-                                                                                                                                                  "SUBROUTINE_NAME": "printPlayerBackedOutHeader"
+                                                                                                                                                "type": "DisplayCustomNotificationMessage",
+                                                                                                                                                "id": "-lPxSr/]~^9a!}QIa6U4",
+                                                                                                                                                "inputs": {
+                                                                                                                                                  "VALUE-0": {
+                                                                                                                                                    "block": {
+                                                                                                                                                      "type": "Message",
+                                                                                                                                                      "id": "y%p1/lf-A~G85fTD$nMD",
+                                                                                                                                                      "inputs": {
+                                                                                                                                                        "VALUE-0": {
+                                                                                                                                                          "block": {
+                                                                                                                                                            "type": "Text",
+                                                                                                                                                            "id": "w(_6Ko_H+3OhiJr[=8*c",
+                                                                                                                                                            "fields": {
+                                                                                                                                                              "TEXT": "A player backed out. Waiting for a new player to join."
+                                                                                                                                                            }
+                                                                                                                                                          }
+                                                                                                                                                        }
+                                                                                                                                                      }
+                                                                                                                                                    }
+                                                                                                                                                  },
+                                                                                                                                                  "VALUE-1": {
+                                                                                                                                                    "block": {
+                                                                                                                                                      "type": "CustomMessagesItem",
+                                                                                                                                                      "id": "c6kKQ$-!hCoP#BjZg0;y",
+                                                                                                                                                      "fields": {
+                                                                                                                                                        "VALUE-0": "CustomMessages",
+                                                                                                                                                        "VALUE-1": "HeaderText"
+                                                                                                                                                      }
+                                                                                                                                                    }
+                                                                                                                                                  },
+                                                                                                                                                  "VALUE-2": {
+                                                                                                                                                    "block": {
+                                                                                                                                                      "type": "Number",
+                                                                                                                                                      "id": "XoCl:(Iq{K4}lYg1P[)s",
+                                                                                                                                                      "fields": {
+                                                                                                                                                        "NUM": -1
+                                                                                                                                                      }
+                                                                                                                                                    }
+                                                                                                                                                  }
                                                                                                                                                 },
                                                                                                                                                 "next": {
                                                                                                                                                   "block": {
@@ -5605,7 +5636,7 @@
         "type": "subroutineBlock",
         "id": "D*tsY#}X49:Er!7v?j;(",
         "x": 0,
-        "y": 57300,
+        "y": 57561,
         "extraState": {
           "subroutineName": "storeCurrentLobby",
           "parameters": []
@@ -6859,7 +6890,7 @@
         "type": "subroutineBlock",
         "id": "4(.*A/GYofaCtobis.*c",
         "x": 0,
-        "y": 58894,
+        "y": 59155,
         "extraState": {
           "subroutineName": "printPlayers",
           "parameters": []
@@ -7644,7 +7675,7 @@
         "type": "subroutineBlock",
         "id": "/hvr$aV[!zff@,!!-3OS",
         "x": 0,
-        "y": 60364,
+        "y": 60625,
         "extraState": {
           "subroutineName": "printGameStartsTimeHeader",
           "parameters": []
@@ -7674,8 +7705,25 @@
                       },
                       "VALUE-1": {
                         "block": {
-                          "type": "GetMatchTimeElapsed",
-                          "id": "kh}VvBL,=c}odwA4kQWl"
+                          "type": "GetVariable",
+                          "id": "^:`*e5l:h`of-M(twH4P",
+                          "inputs": {
+                            "VALUE-0": {
+                              "block": {
+                                "type": "variableReferenceBlock",
+                                "id": "5t:[AA0PbdL(mW/?-!tj",
+                                "extraState": {
+                                  "isObjectVar": false
+                                },
+                                "fields": {
+                                  "OBJECTTYPE": "Global",
+                                  "VAR": {
+                                    "id": "=/`@45{B8}Qlw^ql*Px:"
+                                  }
+                                }
+                              }
+                            }
+                          }
                         }
                       }
                     }
@@ -7715,7 +7763,7 @@
                           "VALUE-0": {
                             "block": {
                               "type": "GetMatchTimeElapsed",
-                              "id": "37~:yr#+rCo)[I6oWX_l"
+                              "id": "tD*Pqx*8Y;B_U_k6Tw_u"
                             }
                           },
                           "VALUE-1": {
@@ -7932,65 +7980,6 @@
                           }
                         }
                       }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      },
-      {
-        "type": "subroutineBlock",
-        "id": "f`I8)MTuuULAU#OkMTo/",
-        "x": 0,
-        "y": 60090,
-        "extraState": {
-          "subroutineName": "printPlayerBackedOutHeader",
-          "parameters": []
-        },
-        "fields": {
-          "SUBROUTINE_NAME": "printPlayerBackedOutHeader"
-        },
-        "inputs": {
-          "ACTIONS": {
-            "block": {
-              "type": "DisplayCustomNotificationMessage",
-              "id": "~_DN0T,pns)aAj@a5HrW",
-              "inputs": {
-                "VALUE-0": {
-                  "block": {
-                    "type": "Message",
-                    "id": "Y6OfSfyb@;FT)@(7L/nJ",
-                    "inputs": {
-                      "VALUE-0": {
-                        "block": {
-                          "type": "Text",
-                          "id": "Vaith(p8n}QugRyuIY-T",
-                          "fields": {
-                            "TEXT": "A player backed out. Waiting for a new player to join."
-                          }
-                        }
-                      }
-                    }
-                  }
-                },
-                "VALUE-1": {
-                  "block": {
-                    "type": "CustomMessagesItem",
-                    "id": "i$GKs^#Atp4J{.$5@jGt",
-                    "fields": {
-                      "VALUE-0": "CustomMessages",
-                      "VALUE-1": "HeaderText"
-                    }
-                  }
-                },
-                "VALUE-2": {
-                  "block": {
-                    "type": "Number",
-                    "id": "?`kS{vk@lq_hn~-9yMg=",
-                    "fields": {
-                      "NUM": -1
                     }
                   }
                 }
@@ -9506,7 +9495,7 @@
         "type": "subroutineBlock",
         "id": "YE(1+nMlFfK6UH2;x8G`",
         "x": 0,
-        "y": 58281,
+        "y": 58542,
         "extraState": {
           "subroutineName": "checkPlayerCount",
           "parameters": []
@@ -9798,7 +9787,7 @@
         "type": "subroutineBlock",
         "id": "w?Dz+J{I#}d87?b@R8FN",
         "x": 0,
-        "y": 56205,
+        "y": 56466,
         "extraState": {
           "subroutineName": "intMcomSpawnLocations",
           "parameters": []
@@ -10677,7 +10666,7 @@
         "type": "subroutineBlock",
         "id": ")@@*cYmeT.oGDKL1:+9[",
         "x": 0,
-        "y": 59473,
+        "y": 59734,
         "extraState": {
           "subroutineName": "intMcoms",
           "parameters": []
@@ -10993,7 +10982,7 @@
         "type": "subroutineBlock",
         "id": "5G/2]ad]yDY53q=6Cd/k",
         "x": 0,
-        "y": 54894,
+        "y": 55155,
         "extraState": {
           "subroutineName": "printSquadWipeHeader",
           "parameters": []
@@ -11782,7 +11771,7 @@
         "type": "subroutineBlock",
         "id": "#sDJqMg)oA:E,ni8*#NM",
         "x": 0,
-        "y": 47993,
+        "y": 48254,
         "extraState": {
           "subroutineName": "wipeAnimation",
           "parameters": [
@@ -14168,7 +14157,7 @@
         "type": "subroutineBlock",
         "id": ")7aqh?27#%X4ra^84vo:",
         "x": 0,
-        "y": 54341,
+        "y": 54602,
         "extraState": {
           "subroutineName": "runScoreboard",
           "parameters": []
@@ -14469,7 +14458,7 @@
         "type": "subroutineBlock",
         "id": "o}o}AlOn/^}y0$oK`+ZS",
         "x": 0,
-        "y": 42888,
+        "y": 43200,
         "extraState": {
           "subroutineName": "teamWiped",
           "parameters": [
@@ -16272,7 +16261,7 @@
         "type": "subroutineBlock",
         "id": "],qXJuGzQhl.vx^ua^.)",
         "x": 0,
-        "y": 47471,
+        "y": 47732,
         "extraState": {
           "subroutineName": "undeployTeam",
           "parameters": [
@@ -16588,7 +16577,7 @@
         "type": "subroutineBlock",
         "id": "1aE]Q*X:gyO:mp82i=[C",
         "x": 0,
-        "y": 49781,
+        "y": 50042,
         "extraState": {
           "subroutineName": "runTeamStats",
           "parameters": [
@@ -18566,7 +18555,7 @@
         "type": "subroutineBlock",
         "id": "TlzI[/`,sj3lRwML+`Dx",
         "x": 0,
-        "y": 34618,
+        "y": 34930,
         "extraState": {
           "subroutineName": "calculateDeploymentPoints",
           "parameters": [
@@ -20279,7 +20268,7 @@
         "type": "subroutineBlock",
         "id": "?,JB2N=m=0E=LAMjt,os",
         "x": 0,
-        "y": 38217,
+        "y": 38529,
         "extraState": {
           "subroutineName": "deploySquadInFormation",
           "parameters": [
@@ -22676,7 +22665,7 @@
         "type": "subroutineBlock",
         "id": "RPJWexpR2:=5%r`ri4L-",
         "x": 0,
-        "y": 32773,
+        "y": 33085,
         "extraState": {
           "subroutineName": "teamSwitchingEnabled",
           "parameters": [
@@ -23570,7 +23559,7 @@
         "type": "subroutineBlock",
         "id": "@PaQZ4;6#n?CGfVstTK7",
         "x": 0,
-        "y": 31641,
+        "y": 31953,
         "extraState": {
           "subroutineName": "playerDeployedGameRunning",
           "parameters": [
@@ -23864,7 +23853,7 @@
         "type": "subroutineBlock",
         "id": "4n}3+qbV9M+c`V5HyOO=",
         "x": 0,
-        "y": 27741,
+        "y": 28053,
         "extraState": {
           "subroutineName": "switchTeamOnDeploy",
           "parameters": [
@@ -24206,7 +24195,7 @@
         "type": "subroutineBlock",
         "id": "f5`Wl7IGIP;v3d}2p|jS",
         "x": 0,
-        "y": 28355,
+        "y": 28667,
         "extraState": {
           "subroutineName": "storeAiForDeploy",
           "parameters": [
@@ -24778,7 +24767,7 @@
         "type": "subroutineBlock",
         "id": "|`sTlZxb$e(dTODX-i#:",
         "x": 0,
-        "y": 29686,
+        "y": 29998,
         "extraState": {
           "subroutineName": "firstDeployRoutine",
           "parameters": [
@@ -25550,7 +25539,7 @@
         "type": "subroutineBlock",
         "id": ";Z~KE=|rsnj]?bZ6`d;-",
         "x": 0,
-        "y": 32268,
+        "y": 32580,
         "extraState": {
           "subroutineName": "deployPlayerToEndGameLobby",
           "parameters": [
@@ -26266,7 +26255,7 @@
         "type": "subroutineBlock",
         "id": "9o90(n{K5MvQfh-Rg_|V",
         "x": 0,
-        "y": 27354,
+        "y": 27666,
         "extraState": {
           "subroutineName": "startGame",
           "parameters": []
@@ -26401,7 +26390,7 @@
         "type": "subroutineBlock",
         "id": "wA.0%`wdx4]b/bBVe#1`",
         "x": 0,
-        "y": 40686,
+        "y": 40998,
         "extraState": {
           "subroutineName": "calculateEndgameTeamLobbyPositions",
           "parameters": []
@@ -28628,7 +28617,7 @@
         "type": "subroutineBlock",
         "id": "zdvt93aX=N3{XkRoVxOU",
         "x": 0,
-        "y": 46569,
+        "y": 46830,
         "extraState": {
           "subroutineName": "checkTeamUndeployed",
           "parameters": [
@@ -30096,8 +30085,8 @@
       {
         "type": "subroutineBlock",
         "id": "]V4ORd}yrs[Y@GJJEF@4",
-        "x": 1915,
-        "y": 12328,
+        "x": 0,
+        "y": 25481,
         "extraState": {
           "subroutineName": "playerJoinsGameLate",
           "parameters": []
@@ -31371,8 +31360,8 @@
       {
         "type": "subroutineBlock",
         "id": "5ZR!lLY*Rv3N(RrM{=h+",
-        "x": 1723,
-        "y": 16118,
+        "x": 0,
+        "y": 27228,
         "extraState": {
           "subroutineName": "setGameModeTime",
           "parameters": [
