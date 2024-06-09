@@ -4613,8 +4613,8 @@
       {
         "type": "subroutineBlock",
         "id": "kNwpY083$r/U}pC!99|.",
-        "x": 0,
-        "y": 8205,
+        "x": 27,
+        "y": -1122,
         "extraState": {
           "subroutineName": "intGameOptions",
           "parameters": []
@@ -30155,8 +30155,8 @@
       {
         "type": "subroutineBlock",
         "id": "ImqiDY~Xx`!y@9+a)|1|",
-        "x": 0,
-        "y": 22812,
+        "x": 84,
+        "y": 22873,
         "extraState": {
           "subroutineName": "gameState_2",
           "parameters": []
@@ -34318,8 +34318,8 @@
       {
         "type": "EventTeam",
         "id": "Z$e3{H2Vgk3F8kIqS2(N",
-        "x": 1244,
-        "y": 19954
+        "x": 1256,
+        "y": 20018
       },
       {
         "type": "SetTargetScore",
@@ -34368,13 +34368,6 @@
             }
           }
         }
-      },
-      {
-        "type": "Add",
-        "id": "T%_`iy-w#yA{_K,BsN!|",
-        "x": 1256,
-        "y": 17967,
-        "inline": false
       },
       {
         "type": "Multiply",
@@ -34560,6 +34553,184 @@
                     "id": "n=waB);fKj,mlRGTmQn!",
                     "fields": {
                       "NUM": 2
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "ruleBlock",
+        "id": "9qyZMPUJzg1J#JGFHI#A",
+        "x": 1324,
+        "y": 17626,
+        "extraState": {
+          "isOngoingEvent": true
+        },
+        "fields": {
+          "NAME": "time limit ended",
+          "EVENTTYPE": "Ongoing",
+          "OBJECTTYPE": "Player"
+        },
+        "inputs": {
+          "CONDITIONS": {
+            "block": {
+              "type": "conditionBlock",
+              "id": "Gqn`!jm*s@_V3kF-eWr3",
+              "inputs": {
+                "CONDITION": {
+                  "block": {
+                    "type": "Equals",
+                    "id": "pz;04Fjfn}gov_H)i+2V",
+                    "inputs": {
+                      "VALUE-0": {
+                        "block": {
+                          "type": "GetVariable",
+                          "id": "oif.rpMMDw,S*!XjpB_o",
+                          "inputs": {
+                            "VALUE-0": {
+                              "block": {
+                                "type": "variableReferenceBlock",
+                                "id": "XuOk?0RC/J?pj2|Gqkm`",
+                                "extraState": {
+                                  "isObjectVar": false
+                                },
+                                "fields": {
+                                  "OBJECTTYPE": "Global",
+                                  "VAR": {
+                                    "id": ";O|*h1oLViZ{t;k#(w$G"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "VALUE-1": {
+                        "block": {
+                          "type": "Number",
+                          "id": "Qngz)V.bUQ5@^tyA*2qx",
+                          "fields": {
+                            "NUM": 7
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "next": {
+                "block": {
+                  "type": "conditionBlock",
+                  "id": "3qRl8SK2/PF*,98Ju?gJ",
+                  "inputs": {
+                    "CONDITION": {
+                      "block": {
+                        "type": "GetSoldierState",
+                        "id": ")!PHP3*gVrTzmoaH~7{j",
+                        "inputs": {
+                          "VALUE-0": {
+                            "block": {
+                              "type": "EventPlayer",
+                              "id": "0H4X;kG`xDH28CR;Qg0,"
+                            }
+                          },
+                          "VALUE-1": {
+                            "block": {
+                              "type": "SoldierStateBoolItem",
+                              "id": "?PF,.U|qyne$9uRCv{m[",
+                              "fields": {
+                                "VALUE-0": "SoldierStateBool",
+                                "VALUE-1": "IsAlive"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "next": {
+                    "block": {
+                      "type": "conditionBlock",
+                      "id": "UI4_ZxcDEv1fQHVr4:zN",
+                      "inputs": {
+                        "CONDITION": {
+                          "block": {
+                            "type": "Equals",
+                            "id": "Lq[jD}vW#+5mML5=qp$A",
+                            "inputs": {
+                              "VALUE-0": {
+                                "block": {
+                                  "type": "GetVariable",
+                                  "id": ";tAitA2DT~!}uo^u[qJo",
+                                  "inputs": {
+                                    "VALUE-0": {
+                                      "block": {
+                                        "type": "variableReferenceBlock",
+                                        "id": "H3!WfO[dVe3$4Wh9rJfU",
+                                        "extraState": {
+                                          "isObjectVar": false
+                                        },
+                                        "fields": {
+                                          "OBJECTTYPE": "Global",
+                                          "VAR": {
+                                            "id": "x!Ct,h,|.qIXOa,9KDfD"
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "VALUE-1": {
+                                "block": {
+                                  "type": "Number",
+                                  "id": "(c%]NS`^@ZbQHMq=k+}l",
+                                  "fields": {
+                                    "NUM": 0
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "ACTIONS": {
+            "block": {
+              "type": "TriggerAudio",
+              "id": "wH;mkKJ1C8m9-qrqzE$[",
+              "next": {
+                "block": {
+                  "type": "subroutineInstanceBlock",
+                  "id": "fY1Wy(Xlg_C|wyf^L7z{",
+                  "extraState": {
+                    "subroutineName": "setGameModeTime",
+                    "parameters": [
+                      {
+                        "types": "Number",
+                        "name": "timerAmount"
+                      },
+                      {
+                        "types": "Boolean",
+                        "name": "pauseTimer"
+                      }
+                    ]
+                  },
+                  "fields": {
+                    "SUBROUTINE_NAME": "setGameModeTime"
+                  },
+                  "next": {
+                    "block": {
+                      "type": "SpotTarget",
+                      "id": "#f%t@VIo8w}M+:{96IL$"
                     }
                   }
                 }
