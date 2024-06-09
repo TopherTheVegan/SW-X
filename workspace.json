@@ -2356,106 +2356,220 @@
                                                     "ACTIONS": {
                                                       "block": {
                                                         "type": "actionComment",
-                                                        "id": "J{nGiv7F;?g[!JGG(jF_",
+                                                        "id": "FMr(:%C=}4lu4{9YU~xT",
                                                         "fields": {
-                                                          "TEXT": "Prevent them from deploying in."
+                                                          "TEXT": "deduct money for dying"
                                                         },
                                                         "next": {
                                                           "block": {
-                                                            "type": "SetSpawnOverride",
-                                                            "id": "qEx2/A3*GaVu3bH!xL.t",
+                                                            "type": "SetVariableAtIndex",
+                                                            "id": "gHgM)A)UQorUNf1JcKl$",
                                                             "inputs": {
                                                               "VALUE-0": {
                                                                 "block": {
-                                                                  "type": "EventPlayer",
-                                                                  "id": "/x|$k$|o1qi9Hs#un]BU"
+                                                                  "type": "variableReferenceBlock",
+                                                                  "id": "hNe.b2-?48Y+5zy6Q3f#",
+                                                                  "extraState": {
+                                                                    "isObjectVar": true
+                                                                  },
+                                                                  "fields": {
+                                                                    "OBJECTTYPE": "Player",
+                                                                    "VAR": {
+                                                                      "id": "(iQfc%z{`BIqx3wNeiS~"
+                                                                    }
+                                                                  },
+                                                                  "inputs": {
+                                                                    "OBJECT": {
+                                                                      "block": {
+                                                                        "type": "EventPlayer",
+                                                                        "id": "m2]|*s^F@+JH2y6i8zU/"
+                                                                      }
+                                                                    }
+                                                                  }
                                                                 }
                                                               },
                                                               "VALUE-1": {
                                                                 "block": {
-                                                                  "type": "Boolean",
-                                                                  "id": "/+yY9eIJsbED7BJVz26S",
+                                                                  "type": "Number",
+                                                                  "id": ")?~G7;QHRhhb%|?0py1L",
                                                                   "fields": {
-                                                                    "BOOL": "FALSE"
+                                                                    "NUM": 2
+                                                                  }
+                                                                }
+                                                              },
+                                                              "VALUE-2": {
+                                                                "block": {
+                                                                  "type": "Subtract",
+                                                                  "id": "7r-=liLT#OL*?jc3sOT1",
+                                                                  "inputs": {
+                                                                    "VALUE-0": {
+                                                                      "block": {
+                                                                        "type": "ValueInArray",
+                                                                        "id": "9`n?4yUl4O0TsIv1)-^J",
+                                                                        "inputs": {
+                                                                          "VALUE-0": {
+                                                                            "block": {
+                                                                              "type": "GetVariable",
+                                                                              "id": "Q75V3xh=.$[HRpjB+HJ}",
+                                                                              "inputs": {
+                                                                                "VALUE-0": {
+                                                                                  "block": {
+                                                                                    "type": "variableReferenceBlock",
+                                                                                    "id": "Ab]Np;[=oNvKu(I|%Ou6",
+                                                                                    "extraState": {
+                                                                                      "isObjectVar": true
+                                                                                    },
+                                                                                    "fields": {
+                                                                                      "OBJECTTYPE": "Player",
+                                                                                      "VAR": {
+                                                                                        "id": "(iQfc%z{`BIqx3wNeiS~"
+                                                                                      }
+                                                                                    },
+                                                                                    "inputs": {
+                                                                                      "OBJECT": {
+                                                                                        "block": {
+                                                                                          "type": "EventPlayer",
+                                                                                          "id": "{$VIs+6^rtB3Huh9V{M7"
+                                                                                        }
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          },
+                                                                          "VALUE-1": {
+                                                                            "block": {
+                                                                              "type": "Number",
+                                                                              "id": "_5QI^r71-x?(5Oo_0U*G",
+                                                                              "fields": {
+                                                                                "NUM": 2
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    },
+                                                                    "VALUE-1": {
+                                                                      "block": {
+                                                                        "type": "Number",
+                                                                        "id": "IHI=Lfn`Ep]BW#]Z:Hnu",
+                                                                        "fields": {
+                                                                          "NUM": 40
+                                                                        }
+                                                                      }
+                                                                    }
                                                                   }
                                                                 }
                                                               }
                                                             },
                                                             "next": {
                                                               "block": {
-                                                                "type": "subroutineInstanceBlock",
-                                                                "id": "Ne~}s.EcH{*1-8_We|I[",
-                                                                "extraState": {
-                                                                  "subroutineName": "trackDeathTypeStats",
-                                                                  "parameters": [
-                                                                    {
-                                                                      "types": "Player",
-                                                                      "name": "eventPlayer"
-                                                                    },
-                                                                    {
-                                                                      "types": "Player",
-                                                                      "name": "eventOtherPlayer"
-                                                                    },
-                                                                    {
-                                                                      "types": "DeathType",
-                                                                      "name": "eventDeathType"
-                                                                    }
-                                                                  ]
-                                                                },
+                                                                "type": "actionComment",
+                                                                "id": "J{nGiv7F;?g[!JGG(jF_",
                                                                 "fields": {
-                                                                  "SUBROUTINE_NAME": "trackDeathTypeStats"
-                                                                },
-                                                                "inputs": {
-                                                                  "PARAM-0": {
-                                                                    "block": {
-                                                                      "type": "EventPlayer",
-                                                                      "id": "uyV+9E{8A=)K%zCO#l%^"
-                                                                    }
-                                                                  },
-                                                                  "PARAM-1": {
-                                                                    "block": {
-                                                                      "type": "EventOtherPlayer",
-                                                                      "id": "0(onb6K,WC/ZP.@d^sPu"
-                                                                    }
-                                                                  },
-                                                                  "PARAM-2": {
-                                                                    "block": {
-                                                                      "type": "EventDeathType",
-                                                                      "id": "*O:(H)qxT=fMX:M|2i!R"
-                                                                    }
-                                                                  }
+                                                                  "TEXT": "Prevent them from deploying in."
                                                                 },
                                                                 "next": {
                                                                   "block": {
-                                                                    "type": "subroutineInstanceBlock",
-                                                                    "id": "+IHeOru^RZ(jrm;kOuMp",
-                                                                    "extraState": {
-                                                                      "subroutineName": "displayKillMessage",
-                                                                      "parameters": [
-                                                                        {
-                                                                          "types": "Player",
-                                                                          "name": "eventPlayer"
-                                                                        },
-                                                                        {
-                                                                          "types": "Player",
-                                                                          "name": "eventOtherPlayer"
-                                                                        }
-                                                                      ]
-                                                                    },
-                                                                    "fields": {
-                                                                      "SUBROUTINE_NAME": "displayKillMessage"
-                                                                    },
+                                                                    "type": "SetSpawnOverride",
+                                                                    "id": "qEx2/A3*GaVu3bH!xL.t",
                                                                     "inputs": {
-                                                                      "PARAM-0": {
+                                                                      "VALUE-0": {
                                                                         "block": {
                                                                           "type": "EventPlayer",
-                                                                          "id": "-@fVFIHvy|E2ftk=$1FV"
+                                                                          "id": "/x|$k$|o1qi9Hs#un]BU"
                                                                         }
                                                                       },
-                                                                      "PARAM-1": {
+                                                                      "VALUE-1": {
                                                                         "block": {
-                                                                          "type": "EventOtherPlayer",
-                                                                          "id": "YvBkztoh=2{MK(9kx`ZV"
+                                                                          "type": "Boolean",
+                                                                          "id": "/+yY9eIJsbED7BJVz26S",
+                                                                          "fields": {
+                                                                            "BOOL": "FALSE"
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    },
+                                                                    "next": {
+                                                                      "block": {
+                                                                        "type": "subroutineInstanceBlock",
+                                                                        "id": "Ne~}s.EcH{*1-8_We|I[",
+                                                                        "extraState": {
+                                                                          "subroutineName": "trackDeathTypeStats",
+                                                                          "parameters": [
+                                                                            {
+                                                                              "types": "Player",
+                                                                              "name": "eventPlayer"
+                                                                            },
+                                                                            {
+                                                                              "types": "Player",
+                                                                              "name": "eventOtherPlayer"
+                                                                            },
+                                                                            {
+                                                                              "types": "DeathType",
+                                                                              "name": "eventDeathType"
+                                                                            }
+                                                                          ]
+                                                                        },
+                                                                        "fields": {
+                                                                          "SUBROUTINE_NAME": "trackDeathTypeStats"
+                                                                        },
+                                                                        "inputs": {
+                                                                          "PARAM-0": {
+                                                                            "block": {
+                                                                              "type": "EventPlayer",
+                                                                              "id": "uyV+9E{8A=)K%zCO#l%^"
+                                                                            }
+                                                                          },
+                                                                          "PARAM-1": {
+                                                                            "block": {
+                                                                              "type": "EventOtherPlayer",
+                                                                              "id": "0(onb6K,WC/ZP.@d^sPu"
+                                                                            }
+                                                                          },
+                                                                          "PARAM-2": {
+                                                                            "block": {
+                                                                              "type": "EventDeathType",
+                                                                              "id": "*O:(H)qxT=fMX:M|2i!R"
+                                                                            }
+                                                                          }
+                                                                        },
+                                                                        "next": {
+                                                                          "block": {
+                                                                            "type": "subroutineInstanceBlock",
+                                                                            "id": "+IHeOru^RZ(jrm;kOuMp",
+                                                                            "extraState": {
+                                                                              "subroutineName": "displayKillMessage",
+                                                                              "parameters": [
+                                                                                {
+                                                                                  "types": "Player",
+                                                                                  "name": "eventPlayer"
+                                                                                },
+                                                                                {
+                                                                                  "types": "Player",
+                                                                                  "name": "eventOtherPlayer"
+                                                                                }
+                                                                              ]
+                                                                            },
+                                                                            "fields": {
+                                                                              "SUBROUTINE_NAME": "displayKillMessage"
+                                                                            },
+                                                                            "inputs": {
+                                                                              "PARAM-0": {
+                                                                                "block": {
+                                                                                  "type": "EventPlayer",
+                                                                                  "id": "-@fVFIHvy|E2ftk=$1FV"
+                                                                                }
+                                                                              },
+                                                                              "PARAM-1": {
+                                                                                "block": {
+                                                                                  "type": "EventOtherPlayer",
+                                                                                  "id": "YvBkztoh=2{MK(9kx`ZV"
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
                                                                         }
                                                                       }
                                                                     }
