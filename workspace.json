@@ -5,8 +5,8 @@
       {
         "type": "modBlock",
         "id": "RxJ]/Kib2k6Fr4$+OaoV",
-        "x": 0,
-        "y": 15138,
+        "x": 21,
+        "y": 15207,
         "inputs": {
           "RULES": {
             "block": {
@@ -3264,6 +3264,40 @@
                                                                                                     "id": "qd4/DX,cJ()6mR7e`AOQ",
                                                                                                     "fields": {
                                                                                                       "BOOL": "FALSE"
+                                                                                                    }
+                                                                                                  }
+                                                                                                }
+                                                                                              },
+                                                                                              "next": {
+                                                                                                "block": {
+                                                                                                  "type": "Wait",
+                                                                                                  "id": "2-rS?`Dq}kvL1?Hx_TK:",
+                                                                                                  "inputs": {
+                                                                                                    "VALUE-0": {
+                                                                                                      "block": {
+                                                                                                        "type": "Number",
+                                                                                                        "id": "da5!=%D{*k*D?@:[-}|U",
+                                                                                                        "fields": {
+                                                                                                          "NUM": 1
+                                                                                                        }
+                                                                                                      }
+                                                                                                    }
+                                                                                                  },
+                                                                                                  "next": {
+                                                                                                    "block": {
+                                                                                                      "type": "EnablePlayerSpawning",
+                                                                                                      "id": "OWJ*(;=/:?wr?c|1ndz*",
+                                                                                                      "inputs": {
+                                                                                                        "VALUE-0": {
+                                                                                                          "block": {
+                                                                                                            "type": "Boolean",
+                                                                                                            "id": "kb)A}GYj6#|r]3L0*!t$",
+                                                                                                            "fields": {
+                                                                                                              "BOOL": "TRUE"
+                                                                                                            }
+                                                                                                          }
+                                                                                                        }
+                                                                                                      }
                                                                                                     }
                                                                                                   }
                                                                                                 }
@@ -42273,108 +42307,6 @@
                   }
                 }
               }
-            }
-          }
-        }
-      },
-      {
-        "type": "Or",
-        "id": "@9Q?2rtL:cbCtJ_LFjHn",
-        "x": 1099,
-        "y": 43675,
-        "inputs": {
-          "VALUE-0": {
-            "block": {
-              "type": "Or",
-              "id": "TG76H}`xF5?u8c[IwVEt",
-              "inputs": {
-                "VALUE-0": {
-                  "block": {
-                    "type": "Equals",
-                    "id": "V)F4v]jfgTt$Mi-sJK,4",
-                    "inputs": {
-                      "VALUE-0": {
-                        "block": {
-                          "type": "GetVariable",
-                          "id": "DmRta-?,CsAAUGCW3m]0",
-                          "inputs": {
-                            "VALUE-0": {
-                              "block": {
-                                "type": "variableReferenceBlock",
-                                "id": "}jjat^_q%_SXsF#K@$B7",
-                                "extraState": {
-                                  "isObjectVar": false
-                                },
-                                "fields": {
-                                  "OBJECTTYPE": "Global",
-                                  "VAR": {
-                                    "id": ";O|*h1oLViZ{t;k#(w$G"
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      },
-                      "VALUE-1": {
-                        "block": {
-                          "type": "Number",
-                          "id": "LrMtW%DX8]U0hAtC@1u:",
-                          "fields": {
-                            "NUM": 2
-                          }
-                        }
-                      }
-                    }
-                  }
-                },
-                "VALUE-1": {
-                  "block": {
-                    "type": "Equals",
-                    "id": "CJ3ev=wa2qZnbfi~@S!c",
-                    "inputs": {
-                      "VALUE-0": {
-                        "block": {
-                          "type": "GetVariable",
-                          "id": ":D+[f~j6c`cr),V%n%49",
-                          "inputs": {
-                            "VALUE-0": {
-                              "block": {
-                                "type": "variableReferenceBlock",
-                                "id": "ufXS+0}MT]Br@ayxf)LJ",
-                                "extraState": {
-                                  "isObjectVar": false
-                                },
-                                "fields": {
-                                  "OBJECTTYPE": "Global",
-                                  "VAR": {
-                                    "id": ";O|*h1oLViZ{t;k#(w$G"
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      },
-                      "VALUE-1": {
-                        "block": {
-                          "type": "Number",
-                          "id": "|0+Gv8L:F43vPeV9AjXQ",
-                          "fields": {
-                            "NUM": 3
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "VALUE-1": {
-            "block": {
-              "type": "Equals",
-              "id": "P*Vs9tY(0t3{W!%v6+0d"
             }
           }
         }
