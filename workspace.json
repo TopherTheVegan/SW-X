@@ -5,8 +5,8 @@
       {
         "type": "modBlock",
         "id": "RxJ]/Kib2k6Fr4$+OaoV",
-        "x": 735,
-        "y": 16378,
+        "x": -1,
+        "y": 15130,
         "inputs": {
           "RULES": {
             "block": {
@@ -3737,148 +3737,194 @@
                                                                                             },
                                                                                             "next": {
                                                                                               "block": {
-                                                                                                "type": "actionComment",
-                                                                                                "id": "_8`IzNSuU:5(hnOGMj#Y",
-                                                                                                "fields": {
-                                                                                                  "TEXT": "for ai testing or future use"
+                                                                                                "type": "If",
+                                                                                                "id": "s%HR,V)lp.Ab6M6^9KZq",
+                                                                                                "extraState": {},
+                                                                                                "inputs": {
+                                                                                                  "VALUE-0": {
+                                                                                                    "block": {
+                                                                                                      "type": "GetVariable",
+                                                                                                      "id": "g;j|q~Yp{!m|O8sC-1Z]",
+                                                                                                      "inputs": {
+                                                                                                        "VALUE-0": {
+                                                                                                          "block": {
+                                                                                                            "type": "variableReferenceBlock",
+                                                                                                            "id": "Q/~oiEdmhdw*,}NPk*m-",
+                                                                                                            "extraState": {
+                                                                                                              "isObjectVar": false
+                                                                                                            },
+                                                                                                            "fields": {
+                                                                                                              "OBJECTTYPE": "Global",
+                                                                                                              "VAR": {
+                                                                                                                "id": "uMjW}0_^xaeNgWpL~5(="
+                                                                                                              }
+                                                                                                            }
+                                                                                                          }
+                                                                                                        }
+                                                                                                      }
+                                                                                                    }
+                                                                                                  },
+                                                                                                  "DO": {
+                                                                                                    "block": {
+                                                                                                      "type": "UnspawnPlayer",
+                                                                                                      "id": ",0/`dWY?+?dx_o9!q@,J",
+                                                                                                      "inputs": {
+                                                                                                        "VALUE-0": {
+                                                                                                          "block": {
+                                                                                                            "type": "EventPlayer",
+                                                                                                            "id": "8W%F(sJn#q[Re_Fv@W;6"
+                                                                                                          }
+                                                                                                        }
+                                                                                                      }
+                                                                                                    }
+                                                                                                  }
                                                                                                 },
                                                                                                 "next": {
                                                                                                   "block": {
-                                                                                                    "type": "subroutineInstanceBlock",
-                                                                                                    "id": "f2{98bq8jy6I)at/,+95",
-                                                                                                    "extraState": {
-                                                                                                      "subroutineName": "storeAiForDeploy",
-                                                                                                      "parameters": [
-                                                                                                        {
-                                                                                                          "types": "Player",
-                                                                                                          "name": "eventPlayer"
-                                                                                                        }
-                                                                                                      ]
-                                                                                                    },
+                                                                                                    "type": "actionComment",
+                                                                                                    "id": "_8`IzNSuU:5(hnOGMj#Y",
                                                                                                     "fields": {
-                                                                                                      "SUBROUTINE_NAME": "storeAiForDeploy"
-                                                                                                    },
-                                                                                                    "inputs": {
-                                                                                                      "PARAM-0": {
-                                                                                                        "block": {
-                                                                                                          "type": "EventPlayer",
-                                                                                                          "id": "L+#=Zak`tmc~=4[%PT]o"
-                                                                                                        }
-                                                                                                      }
+                                                                                                      "TEXT": "for ai testing or future use"
                                                                                                     },
                                                                                                     "next": {
                                                                                                       "block": {
-                                                                                                        "type": "actionComment",
-                                                                                                        "id": "}PvNX$cp-`CRBYem%`aN",
+                                                                                                        "type": "subroutineInstanceBlock",
+                                                                                                        "id": "f2{98bq8jy6I)at/,+95",
+                                                                                                        "extraState": {
+                                                                                                          "subroutineName": "storeAiForDeploy",
+                                                                                                          "parameters": [
+                                                                                                            {
+                                                                                                              "types": "Player",
+                                                                                                              "name": "eventPlayer"
+                                                                                                            }
+                                                                                                          ]
+                                                                                                        },
                                                                                                         "fields": {
-                                                                                                          "TEXT": "when players deploy while game is running"
+                                                                                                          "SUBROUTINE_NAME": "storeAiForDeploy"
+                                                                                                        },
+                                                                                                        "inputs": {
+                                                                                                          "PARAM-0": {
+                                                                                                            "block": {
+                                                                                                              "type": "EventPlayer",
+                                                                                                              "id": "L+#=Zak`tmc~=4[%PT]o"
+                                                                                                            }
+                                                                                                          }
                                                                                                         },
                                                                                                         "next": {
                                                                                                           "block": {
-                                                                                                            "type": "subroutineInstanceBlock",
-                                                                                                            "id": "4^8XqjW^_7~eH6AI$g]r",
-                                                                                                            "extraState": {
-                                                                                                              "subroutineName": "playerDeployedGameRunning",
-                                                                                                              "parameters": [
-                                                                                                                {
-                                                                                                                  "types": "Player",
-                                                                                                                  "name": "eventPlayer"
-                                                                                                                }
-                                                                                                              ]
-                                                                                                            },
+                                                                                                            "type": "actionComment",
+                                                                                                            "id": "}PvNX$cp-`CRBYem%`aN",
                                                                                                             "fields": {
-                                                                                                              "SUBROUTINE_NAME": "playerDeployedGameRunning"
-                                                                                                            },
-                                                                                                            "inputs": {
-                                                                                                              "PARAM-0": {
-                                                                                                                "block": {
-                                                                                                                  "type": "EventPlayer",
-                                                                                                                  "id": ".).Y(f0CE^Zzr+:0VTun"
-                                                                                                                }
-                                                                                                              }
+                                                                                                              "TEXT": "when players deploy while game is running"
                                                                                                             },
                                                                                                             "next": {
                                                                                                               "block": {
-                                                                                                                "type": "actionComment",
-                                                                                                                "id": "DX5M+#EJLC?pnP!Zpud{",
+                                                                                                                "type": "subroutineInstanceBlock",
+                                                                                                                "id": "4^8XqjW^_7~eH6AI$g]r",
+                                                                                                                "extraState": {
+                                                                                                                  "subroutineName": "playerDeployedGameRunning",
+                                                                                                                  "parameters": [
+                                                                                                                    {
+                                                                                                                      "types": "Player",
+                                                                                                                      "name": "eventPlayer"
+                                                                                                                    }
+                                                                                                                  ]
+                                                                                                                },
                                                                                                                 "fields": {
-                                                                                                                  "TEXT": "when players first deploy into the game"
+                                                                                                                  "SUBROUTINE_NAME": "playerDeployedGameRunning"
+                                                                                                                },
+                                                                                                                "inputs": {
+                                                                                                                  "PARAM-0": {
+                                                                                                                    "block": {
+                                                                                                                      "type": "EventPlayer",
+                                                                                                                      "id": ".).Y(f0CE^Zzr+:0VTun"
+                                                                                                                    }
+                                                                                                                  }
                                                                                                                 },
                                                                                                                 "next": {
                                                                                                                   "block": {
-                                                                                                                    "type": "subroutineInstanceBlock",
-                                                                                                                    "id": "_XVFUF$e/h7.!rODd|A:",
-                                                                                                                    "extraState": {
-                                                                                                                      "subroutineName": "firstDeployRoutine",
-                                                                                                                      "parameters": [
-                                                                                                                        {
-                                                                                                                          "types": "Player",
-                                                                                                                          "name": "eventPlayer"
-                                                                                                                        }
-                                                                                                                      ]
-                                                                                                                    },
+                                                                                                                    "type": "actionComment",
+                                                                                                                    "id": "DX5M+#EJLC?pnP!Zpud{",
                                                                                                                     "fields": {
-                                                                                                                      "SUBROUTINE_NAME": "firstDeployRoutine"
-                                                                                                                    },
-                                                                                                                    "inputs": {
-                                                                                                                      "PARAM-0": {
-                                                                                                                        "block": {
-                                                                                                                          "type": "EventPlayer",
-                                                                                                                          "id": "_8/8=1ph=2}6Mf|n[PJ:"
-                                                                                                                        }
-                                                                                                                      }
+                                                                                                                      "TEXT": "when players first deploy into the game"
                                                                                                                     },
                                                                                                                     "next": {
                                                                                                                       "block": {
-                                                                                                                        "type": "actionComment",
-                                                                                                                        "id": "{CRnS#QEmp(Wu2X;Brp5",
+                                                                                                                        "type": "subroutineInstanceBlock",
+                                                                                                                        "id": "_XVFUF$e/h7.!rODd|A:",
+                                                                                                                        "extraState": {
+                                                                                                                          "subroutineName": "firstDeployRoutine",
+                                                                                                                          "parameters": [
+                                                                                                                            {
+                                                                                                                              "types": "Player",
+                                                                                                                              "name": "eventPlayer"
+                                                                                                                            }
+                                                                                                                          ]
+                                                                                                                        },
                                                                                                                         "fields": {
-                                                                                                                          "TEXT": "when players deploy if game is over"
+                                                                                                                          "SUBROUTINE_NAME": "firstDeployRoutine"
+                                                                                                                        },
+                                                                                                                        "inputs": {
+                                                                                                                          "PARAM-0": {
+                                                                                                                            "block": {
+                                                                                                                              "type": "EventPlayer",
+                                                                                                                              "id": "_8/8=1ph=2}6Mf|n[PJ:"
+                                                                                                                            }
+                                                                                                                          }
                                                                                                                         },
                                                                                                                         "next": {
                                                                                                                           "block": {
-                                                                                                                            "type": "subroutineInstanceBlock",
-                                                                                                                            "id": "]Z1E,?8pE%/Aa?.?Tj.I",
-                                                                                                                            "extraState": {
-                                                                                                                              "subroutineName": "deployPlayerToEndGameLobby",
-                                                                                                                              "parameters": [
-                                                                                                                                {
-                                                                                                                                  "types": "Player",
-                                                                                                                                  "name": "eventPlayer"
-                                                                                                                                }
-                                                                                                                              ]
-                                                                                                                            },
+                                                                                                                            "type": "actionComment",
+                                                                                                                            "id": "{CRnS#QEmp(Wu2X;Brp5",
                                                                                                                             "fields": {
-                                                                                                                              "SUBROUTINE_NAME": "deployPlayerToEndGameLobby"
-                                                                                                                            },
-                                                                                                                            "inputs": {
-                                                                                                                              "PARAM-0": {
-                                                                                                                                "block": {
-                                                                                                                                  "type": "EventPlayer",
-                                                                                                                                  "id": "=!B|3|h~c16W`pP_iwru"
-                                                                                                                                }
-                                                                                                                              }
+                                                                                                                              "TEXT": "when players deploy if game is over"
                                                                                                                             },
                                                                                                                             "next": {
                                                                                                                               "block": {
-                                                                                                                                "type": "actionComment",
-                                                                                                                                "id": "S;uLLu5)6BpZ.5p-F}~|",
+                                                                                                                                "type": "subroutineInstanceBlock",
+                                                                                                                                "id": "]Z1E,?8pE%/Aa?.?Tj.I",
+                                                                                                                                "extraState": {
+                                                                                                                                  "subroutineName": "deployPlayerToEndGameLobby",
+                                                                                                                                  "parameters": [
+                                                                                                                                    {
+                                                                                                                                      "types": "Player",
+                                                                                                                                      "name": "eventPlayer"
+                                                                                                                                    }
+                                                                                                                                  ]
+                                                                                                                                },
                                                                                                                                 "fields": {
-                                                                                                                                  "TEXT": "things to do:"
+                                                                                                                                  "SUBROUTINE_NAME": "deployPlayerToEndGameLobby"
+                                                                                                                                },
+                                                                                                                                "inputs": {
+                                                                                                                                  "PARAM-0": {
+                                                                                                                                    "block": {
+                                                                                                                                      "type": "EventPlayer",
+                                                                                                                                      "id": "=!B|3|h~c16W`pP_iwru"
+                                                                                                                                    }
+                                                                                                                                  }
                                                                                                                                 },
                                                                                                                                 "next": {
                                                                                                                                   "block": {
                                                                                                                                     "type": "actionComment",
-                                                                                                                                    "id": "?.!;N:s:v.+f^[Yc@D).",
+                                                                                                                                    "id": "S;uLLu5)6BpZ.5p-F}~|",
                                                                                                                                     "fields": {
-                                                                                                                                      "TEXT": "reverse animation of players wiped"
+                                                                                                                                      "TEXT": "things to do:"
                                                                                                                                     },
                                                                                                                                     "next": {
                                                                                                                                       "block": {
                                                                                                                                         "type": "actionComment",
-                                                                                                                                        "id": "ND$DIV+mCB[jX^n4B(]s",
+                                                                                                                                        "id": "?.!;N:s:v.+f^[Yc@D).",
                                                                                                                                         "fields": {
-                                                                                                                                          "TEXT": "when last player of squad make music suspense "
+                                                                                                                                          "TEXT": "reverse animation of players wiped"
+                                                                                                                                        },
+                                                                                                                                        "next": {
+                                                                                                                                          "block": {
+                                                                                                                                            "type": "actionComment",
+                                                                                                                                            "id": "ND$DIV+mCB[jX^n4B(]s",
+                                                                                                                                            "fields": {
+                                                                                                                                              "TEXT": "when last player of squad make music suspense "
+                                                                                                                                            }
+                                                                                                                                          }
                                                                                                                                         }
                                                                                                                                       }
                                                                                                                                     }
