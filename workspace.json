@@ -6124,7 +6124,7 @@
                             "type": "Number",
                             "id": "}iw}(vuF$ky.{2{0:nU)",
                             "fields": {
-                              "NUM": 210
+                              "NUM": 180
                             }
                           }
                         }
@@ -6154,7 +6154,7 @@
                                 "type": "Number",
                                 "id": "tVK)2H0{1BiRwZ)+8r8@",
                                 "fields": {
-                                  "NUM": 90
+                                  "NUM": 60
                                 }
                               }
                             }
@@ -6184,7 +6184,7 @@
                                     "type": "Number",
                                     "id": "%E3(kIHwifKx,L0mV-3O",
                                     "fields": {
-                                      "NUM": 12
+                                      "NUM": 15
                                     }
                                   }
                                 }
@@ -6214,7 +6214,7 @@
                                         "type": "Number",
                                         "id": "[A7O,:_Jh]?0OXhbrT+Y",
                                         "fields": {
-                                          "NUM": 1
+                                          "NUM": 2
                                         }
                                       }
                                     }
@@ -6364,7 +6364,7 @@
                                                             "type": "Number",
                                                             "id": "KaJb-vgUWE{Xtm_Xvf(b",
                                                             "fields": {
-                                                              "NUM": 5
+                                                              "NUM": 6
                                                             }
                                                           }
                                                         }
@@ -39088,7 +39088,7 @@
                                                                                     "type": "Number",
                                                                                     "id": ".`PP@G3$^ptC`(OZ;vGe",
                                                                                     "fields": {
-                                                                                      "NUM": 130
+                                                                                      "NUM": 180
                                                                                     }
                                                                                   }
                                                                                 }
@@ -43627,8 +43627,8 @@
       {
         "type": "subroutineBlock",
         "id": "}AyxoZPezCy,n!nt0(3]",
-        "x": 0,
-        "y": 30290,
+        "x": 49,
+        "y": 30321,
         "extraState": {
           "subroutineName": "intGameObjects",
           "parameters": []
@@ -43914,8 +43914,8 @@
       {
         "type": "subroutineBlock",
         "id": "s1bp%G$)I?1$Z_c}Cp(t",
-        "x": 0,
-        "y": 29644,
+        "x": 2520,
+        "y": 28290,
         "extraState": {
           "subroutineName": "resupply",
           "parameters": [
@@ -43936,8 +43936,11 @@
               "inputs": {
                 "VALUE-0": {
                   "block": {
-                    "type": "EventPlayer",
-                    "id": "lMi+YIWeF?m{i3]da+Lt"
+                    "type": "subroutineArgumentBlock",
+                    "id": "]2)tvMWhF;%-_+N]ToxR",
+                    "fields": {
+                      "ARGUMENT_INDEX": "0"
+                    }
                   }
                 },
                 "VALUE-1": {
@@ -43953,186 +43956,114 @@
               },
               "next": {
                 "block": {
-                  "type": "If",
-                  "id": "XO..r*B`Y#,oP=zMlg`/",
-                  "extraState": {},
+                  "type": "SetInventoryAmmo",
+                  "id": "299L+}C:n1NDU.BdkgaD",
                   "inputs": {
                     "VALUE-0": {
                       "block": {
-                        "type": "HasInventory",
-                        "id": "On%XjfHS7+hpB@k@{+,+",
-                        "inputs": {
-                          "VALUE-0": {
-                            "block": {
-                              "type": "subroutineArgumentBlock",
-                              "id": "OqbZ.CG)zE}X%z9+po!G",
-                              "fields": {
-                                "ARGUMENT_INDEX": "0"
-                              }
-                            }
-                          },
-                          "VALUE-1": {
-                            "block": {
-                              "type": "ThrowablesItem",
-                              "id": "=McItBSzG/4_-Fb#1:q+",
-                              "fields": {
-                                "VALUE-0": "ThrowablesKingston",
-                                "VALUE-1": "SmokeGrenade"
-                              }
-                            }
-                          }
+                        "type": "subroutineArgumentBlock",
+                        "id": "02^7RnS/DPd)wjiu8_.:",
+                        "fields": {
+                          "ARGUMENT_INDEX": "0"
                         }
                       }
                     },
-                    "DO": {
+                    "VALUE-1": {
                       "block": {
-                        "type": "SetInventoryMagazineAmmo",
-                        "id": "]X^.eoQ9W;Z2ZG-2=@D4",
-                        "inputs": {
-                          "VALUE-0": {
-                            "block": {
-                              "type": "subroutineArgumentBlock",
-                              "id": "q04})+k.a(mxQnIiv;~[",
-                              "fields": {
-                                "ARGUMENT_INDEX": "0"
-                              }
-                            }
-                          },
-                          "VALUE-1": {
-                            "block": {
-                              "type": "InventorySlotsItem",
-                              "id": "2[5Re?rHLytd4yk[0G:Z",
-                              "fields": {
-                                "VALUE-0": "InventorySlots",
-                                "VALUE-1": "Throwable"
-                              }
-                            }
-                          },
-                          "VALUE-2": {
-                            "block": {
-                              "type": "Number",
-                              "id": "S[as~p4ysqlp}3:Gbv*7",
-                              "fields": {
-                                "NUM": 4
-                              }
-                            }
-                          }
-                        },
-                        "next": {
-                          "block": {
-                            "type": "SetInventoryAmmo",
-                            "id": "JDuPV;+eD*D?l~4JVY`c",
-                            "inputs": {
-                              "VALUE-0": {
-                                "block": {
-                                  "type": "subroutineArgumentBlock",
-                                  "id": "mCS~YU$Ls^7Dpm+qYR~-",
-                                  "fields": {
-                                    "ARGUMENT_INDEX": "0"
-                                  }
-                                }
-                              },
-                              "VALUE-1": {
-                                "block": {
-                                  "type": "InventorySlotsItem",
-                                  "id": ";kz_-lA+[[2?W|}g_2+w",
-                                  "fields": {
-                                    "VALUE-0": "InventorySlots",
-                                    "VALUE-1": "Throwable"
-                                  }
-                                }
-                              },
-                              "VALUE-2": {
-                                "block": {
-                                  "type": "Number",
-                                  "id": "8dJ*_I-QE0N(X[YtK0!W",
-                                  "fields": {
-                                    "NUM": 4
-                                  }
-                                }
-                              }
-                            }
-                          }
+                        "type": "InventorySlotsItem",
+                        "id": "#gH?o**o7$wF$Z)UYu#N",
+                        "fields": {
+                          "VALUE-0": "InventorySlots",
+                          "VALUE-1": "ClassGadget"
+                        }
+                      }
+                    },
+                    "VALUE-2": {
+                      "block": {
+                        "type": "Number",
+                        "id": "=eM+[:h8j_:6u:#[,XPZ",
+                        "fields": {
+                          "NUM": 2
                         }
                       }
                     }
                   },
                   "next": {
                     "block": {
-                      "type": "If",
-                      "id": "IYPaV+3jES;S`uAD}qvS",
-                      "extraState": {},
+                      "type": "SetInventoryAmmo",
+                      "id": "[q*pt6!rsm/:VA,6)w,w",
                       "inputs": {
                         "VALUE-0": {
                           "block": {
-                            "type": "HasInventory",
-                            "id": "%~Bf6fGr)+m/DDM-CGdU",
-                            "inputs": {
-                              "VALUE-0": {
-                                "block": {
-                                  "type": "subroutineArgumentBlock",
-                                  "id": "AaP/H$98dtk6wT*?!#pb",
-                                  "fields": {
-                                    "ARGUMENT_INDEX": "0"
-                                  }
-                                }
-                              },
-                              "VALUE-1": {
-                                "block": {
-                                  "type": "ThrowablesItem",
-                                  "id": "N0H/b3^G-5*s]n,z}KF!",
-                                  "fields": {
-                                    "VALUE-0": "ThrowablesKingston",
-                                    "VALUE-1": "IncendiaryGrenade"
-                                  }
-                                }
-                              }
+                            "type": "subroutineArgumentBlock",
+                            "id": ".*..=,8,zv}/Q]MAC=,c",
+                            "fields": {
+                              "ARGUMENT_INDEX": "1"
                             }
                           }
                         },
-                        "DO": {
+                        "VALUE-1": {
                           "block": {
-                            "type": "SetInventoryMagazineAmmo",
-                            "id": "BYLNR3{{@~[-4ibYoLEP",
-                            "inputs": {
-                              "VALUE-0": {
-                                "block": {
-                                  "type": "subroutineArgumentBlock",
-                                  "id": "z#Y$@sM:;{Qd1[Qx~9.H",
-                                  "fields": {
-                                    "ARGUMENT_INDEX": "0"
-                                  }
-                                }
-                              },
-                              "VALUE-1": {
-                                "block": {
-                                  "type": "InventorySlotsItem",
-                                  "id": "+jWPo0FM3lxf=edM3LTh",
-                                  "fields": {
-                                    "VALUE-0": "InventorySlots",
-                                    "VALUE-1": "Throwable"
-                                  }
-                                }
-                              },
-                              "VALUE-2": {
-                                "block": {
-                                  "type": "Number",
-                                  "id": "=q~sM3hQkSxR1SG!lfS;",
-                                  "fields": {
-                                    "NUM": 5
-                                  }
-                                }
-                              }
-                            },
-                            "next": {
+                            "type": "InventorySlotsItem",
+                            "id": "z+qdN/f@IuY[Um;/SFQ2",
+                            "fields": {
+                              "VALUE-0": "InventorySlots",
+                              "VALUE-1": "OpenGadget"
+                            }
+                          }
+                        },
+                        "VALUE-2": {
+                          "block": {
+                            "type": "Number",
+                            "id": "9)DtZ=IdkBar5t[3Ll?K",
+                            "fields": {
+                              "NUM": 2
+                            }
+                          }
+                        }
+                      },
+                      "next": {
+                        "block": {
+                          "type": "If",
+                          "id": "XO..r*B`Y#,oP=zMlg`/",
+                          "extraState": {},
+                          "inputs": {
+                            "VALUE-0": {
                               "block": {
-                                "type": "SetInventoryAmmo",
-                                "id": "98hDn/.hF_%Z#wrZP;b*",
+                                "type": "HasInventory",
+                                "id": "On%XjfHS7+hpB@k@{+,+",
                                 "inputs": {
                                   "VALUE-0": {
                                     "block": {
                                       "type": "subroutineArgumentBlock",
-                                      "id": "yTwPyqZq?W9.AaCPs*A4",
+                                      "id": "OqbZ.CG)zE}X%z9+po!G",
+                                      "fields": {
+                                        "ARGUMENT_INDEX": "0"
+                                      }
+                                    }
+                                  },
+                                  "VALUE-1": {
+                                    "block": {
+                                      "type": "ThrowablesItem",
+                                      "id": "=McItBSzG/4_-Fb#1:q+",
+                                      "fields": {
+                                        "VALUE-0": "ThrowablesKingston",
+                                        "VALUE-1": "SmokeGrenade"
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "DO": {
+                              "block": {
+                                "type": "SetInventoryMagazineAmmo",
+                                "id": "]X^.eoQ9W;Z2ZG-2=@D4",
+                                "inputs": {
+                                  "VALUE-0": {
+                                    "block": {
+                                      "type": "subroutineArgumentBlock",
+                                      "id": "q04})+k.a(mxQnIiv;~[",
                                       "fields": {
                                         "ARGUMENT_INDEX": "0"
                                       }
@@ -44141,7 +44072,7 @@
                                   "VALUE-1": {
                                     "block": {
                                       "type": "InventorySlotsItem",
-                                      "id": "6Re/eCMn@7P^s)T-/e-}",
+                                      "id": "2[5Re?rHLytd4yk[0G:Z",
                                       "fields": {
                                         "VALUE-0": "InventorySlots",
                                         "VALUE-1": "Throwable"
@@ -44151,9 +44082,621 @@
                                   "VALUE-2": {
                                     "block": {
                                       "type": "Number",
-                                      "id": "AIulBF{jk1Lek):JCrny",
+                                      "id": "S[as~p4ysqlp}3:Gbv*7",
                                       "fields": {
-                                        "NUM": 5
+                                        "NUM": 4
+                                      }
+                                    }
+                                  }
+                                },
+                                "next": {
+                                  "block": {
+                                    "type": "SetInventoryAmmo",
+                                    "id": "JDuPV;+eD*D?l~4JVY`c",
+                                    "inputs": {
+                                      "VALUE-0": {
+                                        "block": {
+                                          "type": "subroutineArgumentBlock",
+                                          "id": "mCS~YU$Ls^7Dpm+qYR~-",
+                                          "fields": {
+                                            "ARGUMENT_INDEX": "0"
+                                          }
+                                        }
+                                      },
+                                      "VALUE-1": {
+                                        "block": {
+                                          "type": "InventorySlotsItem",
+                                          "id": ";kz_-lA+[[2?W|}g_2+w",
+                                          "fields": {
+                                            "VALUE-0": "InventorySlots",
+                                            "VALUE-1": "Throwable"
+                                          }
+                                        }
+                                      },
+                                      "VALUE-2": {
+                                        "block": {
+                                          "type": "Number",
+                                          "id": "8dJ*_I-QE0N(X[YtK0!W",
+                                          "fields": {
+                                            "NUM": 4
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "next": {
+                            "block": {
+                              "type": "If",
+                              "id": "IYPaV+3jES;S`uAD}qvS",
+                              "extraState": {},
+                              "inputs": {
+                                "VALUE-0": {
+                                  "block": {
+                                    "type": "HasInventory",
+                                    "id": "%~Bf6fGr)+m/DDM-CGdU",
+                                    "inputs": {
+                                      "VALUE-0": {
+                                        "block": {
+                                          "type": "subroutineArgumentBlock",
+                                          "id": "AaP/H$98dtk6wT*?!#pb",
+                                          "fields": {
+                                            "ARGUMENT_INDEX": "0"
+                                          }
+                                        }
+                                      },
+                                      "VALUE-1": {
+                                        "block": {
+                                          "type": "ThrowablesItem",
+                                          "id": "N0H/b3^G-5*s]n,z}KF!",
+                                          "fields": {
+                                            "VALUE-0": "ThrowablesKingston",
+                                            "VALUE-1": "IncendiaryGrenade"
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                },
+                                "DO": {
+                                  "block": {
+                                    "type": "SetInventoryMagazineAmmo",
+                                    "id": "BYLNR3{{@~[-4ibYoLEP",
+                                    "inputs": {
+                                      "VALUE-0": {
+                                        "block": {
+                                          "type": "subroutineArgumentBlock",
+                                          "id": "z#Y$@sM:;{Qd1[Qx~9.H",
+                                          "fields": {
+                                            "ARGUMENT_INDEX": "0"
+                                          }
+                                        }
+                                      },
+                                      "VALUE-1": {
+                                        "block": {
+                                          "type": "InventorySlotsItem",
+                                          "id": "+jWPo0FM3lxf=edM3LTh",
+                                          "fields": {
+                                            "VALUE-0": "InventorySlots",
+                                            "VALUE-1": "Throwable"
+                                          }
+                                        }
+                                      },
+                                      "VALUE-2": {
+                                        "block": {
+                                          "type": "Number",
+                                          "id": "=q~sM3hQkSxR1SG!lfS;",
+                                          "fields": {
+                                            "NUM": 5
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "next": {
+                                      "block": {
+                                        "type": "SetInventoryAmmo",
+                                        "id": "98hDn/.hF_%Z#wrZP;b*",
+                                        "inputs": {
+                                          "VALUE-0": {
+                                            "block": {
+                                              "type": "subroutineArgumentBlock",
+                                              "id": "yTwPyqZq?W9.AaCPs*A4",
+                                              "fields": {
+                                                "ARGUMENT_INDEX": "0"
+                                              }
+                                            }
+                                          },
+                                          "VALUE-1": {
+                                            "block": {
+                                              "type": "InventorySlotsItem",
+                                              "id": "6Re/eCMn@7P^s)T-/e-}",
+                                              "fields": {
+                                                "VALUE-0": "InventorySlots",
+                                                "VALUE-1": "Throwable"
+                                              }
+                                            }
+                                          },
+                                          "VALUE-2": {
+                                            "block": {
+                                              "type": "Number",
+                                              "id": "AIulBF{jk1Lek):JCrny",
+                                              "fields": {
+                                                "NUM": 5
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "next": {
+                                "block": {
+                                  "type": "If",
+                                  "id": "oQ=;684Q0fm]OUN`((dx",
+                                  "extraState": {},
+                                  "inputs": {
+                                    "VALUE-0": {
+                                      "block": {
+                                        "type": "HasInventory",
+                                        "id": "#1AX]d~Px(Zhl}W%,Z]q",
+                                        "inputs": {
+                                          "VALUE-0": {
+                                            "block": {
+                                              "type": "subroutineArgumentBlock",
+                                              "id": "[(*3^-UIThgm::@T/5]~",
+                                              "fields": {
+                                                "ARGUMENT_INDEX": "0"
+                                              }
+                                            }
+                                          },
+                                          "VALUE-1": {
+                                            "block": {
+                                              "type": "ThrowablesItem",
+                                              "id": "s!^5*:N28^LPyy^9+(Y{",
+                                              "fields": {
+                                                "VALUE-0": "ThrowablesKingston",
+                                                "VALUE-1": "ConcussionGrenade"
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "DO": {
+                                      "block": {
+                                        "type": "SetInventoryMagazineAmmo",
+                                        "id": "FMl2!]l9c)-uo#VE(Eqx",
+                                        "inputs": {
+                                          "VALUE-0": {
+                                            "block": {
+                                              "type": "subroutineArgumentBlock",
+                                              "id": "=-bHw#*[.H(B^o;CjV|/",
+                                              "fields": {
+                                                "ARGUMENT_INDEX": "0"
+                                              }
+                                            }
+                                          },
+                                          "VALUE-1": {
+                                            "block": {
+                                              "type": "InventorySlotsItem",
+                                              "id": "=$0l,T:A3j4Jd05ZsYg%",
+                                              "fields": {
+                                                "VALUE-0": "InventorySlots",
+                                                "VALUE-1": "Throwable"
+                                              }
+                                            }
+                                          },
+                                          "VALUE-2": {
+                                            "block": {
+                                              "type": "Number",
+                                              "id": "ncuV1Omv4q)JV;quC+U[",
+                                              "fields": {
+                                                "NUM": 5
+                                              }
+                                            }
+                                          }
+                                        },
+                                        "next": {
+                                          "block": {
+                                            "type": "SetInventoryAmmo",
+                                            "id": "jf[dNuXN,~-=0K]x$C#$",
+                                            "inputs": {
+                                              "VALUE-0": {
+                                                "block": {
+                                                  "type": "subroutineArgumentBlock",
+                                                  "id": "Np)u/Ama]Cp*54Dfq-t(",
+                                                  "fields": {
+                                                    "ARGUMENT_INDEX": "0"
+                                                  }
+                                                }
+                                              },
+                                              "VALUE-1": {
+                                                "block": {
+                                                  "type": "InventorySlotsItem",
+                                                  "id": "E}FMhd_c!:|(y7.7b@kJ",
+                                                  "fields": {
+                                                    "VALUE-0": "InventorySlots",
+                                                    "VALUE-1": "Throwable"
+                                                  }
+                                                }
+                                              },
+                                              "VALUE-2": {
+                                                "block": {
+                                                  "type": "Number",
+                                                  "id": "2=KS#.cG}/O*S$+5{il^",
+                                                  "fields": {
+                                                    "NUM": 5
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "next": {
+                                    "block": {
+                                      "type": "If",
+                                      "id": "L#1CYb_{;W[*!.aS[?`)",
+                                      "extraState": {},
+                                      "inputs": {
+                                        "VALUE-0": {
+                                          "block": {
+                                            "type": "HasInventory",
+                                            "id": "{oVHVrXmq41:0F!SbU7N",
+                                            "inputs": {
+                                              "VALUE-0": {
+                                                "block": {
+                                                  "type": "subroutineArgumentBlock",
+                                                  "id": "hiBx8*9+4_yRyx#kFC|V",
+                                                  "fields": {
+                                                    "ARGUMENT_INDEX": "0"
+                                                  }
+                                                }
+                                              },
+                                              "VALUE-1": {
+                                                "block": {
+                                                  "type": "ThrowablesItem",
+                                                  "id": "wkhX,Z]z3iWuoY_=j#^K",
+                                                  "fields": {
+                                                    "VALUE-0": "ThrowablesKingston",
+                                                    "VALUE-1": "MotionMine"
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        },
+                                        "DO": {
+                                          "block": {
+                                            "type": "SetInventoryAmmo",
+                                            "id": "u)O%x]g3`wLRVAQR=`se",
+                                            "inputs": {
+                                              "VALUE-0": {
+                                                "block": {
+                                                  "type": "subroutineArgumentBlock",
+                                                  "id": "IZs].#Ma3@t]UKuM`.G7",
+                                                  "fields": {
+                                                    "ARGUMENT_INDEX": "0"
+                                                  }
+                                                }
+                                              },
+                                              "VALUE-1": {
+                                                "block": {
+                                                  "type": "InventorySlotsItem",
+                                                  "id": "nqy15WO+`;E31C9plnjj",
+                                                  "fields": {
+                                                    "VALUE-0": "InventorySlots",
+                                                    "VALUE-1": "Throwable"
+                                                  }
+                                                }
+                                              },
+                                              "VALUE-2": {
+                                                "block": {
+                                                  "type": "Number",
+                                                  "id": "l^K9K~h[Z:1_shQ?/V$;",
+                                                  "fields": {
+                                                    "NUM": 1
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "next": {
+                                        "block": {
+                                          "type": "If",
+                                          "id": "?SLP$glH(AgnSA`=W!5G",
+                                          "extraState": {},
+                                          "inputs": {
+                                            "VALUE-0": {
+                                              "block": {
+                                                "type": "HasInventory",
+                                                "id": "fu39BUM!t.hx4;n~1:eo",
+                                                "inputs": {
+                                                  "VALUE-0": {
+                                                    "block": {
+                                                      "type": "subroutineArgumentBlock",
+                                                      "id": "t_Xfj8H#]]I+BD-54?~U",
+                                                      "fields": {
+                                                        "ARGUMENT_INDEX": "0"
+                                                      }
+                                                    }
+                                                  },
+                                                  "VALUE-1": {
+                                                    "block": {
+                                                      "type": "ThrowablesItem",
+                                                      "id": "5TCGYxn+0jn.:I#]_(X?",
+                                                      "fields": {
+                                                        "VALUE-0": "ThrowablesKingston",
+                                                        "VALUE-1": "ThrowingKnife"
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "DO": {
+                                              "block": {
+                                                "type": "SetInventoryAmmo",
+                                                "id": ")NW;9xg`B62|[SWNKjC)",
+                                                "inputs": {
+                                                  "VALUE-0": {
+                                                    "block": {
+                                                      "type": "subroutineArgumentBlock",
+                                                      "id": "j_F^w^4qUZ@}Qkx_kL~C",
+                                                      "fields": {
+                                                        "ARGUMENT_INDEX": "0"
+                                                      }
+                                                    }
+                                                  },
+                                                  "VALUE-1": {
+                                                    "block": {
+                                                      "type": "InventorySlotsItem",
+                                                      "id": "L.;SH+XX4-%IY}T{(yjZ",
+                                                      "fields": {
+                                                        "VALUE-0": "InventorySlots",
+                                                        "VALUE-1": "Throwable"
+                                                      }
+                                                    }
+                                                  },
+                                                  "VALUE-2": {
+                                                    "block": {
+                                                      "type": "Number",
+                                                      "id": "aadwF`Gessh%_SLwRpQC",
+                                                      "fields": {
+                                                        "NUM": 3
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          },
+                                          "next": {
+                                            "block": {
+                                              "type": "If",
+                                              "id": "%laIhgK1(J,3.-,WK4Bz",
+                                              "extraState": {},
+                                              "inputs": {
+                                                "VALUE-0": {
+                                                  "block": {
+                                                    "type": "HasInventory",
+                                                    "id": "Dwqq`W;?pX$%=={}9sDT",
+                                                    "inputs": {
+                                                      "VALUE-0": {
+                                                        "block": {
+                                                          "type": "subroutineArgumentBlock",
+                                                          "id": "zr*g.Bpuqh~;i_j,s`[D",
+                                                          "fields": {
+                                                            "ARGUMENT_INDEX": "0"
+                                                          }
+                                                        }
+                                                      },
+                                                      "VALUE-1": {
+                                                        "block": {
+                                                          "type": "ThrowablesItem",
+                                                          "id": "%Y:rclfz-,]6^j0ibq1$",
+                                                          "fields": {
+                                                            "VALUE-0": "ThrowablesKingston",
+                                                            "VALUE-1": "FragGrenade"
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                },
+                                                "DO": {
+                                                  "block": {
+                                                    "type": "SetInventoryMagazineAmmo",
+                                                    "id": "iTssk:jV%w:Wg?FC+Q=%",
+                                                    "inputs": {
+                                                      "VALUE-0": {
+                                                        "block": {
+                                                          "type": "subroutineArgumentBlock",
+                                                          "id": "XNvYi-CBPWj!lq$Thi1S",
+                                                          "fields": {
+                                                            "ARGUMENT_INDEX": "0"
+                                                          }
+                                                        }
+                                                      },
+                                                      "VALUE-1": {
+                                                        "block": {
+                                                          "type": "InventorySlotsItem",
+                                                          "id": "UMKXD9ZF;WJ2V.nJQ7,z",
+                                                          "fields": {
+                                                            "VALUE-0": "InventorySlots",
+                                                            "VALUE-1": "Throwable"
+                                                          }
+                                                        }
+                                                      },
+                                                      "VALUE-2": {
+                                                        "block": {
+                                                          "type": "Number",
+                                                          "id": "r@ae;/KdisAYS8G{eQxn",
+                                                          "fields": {
+                                                            "NUM": 2
+                                                          }
+                                                        }
+                                                      }
+                                                    },
+                                                    "next": {
+                                                      "block": {
+                                                        "type": "SetInventoryAmmo",
+                                                        "id": "e4*qP,fn!)E6InxE|xyB",
+                                                        "inputs": {
+                                                          "VALUE-0": {
+                                                            "block": {
+                                                              "type": "subroutineArgumentBlock",
+                                                              "id": "D|[X4;,eyKmOyk`WG5dA",
+                                                              "fields": {
+                                                                "ARGUMENT_INDEX": "0"
+                                                              }
+                                                            }
+                                                          },
+                                                          "VALUE-1": {
+                                                            "block": {
+                                                              "type": "InventorySlotsItem",
+                                                              "id": "@HF{XPxRq2q=5/fkwnW3",
+                                                              "fields": {
+                                                                "VALUE-0": "InventorySlots",
+                                                                "VALUE-1": "Throwable"
+                                                              }
+                                                            }
+                                                          },
+                                                          "VALUE-2": {
+                                                            "block": {
+                                                              "type": "Number",
+                                                              "id": "NL9#Akgzs@WQN*e%!$`5",
+                                                              "fields": {
+                                                                "NUM": 2
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              },
+                                              "next": {
+                                                "block": {
+                                                  "type": "If",
+                                                  "id": "Gt.[(DEa;,i`GVoqSre=",
+                                                  "extraState": {},
+                                                  "inputs": {
+                                                    "VALUE-0": {
+                                                      "block": {
+                                                        "type": "HasInventory",
+                                                        "id": "?QoXmF%pnPP=LuCwd*KU",
+                                                        "inputs": {
+                                                          "VALUE-0": {
+                                                            "block": {
+                                                              "type": "subroutineArgumentBlock",
+                                                              "id": "rXsIwV/W8;kOgnjz7=-S",
+                                                              "fields": {
+                                                                "ARGUMENT_INDEX": "0"
+                                                              }
+                                                            }
+                                                          },
+                                                          "VALUE-1": {
+                                                            "block": {
+                                                              "type": "ThrowablesItem",
+                                                              "id": "cvJovTLf^#!^.)`:h%kQ",
+                                                              "fields": {
+                                                                "VALUE-0": "ThrowablesKingston",
+                                                                "VALUE-1": "Mini Grenade"
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    },
+                                                    "DO": {
+                                                      "block": {
+                                                        "type": "SetInventoryMagazineAmmo",
+                                                        "id": "ZL3Mn`cHf(;ou15}91^D",
+                                                        "inputs": {
+                                                          "VALUE-0": {
+                                                            "block": {
+                                                              "type": "subroutineArgumentBlock",
+                                                              "id": "wjO4$crVN65C+}/G/b^h",
+                                                              "fields": {
+                                                                "ARGUMENT_INDEX": "0"
+                                                              }
+                                                            }
+                                                          },
+                                                          "VALUE-1": {
+                                                            "block": {
+                                                              "type": "InventorySlotsItem",
+                                                              "id": "!]bQ_}0vR-0B6Va5Ab_r",
+                                                              "fields": {
+                                                                "VALUE-0": "InventorySlots",
+                                                                "VALUE-1": "Throwable"
+                                                              }
+                                                            }
+                                                          },
+                                                          "VALUE-2": {
+                                                            "block": {
+                                                              "type": "Number",
+                                                              "id": "gKUMs82,sJQnD7Yj.H(g",
+                                                              "fields": {
+                                                                "NUM": 2
+                                                              }
+                                                            }
+                                                          }
+                                                        },
+                                                        "next": {
+                                                          "block": {
+                                                            "type": "SetInventoryAmmo",
+                                                            "id": "TB.Hd?@fe0rvHI0iGOc!",
+                                                            "inputs": {
+                                                              "VALUE-0": {
+                                                                "block": {
+                                                                  "type": "subroutineArgumentBlock",
+                                                                  "id": "X3Jds%oZ^$ehwAe]@]Za",
+                                                                  "fields": {
+                                                                    "ARGUMENT_INDEX": "0"
+                                                                  }
+                                                                }
+                                                              },
+                                                              "VALUE-1": {
+                                                                "block": {
+                                                                  "type": "InventorySlotsItem",
+                                                                  "id": "?7E%90O$^x]I8~^-tY+7",
+                                                                  "fields": {
+                                                                    "VALUE-0": "InventorySlots",
+                                                                    "VALUE-1": "Throwable"
+                                                                  }
+                                                                }
+                                                              },
+                                                              "VALUE-2": {
+                                                                "block": {
+                                                                  "type": "Number",
+                                                                  "id": "@nW*J|V,Wtco;1#omAZY",
+                                                                  "fields": {
+                                                                    "NUM": 2
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
                                       }
                                     }
                                   }
@@ -44674,46 +45217,6 @@
         }
       },
       {
-        "type": "Divide",
-        "id": "GKAw1%X7UFsAW-w6|TAb",
-        "x": 0,
-        "y": 29452,
-        "inputs": {
-          "VALUE-1": {
-            "block": {
-              "type": "Number",
-              "id": "5n,k2x1CibxYYVuk|KCq",
-              "fields": {
-                "NUM": 3
-              }
-            }
-          }
-        }
-      },
-      {
-        "type": "GetVariable",
-        "id": ";zduOdlZ]h1|$);d!7uD",
-        "x": 0,
-        "y": 29548,
-        "inputs": {
-          "VALUE-0": {
-            "block": {
-              "type": "variableReferenceBlock",
-              "id": "qeQFLTppN40DnYmE41W!",
-              "extraState": {
-                "isObjectVar": false
-              },
-              "fields": {
-                "OBJECTTYPE": "Global",
-                "VAR": {
-                  "id": "7kpss^r1Z{vgxVE4YAVD"
-                }
-              }
-            }
-          }
-        }
-      },
-      {
         "type": "subroutineBlock",
         "id": "QbsK_o^D/e%_fWCEX#2?",
         "x": 2129,
@@ -44743,6 +45246,853 @@
                           "fields": {
                             "VALUE-0": "Maps",
                             "VALUE-1": "Boulder"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "ACTIONS": {
+            "block": {
+              "type": "actionComment",
+              "id": "U[Q2dH+OwT`Bys([-_xU",
+              "fields": {
+                "TEXT": "------Squad deploy Settings-----"
+              },
+              "next": {
+                "block": {
+                  "type": "actionComment",
+                  "id": "4oXyj/U9+u}IZTP(iL9P",
+                  "fields": {
+                    "TEXT": "Map focus position"
+                  },
+                  "next": {
+                    "block": {
+                      "type": "SetVariableAtIndex",
+                      "id": "9O{7YVWyUFsk/{fsu!jy",
+                      "inputs": {
+                        "VALUE-0": {
+                          "block": {
+                            "type": "variableReferenceBlock",
+                            "id": "rJwc,m93Ibs{#W_L4UiK",
+                            "extraState": {
+                              "isObjectVar": false
+                            },
+                            "fields": {
+                              "OBJECTTYPE": "Global",
+                              "VAR": {
+                                "id": "fpTKjp3;7JTta35V7{dW"
+                              }
+                            }
+                          }
+                        },
+                        "VALUE-1": {
+                          "block": {
+                            "type": "Number",
+                            "id": "ZO4c2yL6lyqC_vv|in5f",
+                            "fields": {
+                              "NUM": 5
+                            }
+                          }
+                        },
+                        "VALUE-2": {
+                          "block": {
+                            "type": "CreateVector",
+                            "id": "SLQMxiR5Esv}]-Yl*:cx",
+                            "inputs": {
+                              "VALUE-0": {
+                                "block": {
+                                  "type": "Number",
+                                  "id": "1iuofu)UB|W2GhyXLYJg",
+                                  "fields": {
+                                    "NUM": 198.4
+                                  }
+                                }
+                              },
+                              "VALUE-1": {
+                                "block": {
+                                  "type": "Number",
+                                  "id": "z97h;*-;XjX#UeMT*=GT",
+                                  "fields": {
+                                    "NUM": 225.7
+                                  }
+                                }
+                              },
+                              "VALUE-2": {
+                                "block": {
+                                  "type": "Number",
+                                  "id": "aXuj4Uu@O!,,kVS:U;Sm",
+                                  "fields": {
+                                    "NUM": 76.2
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "next": {
+                        "block": {
+                          "type": "actionComment",
+                          "id": "k]-SEz(#Kt0=#/U{b[rP",
+                          "fields": {
+                            "TEXT": "Map focus position for debugging"
+                          },
+                          "next": {
+                            "block": {
+                              "type": "SetVariableAtIndex",
+                              "id": ":wt^/qp0K;XM4mC-r+4O",
+                              "inputs": {
+                                "VALUE-0": {
+                                  "block": {
+                                    "type": "variableReferenceBlock",
+                                    "id": "qC:_NG{,;m2)snprCLj2",
+                                    "extraState": {
+                                      "isObjectVar": false
+                                    },
+                                    "fields": {
+                                      "OBJECTTYPE": "Global",
+                                      "VAR": {
+                                        "id": "fpTKjp3;7JTta35V7{dW"
+                                      }
+                                    }
+                                  }
+                                },
+                                "VALUE-1": {
+                                  "block": {
+                                    "type": "Number",
+                                    "id": "AWzr5Xa+V|Fh=O`)xF,5",
+                                    "fields": {
+                                      "NUM": 13
+                                    }
+                                  }
+                                },
+                                "VALUE-2": {
+                                  "block": {
+                                    "type": "CreateVector",
+                                    "id": "/oQ3w{ofFtj.iU(a~TF^",
+                                    "inputs": {
+                                      "VALUE-0": {
+                                        "block": {
+                                          "type": "Number",
+                                          "id": "xt2S/iMvn4IG`dHY;rTk",
+                                          "fields": {
+                                            "NUM": 128
+                                          }
+                                        }
+                                      },
+                                      "VALUE-1": {
+                                        "block": {
+                                          "type": "Number",
+                                          "id": "67dY(W=CzyT%Pm(4j)$C",
+                                          "fields": {
+                                            "NUM": 198.3
+                                          }
+                                        }
+                                      },
+                                      "VALUE-2": {
+                                        "block": {
+                                          "type": "Number",
+                                          "id": "CyvsXxZ`d8W1yvCe@mR+",
+                                          "fields": {
+                                            "NUM": -49
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "next": {
+                                "block": {
+                                  "type": "actionComment",
+                                  "id": "Ulojh+E|AN_1/GB9@_Kz",
+                                  "fields": {
+                                    "TEXT": "facing diection offset"
+                                  },
+                                  "next": {
+                                    "block": {
+                                      "type": "SetVariableAtIndex",
+                                      "id": "hufIg==OSc(;8@^)pLAP",
+                                      "inputs": {
+                                        "VALUE-0": {
+                                          "block": {
+                                            "type": "variableReferenceBlock",
+                                            "id": "kR]W0]F+R}9/5]1e1M/,",
+                                            "extraState": {
+                                              "isObjectVar": false
+                                            },
+                                            "fields": {
+                                              "OBJECTTYPE": "Global",
+                                              "VAR": {
+                                                "id": "fpTKjp3;7JTta35V7{dW"
+                                              }
+                                            }
+                                          }
+                                        },
+                                        "VALUE-1": {
+                                          "block": {
+                                            "type": "Number",
+                                            "id": "NZ*Rf!9090lDE-Vd2bKm",
+                                            "fields": {
+                                              "NUM": 6
+                                            }
+                                          }
+                                        },
+                                        "VALUE-2": {
+                                          "block": {
+                                            "type": "Number",
+                                            "id": "^sp{Vg^K+Q8Kb?bWwOZ6",
+                                            "fields": {
+                                              "NUM": 90
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "next": {
+                                        "block": {
+                                          "type": "actionComment",
+                                          "id": "`ClKahW`T/4^BwV6xa-R",
+                                          "fields": {
+                                            "TEXT": "deploy radius"
+                                          },
+                                          "next": {
+                                            "block": {
+                                              "type": "SetVariableAtIndex",
+                                              "id": "Ua.,5/}gq@jR#tWFJ~?~",
+                                              "inputs": {
+                                                "VALUE-0": {
+                                                  "block": {
+                                                    "type": "variableReferenceBlock",
+                                                    "id": "xD5GnIT3NJVUi4-/rT`o",
+                                                    "extraState": {
+                                                      "isObjectVar": false
+                                                    },
+                                                    "fields": {
+                                                      "OBJECTTYPE": "Global",
+                                                      "VAR": {
+                                                        "id": "fpTKjp3;7JTta35V7{dW"
+                                                      }
+                                                    }
+                                                  }
+                                                },
+                                                "VALUE-1": {
+                                                  "block": {
+                                                    "type": "Number",
+                                                    "id": "([6jMi_#0n2OHJ;(m0$4",
+                                                    "fields": {
+                                                      "NUM": 7
+                                                    }
+                                                  }
+                                                },
+                                                "VALUE-2": {
+                                                  "block": {
+                                                    "type": "Number",
+                                                    "id": "r+wIlFm#=QF6Mj2w^J_~",
+                                                    "fields": {
+                                                      "NUM": 120
+                                                    }
+                                                  }
+                                                }
+                                              },
+                                              "next": {
+                                                "block": {
+                                                  "type": "actionComment",
+                                                  "id": "TuXFa3JrHX8R[Ze?989;",
+                                                  "fields": {
+                                                    "TEXT": "squad formation radius"
+                                                  },
+                                                  "next": {
+                                                    "block": {
+                                                      "type": "SetVariableAtIndex",
+                                                      "id": "wy/@8SDmd%p@}BhR9OFL",
+                                                      "inputs": {
+                                                        "VALUE-0": {
+                                                          "block": {
+                                                            "type": "variableReferenceBlock",
+                                                            "id": "VMGno=q:JJGy|j*bUxlW",
+                                                            "extraState": {
+                                                              "isObjectVar": false
+                                                            },
+                                                            "fields": {
+                                                              "OBJECTTYPE": "Global",
+                                                              "VAR": {
+                                                                "id": "fpTKjp3;7JTta35V7{dW"
+                                                              }
+                                                            }
+                                                          }
+                                                        },
+                                                        "VALUE-1": {
+                                                          "block": {
+                                                            "type": "Number",
+                                                            "id": "ekScX)hJtBLO%QTLoZY;",
+                                                            "fields": {
+                                                              "NUM": 8
+                                                            }
+                                                          }
+                                                        },
+                                                        "VALUE-2": {
+                                                          "block": {
+                                                            "type": "Number",
+                                                            "id": "bDz]d.BTyW4L|)js/C+B",
+                                                            "fields": {
+                                                              "NUM": 3.5
+                                                            }
+                                                          }
+                                                        }
+                                                      },
+                                                      "next": {
+                                                        "block": {
+                                                          "type": "actionComment",
+                                                          "id": "l8mMR]OrW3fT@fXe/0U7",
+                                                          "fields": {
+                                                            "TEXT": "randomize deployment rotation start angle"
+                                                          },
+                                                          "next": {
+                                                            "block": {
+                                                              "type": "SetVariableAtIndex",
+                                                              "id": "%]s`t,C,f1@u-92Rxf-C",
+                                                              "inputs": {
+                                                                "VALUE-0": {
+                                                                  "block": {
+                                                                    "type": "variableReferenceBlock",
+                                                                    "id": "l(^-:L4a%~eF~4vB.eI:",
+                                                                    "extraState": {
+                                                                      "isObjectVar": false
+                                                                    },
+                                                                    "fields": {
+                                                                      "OBJECTTYPE": "Global",
+                                                                      "VAR": {
+                                                                        "id": "fpTKjp3;7JTta35V7{dW"
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                },
+                                                                "VALUE-1": {
+                                                                  "block": {
+                                                                    "type": "Number",
+                                                                    "id": ",kdX[UX0!QwCcgQ3Mz(M",
+                                                                    "fields": {
+                                                                      "NUM": 9
+                                                                    }
+                                                                  }
+                                                                },
+                                                                "VALUE-2": {
+                                                                  "block": {
+                                                                    "type": "Number",
+                                                                    "id": "j[58RD.,T)?L7BOH8$XI",
+                                                                    "fields": {
+                                                                      "NUM": 0
+                                                                    }
+                                                                  }
+                                                                }
+                                                              },
+                                                              "next": {
+                                                                "block": {
+                                                                  "type": "actionComment",
+                                                                  "id": "!@^nMMw]r]!A};g8cmaM",
+                                                                  "fields": {
+                                                                    "TEXT": "randomize deployment rotation end angle"
+                                                                  },
+                                                                  "next": {
+                                                                    "block": {
+                                                                      "type": "SetVariableAtIndex",
+                                                                      "id": "]aSTBuzA:P}9hhgvGgJ(",
+                                                                      "inputs": {
+                                                                        "VALUE-0": {
+                                                                          "block": {
+                                                                            "type": "variableReferenceBlock",
+                                                                            "id": "DcV~zoEh,2)s$`aO/7!w",
+                                                                            "extraState": {
+                                                                              "isObjectVar": false
+                                                                            },
+                                                                            "fields": {
+                                                                              "OBJECTTYPE": "Global",
+                                                                              "VAR": {
+                                                                                "id": "fpTKjp3;7JTta35V7{dW"
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        },
+                                                                        "VALUE-1": {
+                                                                          "block": {
+                                                                            "type": "Number",
+                                                                            "id": "(utQ007Mm#meKeSsgiCg",
+                                                                            "fields": {
+                                                                              "NUM": 10
+                                                                            }
+                                                                          }
+                                                                        },
+                                                                        "VALUE-2": {
+                                                                          "block": {
+                                                                            "type": "Number",
+                                                                            "id": "OV-R+m7FIrGi2?2]1t+_",
+                                                                            "fields": {
+                                                                              "NUM": 360
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      },
+                                                                      "next": {
+                                                                        "block": {
+                                                                          "type": "actionComment",
+                                                                          "id": "D*YxOeug^vwobl]!2_*Z",
+                                                                          "fields": {
+                                                                            "TEXT": "Set deployment height"
+                                                                          },
+                                                                          "next": {
+                                                                            "block": {
+                                                                              "type": "SetVariableAtIndex",
+                                                                              "id": "{LFGun)X|Q}J?O+YuRqU",
+                                                                              "inputs": {
+                                                                                "VALUE-0": {
+                                                                                  "block": {
+                                                                                    "type": "variableReferenceBlock",
+                                                                                    "id": "gB4eI(rHRw;wfk%j^aZk",
+                                                                                    "extraState": {
+                                                                                      "isObjectVar": false
+                                                                                    },
+                                                                                    "fields": {
+                                                                                      "OBJECTTYPE": "Global",
+                                                                                      "VAR": {
+                                                                                        "id": "fpTKjp3;7JTta35V7{dW"
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                },
+                                                                                "VALUE-1": {
+                                                                                  "block": {
+                                                                                    "type": "Number",
+                                                                                    "id": "~Y#?|eIS6DKU,]lVf([y",
+                                                                                    "fields": {
+                                                                                      "NUM": 11
+                                                                                    }
+                                                                                  }
+                                                                                },
+                                                                                "VALUE-2": {
+                                                                                  "block": {
+                                                                                    "type": "Number",
+                                                                                    "id": "tc}{tIZcL3`xlR[EPmva",
+                                                                                    "fields": {
+                                                                                      "NUM": 180
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              },
+                                                                              "next": {
+                                                                                "block": {
+                                                                                  "type": "actionComment",
+                                                                                  "id": "Ey2`jkuPz*ZizicLa#*O",
+                                                                                  "fields": {
+                                                                                    "TEXT": "Average map height of floor plane"
+                                                                                  },
+                                                                                  "next": {
+                                                                                    "block": {
+                                                                                      "type": "SetVariableAtIndex",
+                                                                                      "id": "yA#u`Adhs}fy$lR.|w8A",
+                                                                                      "inputs": {
+                                                                                        "VALUE-0": {
+                                                                                          "block": {
+                                                                                            "type": "variableReferenceBlock",
+                                                                                            "id": "b5oX+Rp/.omvD?o@-%L@",
+                                                                                            "extraState": {
+                                                                                              "isObjectVar": false
+                                                                                            },
+                                                                                            "fields": {
+                                                                                              "OBJECTTYPE": "Global",
+                                                                                              "VAR": {
+                                                                                                "id": "fpTKjp3;7JTta35V7{dW"
+                                                                                              }
+                                                                                            }
+                                                                                          }
+                                                                                        },
+                                                                                        "VALUE-1": {
+                                                                                          "block": {
+                                                                                            "type": "Number",
+                                                                                            "id": "X1)5+%pJOXzmRmJq.hN{",
+                                                                                            "fields": {
+                                                                                              "NUM": 12
+                                                                                            }
+                                                                                          }
+                                                                                        },
+                                                                                        "VALUE-2": {
+                                                                                          "block": {
+                                                                                            "type": "Number",
+                                                                                            "id": "(}?fGpJ5xwY0;COv3(M#",
+                                                                                            "fields": {
+                                                                                              "NUM": 30
+                                                                                            }
+                                                                                          }
+                                                                                        }
+                                                                                      },
+                                                                                      "next": {
+                                                                                        "block": {
+                                                                                          "type": "actionComment",
+                                                                                          "id": "cy5MlD.@}`rX#Ynnc^$4",
+                                                                                          "fields": {
+                                                                                            "TEXT": "------Game OVER lobby Settings-----"
+                                                                                          },
+                                                                                          "next": {
+                                                                                            "block": {
+                                                                                              "type": "actionComment",
+                                                                                              "id": "fbrOo!k4b[Pc4|}4FyHR",
+                                                                                              "fields": {
+                                                                                                "TEXT": "Lobby center position"
+                                                                                              },
+                                                                                              "next": {
+                                                                                                "block": {
+                                                                                                  "type": "SetVariableAtIndex",
+                                                                                                  "id": "IoKv;!`%dk8`g2ENc[99",
+                                                                                                  "inputs": {
+                                                                                                    "VALUE-0": {
+                                                                                                      "block": {
+                                                                                                        "type": "variableReferenceBlock",
+                                                                                                        "id": "e*T.TX%Fmz8A4UueK:yH",
+                                                                                                        "extraState": {
+                                                                                                          "isObjectVar": false
+                                                                                                        },
+                                                                                                        "fields": {
+                                                                                                          "OBJECTTYPE": "Global",
+                                                                                                          "VAR": {
+                                                                                                            "id": "fpTKjp3;7JTta35V7{dW"
+                                                                                                          }
+                                                                                                        }
+                                                                                                      }
+                                                                                                    },
+                                                                                                    "VALUE-1": {
+                                                                                                      "block": {
+                                                                                                        "type": "Number",
+                                                                                                        "id": ")6{N+|CIoTlUn`Xh/z`D",
+                                                                                                        "fields": {
+                                                                                                          "NUM": 0
+                                                                                                        }
+                                                                                                      }
+                                                                                                    },
+                                                                                                    "VALUE-2": {
+                                                                                                      "block": {
+                                                                                                        "type": "CreateVector",
+                                                                                                        "id": "vhBZDDNzHjPV`2b?Q=uC",
+                                                                                                        "inputs": {
+                                                                                                          "VALUE-0": {
+                                                                                                            "block": {
+                                                                                                              "type": "Number",
+                                                                                                              "id": "va0pB*X:jIRo6SQ?TcbU",
+                                                                                                              "fields": {
+                                                                                                                "NUM": 160.74
+                                                                                                              }
+                                                                                                            }
+                                                                                                          },
+                                                                                                          "VALUE-1": {
+                                                                                                            "block": {
+                                                                                                              "type": "Number",
+                                                                                                              "id": "?oH`Qu?I+eNt=Ek7AlJv",
+                                                                                                              "fields": {
+                                                                                                                "NUM": 225.75
+                                                                                                              }
+                                                                                                            }
+                                                                                                          },
+                                                                                                          "VALUE-2": {
+                                                                                                            "block": {
+                                                                                                              "type": "Number",
+                                                                                                              "id": "05T:cSu8TI:n(^c|aFV{",
+                                                                                                              "fields": {
+                                                                                                                "NUM": 127.1
+                                                                                                              }
+                                                                                                            }
+                                                                                                          }
+                                                                                                        }
+                                                                                                      }
+                                                                                                    }
+                                                                                                  },
+                                                                                                  "next": {
+                                                                                                    "block": {
+                                                                                                      "type": "actionComment",
+                                                                                                      "id": "xsy1qp(/YS2U/`lK8:|o",
+                                                                                                      "fields": {
+                                                                                                        "TEXT": "Lobby facing direction offset"
+                                                                                                      },
+                                                                                                      "next": {
+                                                                                                        "block": {
+                                                                                                          "type": "SetVariableAtIndex",
+                                                                                                          "id": "UKIvZ4N9QBB6sjko*t}b",
+                                                                                                          "inputs": {
+                                                                                                            "VALUE-0": {
+                                                                                                              "block": {
+                                                                                                                "type": "variableReferenceBlock",
+                                                                                                                "id": "$$dp^gGogD5`5Z;NHlE`",
+                                                                                                                "extraState": {
+                                                                                                                  "isObjectVar": false
+                                                                                                                },
+                                                                                                                "fields": {
+                                                                                                                  "OBJECTTYPE": "Global",
+                                                                                                                  "VAR": {
+                                                                                                                    "id": "fpTKjp3;7JTta35V7{dW"
+                                                                                                                  }
+                                                                                                                }
+                                                                                                              }
+                                                                                                            },
+                                                                                                            "VALUE-1": {
+                                                                                                              "block": {
+                                                                                                                "type": "Number",
+                                                                                                                "id": "kGu`V,fGVu2I(IJED+zd",
+                                                                                                                "fields": {
+                                                                                                                  "NUM": 1
+                                                                                                                }
+                                                                                                              }
+                                                                                                            },
+                                                                                                            "VALUE-2": {
+                                                                                                              "block": {
+                                                                                                                "type": "Number",
+                                                                                                                "id": "$Yx6O2Hb=5xMmQXQeR43",
+                                                                                                                "fields": {
+                                                                                                                  "NUM": 90
+                                                                                                                }
+                                                                                                              }
+                                                                                                            }
+                                                                                                          },
+                                                                                                          "next": {
+                                                                                                            "block": {
+                                                                                                              "type": "actionComment",
+                                                                                                              "id": "kus+IH+od~n([2:W)F0N",
+                                                                                                              "fields": {
+                                                                                                                "TEXT": "Lobby radius"
+                                                                                                              },
+                                                                                                              "next": {
+                                                                                                                "block": {
+                                                                                                                  "type": "SetVariableAtIndex",
+                                                                                                                  "id": "qEj1*IhfY2HOBr3p6_ba",
+                                                                                                                  "inputs": {
+                                                                                                                    "VALUE-0": {
+                                                                                                                      "block": {
+                                                                                                                        "type": "variableReferenceBlock",
+                                                                                                                        "id": "VR%lEf)Wj:X1`TT}${jA",
+                                                                                                                        "extraState": {
+                                                                                                                          "isObjectVar": false
+                                                                                                                        },
+                                                                                                                        "fields": {
+                                                                                                                          "OBJECTTYPE": "Global",
+                                                                                                                          "VAR": {
+                                                                                                                            "id": "fpTKjp3;7JTta35V7{dW"
+                                                                                                                          }
+                                                                                                                        }
+                                                                                                                      }
+                                                                                                                    },
+                                                                                                                    "VALUE-1": {
+                                                                                                                      "block": {
+                                                                                                                        "type": "Number",
+                                                                                                                        "id": "KZ_$49znc2$!Q3F/A8N1",
+                                                                                                                        "fields": {
+                                                                                                                          "NUM": 2
+                                                                                                                        }
+                                                                                                                      }
+                                                                                                                    },
+                                                                                                                    "VALUE-2": {
+                                                                                                                      "block": {
+                                                                                                                        "type": "Number",
+                                                                                                                        "id": "Jkx66Ko-QUVTgC4@u{af",
+                                                                                                                        "fields": {
+                                                                                                                          "NUM": 3.5
+                                                                                                                        }
+                                                                                                                      }
+                                                                                                                    }
+                                                                                                                  },
+                                                                                                                  "next": {
+                                                                                                                    "block": {
+                                                                                                                      "type": "actionComment",
+                                                                                                                      "id": "y/GF@MbxW{.,xW2fi9R]",
+                                                                                                                      "fields": {
+                                                                                                                        "TEXT": "Player text height"
+                                                                                                                      },
+                                                                                                                      "next": {
+                                                                                                                        "block": {
+                                                                                                                          "type": "SetVariableAtIndex",
+                                                                                                                          "id": "~C7H2v1*25m2=tV.,oAa",
+                                                                                                                          "inputs": {
+                                                                                                                            "VALUE-0": {
+                                                                                                                              "block": {
+                                                                                                                                "type": "variableReferenceBlock",
+                                                                                                                                "id": "|Oy(=[~~hBm3#t9{t3](",
+                                                                                                                                "extraState": {
+                                                                                                                                  "isObjectVar": false
+                                                                                                                                },
+                                                                                                                                "fields": {
+                                                                                                                                  "OBJECTTYPE": "Global",
+                                                                                                                                  "VAR": {
+                                                                                                                                    "id": "fpTKjp3;7JTta35V7{dW"
+                                                                                                                                  }
+                                                                                                                                }
+                                                                                                                              }
+                                                                                                                            },
+                                                                                                                            "VALUE-1": {
+                                                                                                                              "block": {
+                                                                                                                                "type": "Number",
+                                                                                                                                "id": "O%_O477Fj0a+y9vd~3ry",
+                                                                                                                                "fields": {
+                                                                                                                                  "NUM": 3
+                                                                                                                                }
+                                                                                                                              }
+                                                                                                                            },
+                                                                                                                            "VALUE-2": {
+                                                                                                                              "block": {
+                                                                                                                                "type": "Number",
+                                                                                                                                "id": "inP5S-Zg#zv=JFjH-^_^",
+                                                                                                                                "fields": {
+                                                                                                                                  "NUM": -0.3
+                                                                                                                                }
+                                                                                                                              }
+                                                                                                                            }
+                                                                                                                          },
+                                                                                                                          "next": {
+                                                                                                                            "block": {
+                                                                                                                              "type": "actionComment",
+                                                                                                                              "id": "fH+p=WwokC=VO2o%n+lD",
+                                                                                                                              "fields": {
+                                                                                                                                "TEXT": "Scoreboard state"
+                                                                                                                              },
+                                                                                                                              "next": {
+                                                                                                                                "block": {
+                                                                                                                                  "type": "SetVariableAtIndex",
+                                                                                                                                  "id": "B_iB0690N*tk,y,2-Jag",
+                                                                                                                                  "inputs": {
+                                                                                                                                    "VALUE-0": {
+                                                                                                                                      "block": {
+                                                                                                                                        "type": "variableReferenceBlock",
+                                                                                                                                        "id": "5f{oe$/K2}oW87ino^1e",
+                                                                                                                                        "extraState": {
+                                                                                                                                          "isObjectVar": false
+                                                                                                                                        },
+                                                                                                                                        "fields": {
+                                                                                                                                          "OBJECTTYPE": "Global",
+                                                                                                                                          "VAR": {
+                                                                                                                                            "id": "fpTKjp3;7JTta35V7{dW"
+                                                                                                                                          }
+                                                                                                                                        }
+                                                                                                                                      }
+                                                                                                                                    },
+                                                                                                                                    "VALUE-1": {
+                                                                                                                                      "block": {
+                                                                                                                                        "type": "Number",
+                                                                                                                                        "id": "Dpyt?05VC~al4r)p{SjQ",
+                                                                                                                                        "fields": {
+                                                                                                                                          "NUM": 4
+                                                                                                                                        }
+                                                                                                                                      }
+                                                                                                                                    },
+                                                                                                                                    "VALUE-2": {
+                                                                                                                                      "block": {
+                                                                                                                                        "type": "Number",
+                                                                                                                                        "id": "ZZ?V{@W*H=3Rdc$xsby4",
+                                                                                                                                        "fields": {
+                                                                                                                                          "NUM": 0
+                                                                                                                                        }
+                                                                                                                                      }
+                                                                                                                                    }
+                                                                                                                                  }
+                                                                                                                                }
+                                                                                                                              }
+                                                                                                                            }
+                                                                                                                          }
+                                                                                                                        }
+                                                                                                                      }
+                                                                                                                    }
+                                                                                                                  }
+                                                                                                                }
+                                                                                                              }
+                                                                                                            }
+                                                                                                          }
+                                                                                                        }
+                                                                                                      }
+                                                                                                    }
+                                                                                                  }
+                                                                                                }
+                                                                                              }
+                                                                                            }
+                                                                                          }
+                                                                                        }
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "ResupplyTypesItem",
+        "id": "V3V1*An7=n436m;7U`].",
+        "x": 1960,
+        "y": 28976,
+        "fields": {
+          "VALUE-0": "ResupplyTypes",
+          "VALUE-1": "AmmoBox"
+        }
+      },
+      {
+        "type": "subroutineBlock",
+        "id": "G~?fvmEdW#%}ZTBQSxk^",
+        "x": 3871,
+        "y": 539,
+        "extraState": {
+          "subroutineName": "Map_Valparaiso",
+          "parameters": []
+        },
+        "fields": {
+          "SUBROUTINE_NAME": "Map_Valparaiso"
+        },
+        "inputs": {
+          "CONDITIONS": {
+            "block": {
+              "type": "conditionBlock",
+              "id": "/pSUsnZrE6U@$l9VJ/IA",
+              "inputs": {
+                "CONDITION": {
+                  "block": {
+                    "type": "IsCurrentMap",
+                    "id": "!aZjDP(^Q1-Xf+|413`X",
+                    "inputs": {
+                      "VALUE-0": {
+                        "block": {
+                          "type": "MapsItem",
+                          "id": "zbgA6KN4^v?_sjqZWA|~",
+                          "fields": {
+                            "VALUE-0": "Maps",
+                            "VALUE-1": "Lighthouse"
                           }
                         }
                       }
@@ -44805,7 +46155,7 @@
                                   "type": "Number",
                                   "id": "kN4e|`2a;![M.XY=Ex+P",
                                   "fields": {
-                                    "NUM": 198.4
+                                    "NUM": 29.4
                                   }
                                 }
                               },
@@ -44814,7 +46164,7 @@
                                   "type": "Number",
                                   "id": "]vR8p18O374^UKBi^t!n",
                                   "fields": {
-                                    "NUM": 225.7
+                                    "NUM": 67.7
                                   }
                                 }
                               },
@@ -44823,7 +46173,7 @@
                                   "type": "Number",
                                   "id": "W*lZj[fV{~o2;%#Hqbww",
                                   "fields": {
-                                    "NUM": 76.2
+                                    "NUM": 117.9
                                   }
                                 }
                               }
@@ -45174,7 +46524,7 @@
                                                                                     "type": "Number",
                                                                                     "id": "_hGXO_BWu801,C2==TQg",
                                                                                     "fields": {
-                                                                                      "NUM": 150
+                                                                                      "NUM": 180
                                                                                     }
                                                                                   }
                                                                                 }
@@ -45278,7 +46628,7 @@
                                                                                                               "type": "Number",
                                                                                                               "id": "e!2*mBd)Vv$YrxXa48+~",
                                                                                                               "fields": {
-                                                                                                                "NUM": 160.74
+                                                                                                                "NUM": -151.4
                                                                                                               }
                                                                                                             }
                                                                                                           },
@@ -45287,7 +46637,7 @@
                                                                                                               "type": "Number",
                                                                                                               "id": "-eF)MJj;~KBna%IAlWYo",
                                                                                                               "fields": {
-                                                                                                                "NUM": 225.75
+                                                                                                                "NUM": 94.13
                                                                                                               }
                                                                                                             }
                                                                                                           },
@@ -45296,7 +46646,7 @@
                                                                                                               "type": "Number",
                                                                                                               "id": "t7@4oo}XVfb7CFW[kJ53",
                                                                                                               "fields": {
-                                                                                                                "NUM": 127.1
+                                                                                                                "NUM": 228
                                                                                                               }
                                                                                                             }
                                                                                                           }
@@ -45844,7 +47194,7 @@
       "type": "Global"
     },
     {
-      "name": "countdownToAwardWinnerTime",
+      "name": "setMusicClimaxEndGameTime",
       "id": "6I*Y(*AO5v4A6F(rhPSK",
       "type": "Global"
     },
