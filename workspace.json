@@ -16421,7 +16421,7 @@
                           "next": {
                             "block": {
                               "type": "subroutineInstanceBlock",
-                              "id": "GmK=B~Hx*X*fK*ShOSI$",
+                              "id": "C~tq6*l#XpN_F$]f#r{b",
                               "extraState": {
                                 "subroutineName": "runTeamStats",
                                 "parameters": [
@@ -16450,14 +16450,14 @@
                                 "PARAM-0": {
                                   "block": {
                                     "type": "GetTeamId",
-                                    "id": "%(=w8K*5}bQMVa/]#1{p",
+                                    "id": "[a9,V?A]gbK(zI.QZIWj",
                                     "inputs": {
                                       "VALUE-0": {
                                         "block": {
                                           "type": "Number",
-                                          "id": ".nm={^@@Y4{pbQm08gb$",
+                                          "id": "MX!A%_w@0Pg||5x;Lp-l",
                                           "fields": {
-                                            "NUM": 1
+                                            "NUM": 2
                                           }
                                         }
                                       }
@@ -16467,27 +16467,27 @@
                                 "PARAM-1": {
                                   "block": {
                                     "type": "Number",
-                                    "id": "_W7-`zteBeR8q/xT(S;*",
+                                    "id": "8O^.E7Xd~3,vG0/be2E~",
                                     "fields": {
-                                      "NUM": 2
+                                      "NUM": 0
                                     }
                                   }
                                 },
                                 "PARAM-2": {
                                   "block": {
                                     "type": "Text",
-                                    "id": "9fSl}mJ12h)0,](+(z_c",
+                                    "id": "j.5(K2g;vP.3X-e^MOf^",
                                     "fields": {
-                                      "TEXT": "Payout $"
+                                      "TEXT": "Kills "
                                     }
                                   }
                                 },
                                 "PARAM-3": {
                                   "block": {
                                     "type": "Text",
-                                    "id": "J._8On45)S=r1r6rY+q;",
+                                    "id": "jGJMeb#VNO%[WGy{#ujP",
                                     "fields": {
-                                      "TEXT": "------ Team 1 Player Payouts ------"
+                                      "TEXT": "------ Team 2 Kill Stats ------"
                                     }
                                   }
                                 }
@@ -16495,7 +16495,7 @@
                               "next": {
                                 "block": {
                                   "type": "subroutineInstanceBlock",
-                                  "id": "C~tq6*l#XpN_F$]f#r{b",
+                                  "id": "RqV~-{Isb_f=#IVG87Iw",
                                   "extraState": {
                                     "subroutineName": "runTeamStats",
                                     "parameters": [
@@ -16524,12 +16524,12 @@
                                     "PARAM-0": {
                                       "block": {
                                         "type": "GetTeamId",
-                                        "id": "[a9,V?A]gbK(zI.QZIWj",
+                                        "id": "OfWF~P%`wWF.wg6WDLjs",
                                         "inputs": {
                                           "VALUE-0": {
                                             "block": {
                                               "type": "Number",
-                                              "id": "MX!A%_w@0Pg||5x;Lp-l",
+                                              "id": "nl+qCL?Rwl?L9r|q|fJS",
                                               "fields": {
                                                 "NUM": 2
                                               }
@@ -16541,175 +16541,93 @@
                                     "PARAM-1": {
                                       "block": {
                                         "type": "Number",
-                                        "id": "8O^.E7Xd~3,vG0/be2E~",
+                                        "id": "{br.PbXb8-%k*qONI(CU",
                                         "fields": {
-                                          "NUM": 0
+                                          "NUM": 1
                                         }
                                       }
                                     },
                                     "PARAM-2": {
                                       "block": {
                                         "type": "Text",
-                                        "id": "j.5(K2g;vP.3X-e^MOf^",
+                                        "id": "iXu/c-w);aanlPE*c.hZ",
                                         "fields": {
-                                          "TEXT": "Kills "
+                                          "TEXT": "Headshots "
                                         }
                                       }
                                     },
                                     "PARAM-3": {
                                       "block": {
                                         "type": "Text",
-                                        "id": "jGJMeb#VNO%[WGy{#ujP",
+                                        "id": "bX`$1P%p*{!)-Hn!QPae",
                                         "fields": {
-                                          "TEXT": "------ Team 2 Kill Stats ------"
+                                          "TEXT": "------ Team 2 Headshot Stats ------"
                                         }
                                       }
                                     }
                                   },
                                   "next": {
                                     "block": {
-                                      "type": "subroutineInstanceBlock",
-                                      "id": "RqV~-{Isb_f=#IVG87Iw",
-                                      "extraState": {
-                                        "subroutineName": "runTeamStats",
-                                        "parameters": [
-                                          {
-                                            "types": "TeamId",
-                                            "name": "eventTeam"
-                                          },
-                                          {
-                                            "types": "Number",
-                                            "name": "stat"
-                                          },
-                                          {
-                                            "types": "String",
-                                            "name": "worldIconTxt"
-                                          },
-                                          {
-                                            "types": "String",
-                                            "name": "headerTxt"
-                                          }
-                                        ]
-                                      },
-                                      "fields": {
-                                        "SUBROUTINE_NAME": "runTeamStats"
-                                      },
+                                      "type": "TriggerAudio",
+                                      "id": "}XSpCLq8GtnkmLYXV%+o",
                                       "inputs": {
-                                        "PARAM-0": {
+                                        "VALUE-0": {
+                                          "block": {
+                                            "type": "SoundsItem",
+                                            "id": "/X_npdVb5%H~P$KcnO1k",
+                                            "fields": {
+                                              "VALUE-0": "Sounds",
+                                              "VALUE-1": "ObjectiveCappingComplete"
+                                            }
+                                          }
+                                        },
+                                        "VALUE-1": {
                                           "block": {
                                             "type": "GetTeamId",
-                                            "id": "OfWF~P%`wWF.wg6WDLjs",
+                                            "id": "88KFNgo10Jd186%I87Aa",
                                             "inputs": {
                                               "VALUE-0": {
                                                 "block": {
                                                   "type": "Number",
-                                                  "id": "nl+qCL?Rwl?L9r|q|fJS",
+                                                  "id": "#(|+s{c~MYb(5jb}P2Al",
                                                   "fields": {
-                                                    "NUM": 2
+                                                    "NUM": 1
                                                   }
                                                 }
                                               }
-                                            }
-                                          }
-                                        },
-                                        "PARAM-1": {
-                                          "block": {
-                                            "type": "Number",
-                                            "id": "{br.PbXb8-%k*qONI(CU",
-                                            "fields": {
-                                              "NUM": 1
-                                            }
-                                          }
-                                        },
-                                        "PARAM-2": {
-                                          "block": {
-                                            "type": "Text",
-                                            "id": "iXu/c-w);aanlPE*c.hZ",
-                                            "fields": {
-                                              "TEXT": "Headshots "
-                                            }
-                                          }
-                                        },
-                                        "PARAM-3": {
-                                          "block": {
-                                            "type": "Text",
-                                            "id": "bX`$1P%p*{!)-Hn!QPae",
-                                            "fields": {
-                                              "TEXT": "------ Team 2 Headshot Stats ------"
                                             }
                                           }
                                         }
                                       },
                                       "next": {
                                         "block": {
-                                          "type": "subroutineInstanceBlock",
-                                          "id": "yh9d}JUZe;9mhgKib([Q",
-                                          "extraState": {
-                                            "subroutineName": "runTeamStats",
-                                            "parameters": [
-                                              {
-                                                "types": "TeamId",
-                                                "name": "eventTeam"
-                                              },
-                                              {
-                                                "types": "Number",
-                                                "name": "stat"
-                                              },
-                                              {
-                                                "types": "String",
-                                                "name": "worldIconTxt"
-                                              },
-                                              {
-                                                "types": "String",
-                                                "name": "headerTxt"
-                                              }
-                                            ]
-                                          },
-                                          "fields": {
-                                            "SUBROUTINE_NAME": "runTeamStats"
-                                          },
+                                          "type": "TriggerAudio",
+                                          "id": "=IctjFf=(qQ9/.`,L@[r",
                                           "inputs": {
-                                            "PARAM-0": {
+                                            "VALUE-0": {
+                                              "block": {
+                                                "type": "SoundsItem",
+                                                "id": "@#^KJKxc*[aG5zidFMo[",
+                                                "fields": {
+                                                  "VALUE-0": "Sounds",
+                                                  "VALUE-1": "ObjectiveCappingComplete"
+                                                }
+                                              }
+                                            },
+                                            "VALUE-1": {
                                               "block": {
                                                 "type": "GetTeamId",
-                                                "id": "(y_*gr_h@luDQM8z;Cm2",
+                                                "id": "kqFq%kzgE@*RcCa?zWFw",
                                                 "inputs": {
                                                   "VALUE-0": {
                                                     "block": {
                                                       "type": "Number",
-                                                      "id": "5.jEWKH2*75N,T_c/0w%",
+                                                      "id": "p`)syT~h0Mv+Ia92DCs)",
                                                       "fields": {
                                                         "NUM": 2
                                                       }
                                                     }
                                                   }
-                                                }
-                                              }
-                                            },
-                                            "PARAM-1": {
-                                              "block": {
-                                                "type": "Number",
-                                                "id": "7Z=D-k9VE;4x.xj.9/!P",
-                                                "fields": {
-                                                  "NUM": 2
-                                                }
-                                              }
-                                            },
-                                            "PARAM-2": {
-                                              "block": {
-                                                "type": "Text",
-                                                "id": "IW)HJRecNNC,*GqD0*wn",
-                                                "fields": {
-                                                  "TEXT": "Payout $"
-                                                }
-                                              }
-                                            },
-                                            "PARAM-3": {
-                                              "block": {
-                                                "type": "Text",
-                                                "id": "tUy?6oQq*=Rr:]0y-cy*",
-                                                "fields": {
-                                                  "TEXT": "------ Team 2 Player Payouts ------"
                                                 }
                                               }
                                             }
@@ -16724,7 +16642,7 @@
                                                     "type": "Number",
                                                     "id": ")h(Lrqf.}9tq-S}]F7.:",
                                                     "fields": {
-                                                      "NUM": 1
+                                                      "NUM": 4
                                                     }
                                                   }
                                                 }
